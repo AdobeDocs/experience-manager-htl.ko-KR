@@ -11,7 +11,7 @@ content-type: 참조
 discoiquuid: 58 AA 6 EA 8-1 D 45-4 F 6 F-A 77 E -4819 F 593 A 19 D
 mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 7a94b0b010461b29d2b74c9c717e3b218d0ca5a8
 
 ---
 
@@ -388,7 +388,7 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM 에서는 포함된 요소를 래핑하는 장식 태그를 포함하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 Developing Components 설명서에서 [장식 태그를](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/decoration-tag) 참조하십시오.
+>AEM 에서는 포함된 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 Developing Components 설명서에서 [장식 태그를](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/decoration-tag.html) 참조하십시오.
 
 ## include {#include}
 
