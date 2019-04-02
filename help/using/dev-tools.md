@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 ---
 
@@ -26,9 +26,9 @@ HTL에 사용할 수 있는 개발자 도구는 다음과 같습니다.
 * [HTL Read Eval Print Loop](https://github.com/Adobe-Marketing-Cloud/aem-htl-repl)\
    언어를 통한 재생을 위한 라이브 실행 환경으로, 학습에 적합합니다.
 
-* [AEM Brackets Extension](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/aem-brackets.html)\
+* [AEM Brackets Extension](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-brackets.html)\
    프런트 엔드 개발자를 위한 간편한 툴로 AEM 구성 요소에서 작업할 수 있습니다.
 
-* [AEM Eclipse 익스텐션](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/aem-eclipse.html)\
+* [AEM Eclipse 익스텐션](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-eclipse.html)\
    백엔드 개발자를 위한 도구로, AEM 프로젝트를 제작하고 쉽게 편집할 수 있습니다.
 
