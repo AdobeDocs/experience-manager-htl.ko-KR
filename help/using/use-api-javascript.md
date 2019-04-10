@@ -13,7 +13,7 @@ content-type: 참조
 discoiquuid: 18871 AF 8-E 44 B -4 EEC-A 483-FCC 765 DAE 58 F
 mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 ---
 

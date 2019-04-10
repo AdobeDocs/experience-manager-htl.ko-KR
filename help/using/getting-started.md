@@ -10,7 +10,7 @@ topic-tags: 소개
 discoiquuid: 3 BF 2 CA 75-0 D 68-489 D-BD 1 C -1 D 4 FD 730 C 61 A
 mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 ---
 

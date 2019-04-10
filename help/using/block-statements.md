@@ -11,7 +11,7 @@ content-type: 참조
 discoiquuid: 58 AA 6 EA 8-1 D 45-4 F 6 F-A 77 E -4819 F 593 A 19 D
 mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 7a94b0b010461b29d2b74c9c717e3b218d0ca5a8
+source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 ---
 

@@ -6,7 +6,7 @@ seo-description: HTL는 AEM의 공식 서버측 템플릿 시스템으로, TCK�
 uuid: cdfe 68 f 3-d 26 a -4 c 1 f-a 41 b-a 41 b-a 35 f 849288 b 7
 discoiquuid: 5 AF 8 B 9 D 6-D 776-4 B 49-BE 12-6492 E 0016096
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 ---
 
