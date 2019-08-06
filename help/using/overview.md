@@ -1,11 +1,8 @@
 ---
-title: 개요
-seo-title: 개요
-description: AEM에서 지원하는 HTL의 목적은 보안이 강화된 엔터프라이즈급 웹 프레임워크를 제공하는 것이며, Java 지식 없이도 HTML
-  개발자가 AEM 프로젝트에 더 잘 참여하도록 하는 것입니다.
-seo-description: Adobe Experience Manager가 지원하는 HTML 템플릿 언어 - HTL의 목적은 보안을 향상시켜주는
-  생산성이 뛰어난 엔터프라이즈급 웹 프레임워크를 제공하는 것이며, Java 지식 없이도 HTML 개발자가 AEM 프로젝트에 더 잘 참여하도록 할
-  수 있습니다.
+title: AEM HTL 개요
+seo-title: AEM HTL 기술 설명서 개요
+description: AEM에서 지원하는 HTL의 목적은 보안이 강화된 엔터프라이즈급 웹 프레임워크를 제공하는 것이며, Java 지식 없이도 HTML 개발자가 AEM 프로젝트에 더 잘 참여하도록 하는 것입니다.
+seo-description: 이 문서에서는 Adobe Experience Manager에서 지원하는 HTML 템플릿 언어 - HTL의 원칙 및 목적을 설명합니다. HTL는 생산성을 높여주는 생산성이 뛰어난 엔터프라이즈급 웹 프레임워크로, Java 지식 없이도 HTML 개발자가 AEM 프로젝트에 더 많은 시간을 할애할 수 있습니다.
 uuid: 8 F 486325-0 A 1 B -4186-A 998-96 FC 0034 C 44 A
 contentOwner: 사용자
 products: sg_ Experiencemanager/HTL
@@ -14,7 +11,7 @@ content-type: 참조
 discoiquuid: 8 f 779 e 08-94 c 7-43 bc-a 6 e 5-d 81 a 9 f 818 c 5 c
 mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: 1d4565a4cffa6e5d42d6a5242f7ce62203dc7c63
 
 ---
 
