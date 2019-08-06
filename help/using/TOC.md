@@ -1,10 +1,11 @@
 ---
 cloud: Experience-Cloud
-product: Adobe Experience Manager HTL
-archtype: admin
+product: Experience Manager
+sub-product: Experience Manager HTL
+archetype: admin
 user-guide-title: Experience Manager HTL 도움말
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: 60258140976a8d2182c4d75c18863c4b607bffbd
 
 ---
 
