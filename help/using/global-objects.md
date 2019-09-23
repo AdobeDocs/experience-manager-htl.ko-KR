@@ -1,43 +1,41 @@
 ---
-title: HTL 글로벌 개체
-seo-title: HTL 글로벌 개체
-description: HTL를 지정하지 않고도 Global. jsp를 포함하여 JSP에서 일반적으로 사용할 수 있었던 모든 개체에 대한 액세스 권한을
-  제공합니다.
-seo-description: HTL를 지정하지 않고도 Global. jsp를 포함하여 JSP에서 일반적으로 사용할 수 있었던 모든 개체에 대한 액세스
-  권한을 제공합니다.
-uuid: E 03 AFFBB-A 683-4323-8224-53 D 8 EF 59 CAEF
+title: HTL 전역 개체
+seo-title: HTL 전역 개체
+description: 아무 것도 지정하지 않아도 HTL은 global.jsp를 포함하여 JSP에서 일반적으로 사용할 수 있는 모든 객체에 대한 액세스를 제공합니다.
+seo-description: '아무 것도 지정하지 않아도 HTL은 global.jsp를 포함하여 JSP에서 일반적으로 사용할 수 있는 모든 객체에 대한 액세스를 제공합니다. '
+uuid: e03afbb-a683-4323-8224-53d8ef59caef
 contentOwner: 사용자
-products: sg_ Experiencemanager/HTL
-topic-tags: HTML-template-language
+products: SG_EXPERIENCEMANAGER/HTL
+topic-tags: html-template-language
 content-type: 참조
-discoiquuid: FE 071 A 7 E -0 DAE -45 C 1-9 F 86-80 C 558483 F 87
-mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
+discoiquuid: fe071a7e-0dae-45c1-9f86-80c558483f87
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: c3beb0d02f18483b1b000c1bf70cd59a3dcc2035
 
 ---
 
 
-# HTL 글로벌 개체{#htl-global-objects}
+# HTL 전역 개체{#htl-global-objects}
 
-HTL는 아무 것도 지정하지 않아도, 포함 후 JSP에서 일반적으로 사용할 수 `global.jsp`있었던 모든 개체에 대한 액세스를 제공합니다. 이러한 개체는 [use-api를 통해 소개될 수 있는 것 외에도 적용됩니다](use-api.md).
+HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 수 있었던 모든 객체에 대한 액세스 권한을 제공합니다 `global.jsp`. 이러한 개체는 Use-API를 통해 소개될 수 있는 [모든 개체에 추가됩니다](use-api.md).
 
-## 열거 가능한 객체 {#enumerable-objects}
+## 열거할 수 있는 개체 {#enumerable-objects}
 
-이러한 개체는 일반적으로 사용되는 정보에 편리하게 액세스할 수 있습니다. 도트 표기법을 사용하여 컨텐츠에 액세스할 수 있으며 또는을 사용하여 `data-sly-list` 반복할 수 `data-sly-repeat`있습니다.
+이러한 개체는 일반적으로 사용되는 정보에 편리하게 액세스할 수 있습니다. 이러한 컨텐츠는 점 표기법으로 액세스할 수 있으며 `data-sly-list` 또는 을 사용하여 반복할 수 `data-sly-repeat`있습니다.
 
 | 변수 이름 | 설명 |
 |--- |--- |
-| 속성 | 현재 리소스의 속성 목록입니다. org. apache. sling. api. resource. valuemap에 의해 [지원됩니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
-| Pageproperties | 현재 페이지의 페이지 속성 목록입니다. org. apache. sling. api. resource. valuemap에 의해 [지원됩니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.hmtl) |
-| Inheritedpageproperties | 현재 페이지의 상속된 페이지 속성 목록입니다. org. apache. sling. api. resource. valuemap에 의해 [지원됩니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| 속성 | 현재 리소스의 속성 목록입니다. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| pageProperties | 현재 페이지의 페이지 속성 목록입니다. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.hmtl) |
+| 상속된 페이지 속성 | 현재 페이지의 상속된 페이지 속성 목록입니다. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 
 
 ## Java 지원 개체 {#java-backed-objects}
 
-다음 개체는 해당 Java 객체에 의해 지원됩니다.
+다음 각 개체는 해당 Java 개체의 지원을 받습니다.
 
-아래 표에서 가장 유용한 변수는 굵은 색으로 강조 표시됩니다.
+아래 표에서 가장 유용한 변수는 굵게 강조 표시됩니다.
 
 | 변수 이름 | 설명 |  |
 |---|---|---|
@@ -65,9 +63,9 @@ HTL는 아무 것도 지정하지 않아도, 포함 후 JSP에서 일반적으�
 | `wcmmode` | `com.adobe.cq.sightly.SightlyWCMMode` |  |
 | `xssAPI` | `com.adobe.granite.xss.XSSAPI` |  |
 
-## JavaScript 지원 개체 {#javascript-backed-objects}
+## JavaScript에서 지원하는 개체 {#javascript-backed-objects}
 
-JavaScript에 의해 지원되는 개체 또한 있습니다. 그러나 AEM 6.2 부터는 이러한 개체가 여전히 실험적이며 Java 지원 개체를 사용하는 것이 더 낫습니다. 이 개체는 이를 수행할 수 있습니다.
+또한 JavaScript로 지원되는 객체를 사용할 수도 있습니다. 그러나 AEM 6.2부터 이러한 개체는 여전히 실험적인 개체이며 동일한 작업을 수행할 수 있는 Java 지원 개체를 사용하는 것이 좋습니다.
 
 <!-- 
 
