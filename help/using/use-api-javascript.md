@@ -1,37 +1,35 @@
 ---
 title: HTL JavaScript Use-API
 seo-title: HTL JavaScript Use-API
-description: HTML 템플릿 Langugae - HTL - JavaScript - JavaScript Use-API를 사용하면 HTL 파일에서
-  JavaScript로 작성한 보조 코드를 액세스할 수 있습니다.
-seo-description: HTML 템플릿 Langugae - HTL - JavaScript - JavaScript Use-API를 사용하면 HTL
-  파일에서 JavaScript로 작성한 보조 코드를 액세스할 수 있습니다.
-uuid: 7 AB 34 B 10-30 AC -44 D 6-926 B -0234 F 52 E 5541
+description: HTML 템플릿 언어 - HTL - JavaScript Use-API를 사용하면 HTML 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다.
+seo-description: HTML 템플릿 언어 - HTL - JavaScript Use-API를 사용하면 HTML 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다.
+uuid: 7ab34b10-30ac-44d6-926b-0234f52e5541
 contentOwner: 사용자
-products: sg_ Experiencemanager/HTL
-topic-tags: HTML-template-language
+products: SG_EXPERIENCEMANAGER/HTL
+topic-tags: html-template-language
 content-type: 참조
-discoiquuid: 18871 AF 8-E 44 B -4 EEC-A 483-FCC 765 DAE 58 F
-mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
+discoiquuid: 18871af8-e44b-4eec-a483-fcc765dae58f
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: bd1962e25d152be4f1608d0a83d8d5b3e728b4aa
 
 ---
 
 
 # HTL JavaScript Use-API {#htl-javascript-use-api}
 
-HTML 템플릿 Langugae (HTL) JavaScript use-API를 사용하면 HTL 파일에서 JavaScript로 작성한 보조 코드를 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 논리를 JavaScript 코드로 캡슐화할 수 있으며 HTL 코드는 Direct Markup Production 에만 적용됩니다.
+HTL(HTML 템플릿 언어) JavaScript Use-API를 사용하면 HTL 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 로직을 JavaScript 코드로 캡슐화할 수 있고 HTL 코드는 직접 마크업 프로덕션만 처리합니다.
 
 ## 간단한 예 {#a-simple-example}
 
-`info`Adobe 는
+Adobe는 `info`
 
 **`/apps/my-example/components/info`**
 
-이 파일에는 두 개의 파일이 포함되어 있습니다.
+여기에는 두 개의 파일이 포함되어 있습니다.
 
-* **`info.js`**: use-class를 정의하는 JavaScript 파일.
-* `info.html`: 구성 요소를 정의하는 HTL 파일 `info`. This code will use the functionality of `info.js` the use-API.
+* **`info.js`**:use-class를 정의하는 JavaScript 파일입니다.
+* `info.html`:구성 요소를 정의하는 HTL `info`파일입니다. 이 코드는 use-API를 `info.js` 통해 의 기능을 사용합니다.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
@@ -54,7 +52,7 @@ use(function () {
 </div>
 ```
 
-We also create a content node that uses the **`info`** component at
+Adobe에서는 다음 위치에서 **`info`** 구성 요소를 사용하는 컨텐트 노드를 만듭니다.
 
 **`/content/my-example`**, with properties:
 
@@ -62,7 +60,7 @@ We also create a content node that uses the **`info`** component at
 * `title = "My Example"`
 * `description = "This is some example content."`
 
-다음은 결과 리포지토리 구조입니다.
+다음은 결과 저장소 구조입니다.
 
 ### 저장소 구조 {#repository-structure}
 
@@ -101,7 +99,7 @@ We also create a content node that uses the **`info`** component at
 </section>
 ```
 
-해당 로직은 템플릿 옆에 있는 파일에 있는 ***다음 서버측*** JavaScript를 사용하여 `component.js` 작성할 수 있습니다.
+템플릿 바로 옆에 있는 ***파일에 있는 다음 서버측*** `component.js` JavaScript를 사용하여 해당 논리를 작성할 수 있습니다.
 
 ```
 use(function () {
@@ -120,11 +118,11 @@ use(function () {
 });
 ```
 
-이렇게 하면 다른 소스에서 가져온 다음 `title` 설명을 50 자로 자릅니다.
+이렇게 하면 서로 다른 소스의 `title` 내용을 가져와 설명을 50자로 자릅니다.
 
 ## 종속성 {#dependencies}
 
-탐색 제목용 기본 로직과 같은 스마트 기능과 특정 길이의 문자열을 오가며 사용할 수 있는 유틸리티 클래스가 있다고 가정해봅시다.
+탐색 제목의 기본 로직이나 문자열을 특정 길이로 잘리는 등 이미 고급 기능이 포함된 유틸리티 클래스가 있다고 가정해 보겠습니다.
 
 ```
 use(['../utils/MyUtils.js'], function (utils) {
@@ -143,11 +141,11 @@ use(['../utils/MyUtils.js'], function (utils) {
 });
 ```
 
-## extending {#extending}
+## 확장 {#extending}
 
-종속성 패턴을 사용하여 다른 구성 요소 (일반적으로 현재 구성 요소) 의 논리를 `sling:resourceSuperType` 확장할 수도 있습니다.
+종속성 패턴을 사용하여 다른 구성 요소(일반적으로 현재 구성 요소의 논리)의 논리를 확장할 `sling:resourceSuperType` 수도 있습니다.
 
-상위 구성 요소가 이미를 `title`제공하고 A **`description`** 도 추가한다고 가정해 보겠습니다.
+상위 구성 요소가 이미 해당 구성 요소를 `title`제공하고, Adobe가 **`description`** 다음을 추가한다고 가정합니다.
 
 ```
 use(['../parent-component/parent-component.js'], function (component) {
@@ -164,15 +162,15 @@ use(['../parent-component/parent-component.js'], function (component) {
 
 ## 템플릿에 매개 변수 전달 {#passing-parameters-to-a-template}
 
-구성 요소와 독립적인 **`data-sly-template`** 명령문의 경우 연결된 use-API에 매개 변수를 전달하는 것이 유용할 수 있습니다.
+구성 요소와 독립적인 **`data-sly-template`** 문의 경우 관련 Use-API에 매개 변수를 전달하는 것이 유용할 수 있습니다.
 
-따라서 구성 요소에서 다른 파일에 있는 템플릿을 호출합니다.
+구성 요소에서 다른 파일에 있는 템플릿을 호출해 보겠습니다.
 
 ```xml
 <section class="component-name" data-sly-use.tmpl="template.html" data-sly-call="${tmpl.templateName @ page=currentPage}"></section>
 ```
 
-이 템플릿은 다음 위치에 있습니다 `template.html`.
+그러면 다음 위치에 있는 템플릿이 `template.html`표시됩니다.
 
 ```xml
 <template data-sly-template.templateName="${@ page}" data-sly-use.tmpl="${'template.js' @ page=page, descriptionLength=50}">
@@ -181,7 +179,7 @@ use(['../parent-component/parent-component.js'], function (component) {
 </template>
 ```
 
-해당 로직은 템플릿 파일 옆에 있는 파일에 있는 ***다음 서버측*** JavaScript `template.js` 를 사용하여 작성할 수 있습니다.
+해당 로직은 템플릿 파일 바로 옆에 있는 ***파일에 있는 다음 서버측*** `template.js` JavaScript를 사용하여 작성할 수 있습니다.
 
 ```
 use(function () {
@@ -199,4 +197,4 @@ use(function () {
 });
 ```
 
-전달된 매개 변수가 `this` 키워드에 대해 설정됩니다.
+전달된 매개 변수는 `this` 키워드에 설정됩니다.
