@@ -2,23 +2,23 @@
 title: HTL 표현식 언어
 seo-title: HTL 표현식 언어
 description: HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다.
-seo-description: HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다.
-uuid: 38 B 4 A 259-03 B 5-4847-91 C 6-E 20377600070
+seo-description: 'HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다. '
+uuid: 38b4a259-03b5-4847-91c6-e2037760070
 contentOwner: 사용자
-products: sg_ Experiencemanager/HTL
-topic-tags: HTML-template-language
+products: SG_EXPERIENCEMANAGER/HTL
+topic-tags: html-template-language
 content-type: 참조
-discoiquuid: 9 BA 37 CA 0-F 318-48 B 0-A 791-A 944 A 72502 ED
-mwpw-migration-script-version: 2017-10-12 T 21 46 58.665-0400
+discoiquuid: 9ba37ca0-f318-48b0-a791-a944a72502ed
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: 84ed515309831fe413abf317d8739f2bba79afdb
 
 ---
 
 
 # HTL 표현식 언어 {#htl-expression-language}
 
-HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다. 이러한 표현식은 문자와 `${``}`숫자로 구분됩니다. 형식이 잘못된 HTML를 피하려면 표현식은 속성 값, 요소 컨텐츠 또는 주석에서만 사용할 수 있습니다.
+HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다. 이러한 표현식은 `${` 문자와 `}`로 구분됩니다. 형식이 잘못된 HTML을 방지하기 위해 표현식은 특성 값, 요소 컨텐츠 또는 주석에만 사용할 수 있습니다.
 
 ```xml
 <!-- ${component.path} -->
@@ -27,46 +27,46 @@ HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 
 </h1>
 ```
 
-예를 들어, **`\`** 문자가 렌더링되면 표현식을 이스케이프 처리하여 이스케이프 처리할 **`\${test}`****`${test}`**수 있습니다.
+표현식은 **`\`** 문자로 연기하여 escape할 수 있습니다. 예를 들어 **`\${test}`** 렌더링됩니다 **`${test}`**.
 
 >[!NOTE]
 >
->이 페이지에 제공된 예제를 사용해 보려면 [Read Eval Print Loop](https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl) 라는 라이브 실행 환경을 사용할 수 있습니다.
+>이 페이지에서 제공되는 예제를 살펴보려면 Read Eval Print [Loop라는 라이브 실행 환경을](https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl) 사용할 수 있습니다.
 
-표현식 구문에는 [변수](#variables), [리터럴](#literals), [연산자](#operators) 및 [옵션이 포함됩니다](#options).
+표현식 구문에는 [변수](#variables), [리터럴](#literals), [연산자](#operators) 및 [optionsFollowing](#options)이 포함됩니다.
 
 ## 변수 {#variables}
 
-변수는 데이터 값이나 개체를 저장하는 컨테이너입니다. 변수의 이름을 식별자라고 합니다.
+변수는 데이터 값 또는 개체를 저장하는 컨테이너입니다. 변수의 이름을 식별자라고 합니다.
 
-HTL는 아무 것도 지정하지 않아도, 포함 후 JSP에서 일반적으로 사용할 수 `global.jsp`있었던 모든 개체에 대한 액세스를 제공합니다. [전역 개체](global-objects.md) 페이지는 HTL에서 액세스할 수 있는 모든 개체 목록을 제공합니다.
+HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 수 있었던 모든 객체에 대한 액세스 권한을 제공합니다 `global.jsp`. [ [전역](global-objects.md) 객체] 페이지는 HTL에서 액세스할 수 있도록 제공된 모든 객체의 목록을 제공합니다.
 
 ### 속성 액세스 {#property-access}
 
-도트 표기법을 사용하거나 괄호 표기법을 사용하여 변수 속성에 액세스하는 방법에는 두 가지가 있습니다.
+점 표기법 또는 대괄호 표기법을 사용하여 변수의 속성에 액세스하는 방법에는 두 가지가 있습니다.
 
 `${currentPage.title}  
 ${currentPage['title']} or ${currentPage["title"]}`
 
-대부분의 경우 간단한 점 표기법을 선호해야 하며, 괄호 표기법을 사용하여 잘못된 식별자 문자가 포함된 속성에 액세스하거나 속성에 동적으로 액세스할 수 있어야 합니다. 다음 두 장에서는 이러한 두 가지 사례에 대한 세부 정보를 제공합니다.
+대부분의 경우 보다 간단한 점 표기법을 선호해야 하며 대괄호 표기법을 사용하여 잘못된 식별자 문자가 포함된 속성에 액세스하거나 속성을 동적으로 액세스해야 합니다. 다음 두 장은 이러한 두 사례에 대한 세부 사항을 제공합니다.
 
-액세스한 속성은 함수일 수 있지만 인수를 전달하는 것은 지원되지 않으므로 인수를 getters 처럼 예상하지 못하는 함수만 사용할 수 있습니다. 이것은 표현식에 포함된 로직 양을 줄이기 위한 것입니다. 필요한 경우 [`data-sly-use`](block-statements.md#use) 문을 사용하여 매개 변수에 매개 변수를 전달할 수 있습니다.
+액세스된 속성은 함수일 수 있지만 인수 전달은 지원되지 않으므로 getter와 같이 인수를 예상하지 않는 함수만 액세스할 수 있습니다. 이 제한은 표현식에 임베드된 로직의 양을 줄이기 위한 것입니다. 필요한 경우 [`data-sly-use`](block-statements.md#use) 문을 사용하여 매개 변수를 로직에 전달할 수 있습니다.
 
-위의 예에서, Java Getter 함수에는을 프리대기하지 않고 `getTitle()`액세스할 수 있고 다음에 나오는 **`get`**문자의 대/소문자를 낮춰서 액세스할 수 있습니다.
+위의 예에서 보듯이 Java getter 함수는 prepending 없이, `getTitle()`그리고 다음에 오는 문자의 대/소문자를 **`get`**&#x200B;줄여 액세스할 수 있습니다.
 
 ### 유효한 식별자 문자 {#valid-indentifier-characters}
 
-변수라는 변수의 이름은 특정 규칙에 적용됩니다. they must start with a letter (**`A`**-**`Z`** and **`a`**-)**`z`**, or an underscore (**`_`**), and subsequent characters can be digit (**`0`**-**`9`**) or colon (**`:`**). 식별자와 같은 **`å`** 유니코드 문자는 **`ü`** 식별자에서 사용할 수 없습니다.
+식별자라고 하는 변수의 이름은 특정 규칙을 따릅니다. 문자(**`A`**-**`Z`** 및 **`a`****`z`**-**`_`**) 또는 밑줄(**`0`**)로 시작해야 하며, 그 뒤에 오는 문자도 숫자(**`9`**-**`:`**) 또는 콜론(콜론)으로 시작할 수 있습니다. Unicode letters such as **`å`** and **`ü`** cannot be used in identifiers.
 
-AEM 속성 이름에서 콜론 (**:**) 문자가 공통인 경우에는 올바른 식별자 문자인 것이 편리합니다.
+Given that the colon (:) character is common in AEM property names, it is convenient that it is a valid identifier character:****
 
 `${properties.jcr:title}`
 
-아래 예에서 공백 문자와 같이 잘못된 식별자 문자를 포함하는 속성에 대괄호 표기법을 사용할 수 있습니다.
+The bracket notation can be used to access properties that contain invalid identifier characters, like the space character in the example below:
 
 `${properties['my property']}`
 
-### 동적으로 멤버 액세스 {#accessing-members-dynamically}
+### Accessing Members Dynamically {#accessing-members-dynamically}
 
 <!-- 
 
@@ -80,7 +80,7 @@ Comment Type: draft
 ${properties[myVar]}
 ```
 
-### null 값 처리 {#permissive-handling-of-null-values}
+### Null 값의 허용적 처리 {#permissive-handling-of-null-values}
 
 <!-- 
 
@@ -94,63 +94,63 @@ Comment Type: draft
 ${currentPage.lastModified.time.toString}
 ```
 
-## 리터럴 {#literals}
+## Literals {#literals}
 
-리터럴은 고정된 값을 나타내는 표표입니다.
+A literal is a notation for representing a fixed value.
 
 ### 부울 {#boolean}
 
-Boolean는 논리 엔티티를 나타내며 두 개의 값을 가질 수 있습니다. **`true`****`false`**및.
+Boolean represents a logical entity and can have two values: , and .**`true`****`false`**
 
 `${true} ${false}`
 
-### numbers {#numbers}
+### Numbers {#numbers}
 
-There are only one number type: 양의 정수. 부동 소수처럼 다른 숫자 형식은 변수에서 지원되지만 리터럴로 표현할 수는 없습니다.
+There is only one number type: positive integers. While other number formats, like floating point, are supported in variables, but cannot be expressed as literals.
 
 `${42}`
 
-### 문자열 {#strings}
+### Strings {#strings}
 
-이들은 텍스트 데이터를 나타내며, 단일 또는 이중 인용될 수 있습니다.
+They represent textual data, and can be single or double quoted:
 
 `${'foo'} ${"bar"}`
 
-일반 문자 외에도 다음 특수 문자를 사용할 수 있습니다.
+In addition to ordinary characters, following special characters can be used:
 
-* **`\\`** 백슬래시 문자
-* **`\'`** 작은따옴표 (또는 아포스트로피)
+* **`\\`** Backslash character
+* **`\'`** 작은 따옴표(또는 아포스트로피)
 * **`\"`** 큰따옴표
-* **`\t`** Tabation
+* **`\t`** 변조
 * **`\n`** 새 행
 * **`\r`** 캐리지 리턴
 * **`\f`** 양식 피드
 * **`\b`** 백스페이스
-* `\uXXXX` 네 자리 16 진수 XXXX로 지정된 유니코드 문자입니다.\
-   유용한 일부 유니코드 이스케이프 시퀀스는 다음과 같습니다.
+* `\uXXXX` 4개의 16진수 XXXX로 지정된 유니코드 문자입니다.\
+   유용한 유니코드 이스케이프 시퀀스는 다음과 같습니다.
 
    * **\u0022** for **"**
    * **\u0027** for **'**
 
-For characters not listed above, preceding a backslash caracter will display an error.
+위에 나열되지 않은 문자의 경우 백슬래시 문자 앞에 오류가 표시됩니다.
 
-Here are some examples of how to use string escaping:
+다음은 문자열 이스케이프 사용 방법의 몇 가지 예입니다.
 
 ```xml
 <p>${'it\'s great, she said "yes!"'}</p>
 <p title="${'it\'s great, she said \u0022yes!\u0022'}">...</p>
 ```
 
-which will result in following output, because HTL will apply context-specific escaping:
+HTL이 컨텍스트별 escape를 적용하므로 다음 결과가 발생합니다.
 
 ```xml
 <p>it&#39;s great, she said &#34;yes!&#34;</p>
 <p title="it&#39;s great, she said &#34;yes!&#34;">...</p>
 ```
 
-### Arrays {#arrays}
+### 배열 {#arrays}
 
-An array is an ordered set of values that can be referred to with a name and an index. The types of its elements can be mixed.
+배열은 이름과 인덱스를 사용하여 참조할 수 있는 순차 값 세트입니다. 요소의 유형은 혼합할 수 있습니다.
 
 <!-- 
 
@@ -165,7 +165,7 @@ ${[1,2,3,4]}
 ${myArray[2]}
 ```
 
-Arrays are useful to provide a list of values from the template.
+배열은 템플릿의 값 목록을 제공하는 데 유용합니다.
 
 ```xml
 <ul data-sly-list="${[1,2,3,4]}">
@@ -173,29 +173,29 @@ Arrays are useful to provide a list of values from the template.
 </ul>
 ```
 
-## Operators {#operators}
+## 연산자 {#operators}
 
-### Logical Operators {#logical-operators}
+### 논리 연산자 {#logical-operators}
 
-These operators are typically used with Boolean values, however, like in JavaScript, they actually return the value of one of the specified operands, so when used with non-Boolean values, they may return a non-Boolean value.
+이러한 연산자는 일반적으로 부울 값과 함께 사용되지만, JavaScript에서와 마찬가지로 지정된 피연산자 중 하나의 값을 실제로 반환하므로 부울이 아닌 값과 함께 사용하면 부울이 아닌 값을 반환할 수 있습니다.
 
-If a value can be converted to **`true`**, the value is so-called truthy. If a value can be converted to **`false`**, the value is so-called falsy. Values that can be converted to **`false`** are: undefined variables, null values, the number zero, and empty strings.
+값을 truthy로 변환할 수 **`true`**&#x200B;있는 경우 이 값을 truthy라고 합니다. 값을 (으)로 변환할 수 **`false`**&#x200B;있는 경우 이 값을 false라고 합니다. 변환할 수 있는 값은 **`false`** 다음과 같습니다.정의되지 않은 변수, null 값, 숫자 0 및 빈 문자열.
 
-#### Logical NOT {#logical-not}
+#### 논리 NOT {#logical-not}
 
-**`${!myVar}`** returns **`false`** if its single operand can be converted to `true`; otherwise, returns **`true`**.
+**`${!myVar}`** 단일 피연산자가 **`false`** 로 변환될 수 있는 `true`경우 반환그렇지 않으면 반환 값이 **`true`**&#x200B;반환됩니다.
 
-This can for instance be used to invert a test condition, like displaying an element only if there are no child pages:
+예를 들어 하위 페이지가 없는 경우에만 요소를 표시하는 것과 같이 테스트 조건을 변환하는 데 사용할 수 있습니다.
 
 ```xml
 <p data-sly-test="${!currentPage.hasChild}">current page has no children</p>
 ```
 
-#### Logical AND {#logical-and}
+#### 논리 AND {#logical-and}
 
-**`${varOne && varTwo}`** returns `varOne` if it is falsy; otherwise, returns **varTwo**.
+**`${varOne && varTwo}`** false인 `varOne` 경우 반환그렇지 않으면 varTwo를 **반환합니다**.
 
-This operator can be used to test two conditions at once, like verifying the existence of two properties:
+이 연산자는 두 속성이 있는지 확인하는 것처럼 두 가지 조건을 한 번에 테스트하는 데 사용할 수 있습니다.
 
 ```xml
 <div data-sly-test="${properties.jcr:title && properties.jcr:description}">
@@ -204,7 +204,7 @@ This operator can be used to test two conditions at once, like verifying the exi
 </div>
 ```
 
-The logical AND operator can also be used to conditionally display HTML attributes, because HTL removes attributes with values set dynamically that evaluate to false, or to an empty string. So in the example below, the **`class`** attribute is only shown if **`logic.showClass`** is truthy and if **`logic.className`** exists and is not empty:
+HTL은 동적으로 설정된 값이 있는 속성을 false로 제거하거나 빈 문자열로 제거하므로 AND 논리 연산자를 사용하여 HTML 속성을 조건부로 표시할 수도 있습니다. So in the example below, the  attribute is only shown if  is truthy and if  exists and is not empty:**`class`****`logic.showClass`****`logic.className`**
 
 ```xml
 <div class="${logic.showClass && logic.className}">...</div>
@@ -212,7 +212,7 @@ The logical AND operator can also be used to conditionally display HTML attribut
 
 #### Logical OR {#logical-or}
 
-**`${varOne || varTwo}`** returns **varOne** if it is truthy; otherwise, returns **varTwo**.
+**`${varOne || varTwo}`** returns varOne if it is truthy; otherwise, returns varTwo.********
 
 This operator can be used to test if one of two conditions apply, like verifying the existence of at least one property:
 
@@ -222,7 +222,7 @@ This operator can be used to test if one of two conditions apply, like verifying
 
 As the logical OR operator returns the first variable that is truthy, it can also very conveniently be used to provide fallback values.
 
-conditionally display HTML attributes, because HTL removes attributes with values set by expressions that evaluate to false or to an empty string. So the example below will display **`properties.jcr:`**title if it exists and is not empty, else it falls back to dislaying **`properties.jcr:description`** if it exists and is not empty, else it will display the message "no title or description provided":
+conditionally display HTML attributes, because HTL removes attributes with values set by expressions that evaluate to false or to an empty string. So the example below will display ****title if it exists and is not empty, else it falls back to dislaying  if it exists and is not empty, else it will display the message "no title or description provided":`properties.jcr:`**`properties.jcr:description`**
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
@@ -230,7 +230,7 @@ conditionally display HTML attributes, because HTL removes attributes with value
 
 ### Conditional (ternary) Operator {#conditional-ternary-operator}
 
-**`${varCondition ? varOne : varTwo}`** returns **`varOne`** if **`varCondition`** is truthy; otherwise it returns **`varTwo`**.
+**`${varCondition ? varOne : varTwo}`** returns  if  is truthy; otherwise it returns .**`varOne`****`varCondition`****`varTwo`**
 
 This operator can typically be used to define conditions within expressions, like displaying a different message based on the status of the page:
 
@@ -246,31 +246,31 @@ An important note, since colon characters are also permitted in identifiers, it 
 
 ### Comparison Operators {#comparison-operators}
 
-The equality and inequality operators only support operands that are of identical types. When the types don't match, an error is displayed.
+항등 연산자는 동일한 유형의 피연산자만 지원합니다. 유형이 일치하지 않으면 오류가 표시됩니다.
 
-* Strings are equal when they have the same sequence of characters.
+* 문자열이 동일한 문자 시퀀스를 가질 때 동일해집니다.
 * Numbers are equal when they have the same value
-* Booleans are equal if both are **`true`** or both are **`false`**.
+* Booleans are equal if both are  or both are .**`true`****`false`**
 
-* Null or undefined variables are equal to themselves and to each other.
+* Null 또는 undefined 변수는 자신과 서로 같습니다.
 
-**`${varOne == varTwo}`** returns **`true`** if **`varOne`** and **`varTwo`** are equal.
+**`${varOne == varTwo}`** returns  if  and  are equal.**`true`****`varOne`****`varTwo`**
 
-**`${varOne != varTwo}`** returns **`true`** if **`varOne`** and **`varTwo`** are not equal.
+**`${varOne != varTwo}`** 과 같지 **`true`** 않은 **`varOne`** **`varTwo`** 경우 을 반환합니다.
 
-The relational operators only support operands that are numbers. For all other types, an error is displayed.
+관계형 연산자는 숫자인 피연산자만 지원합니다. 다른 모든 유형의 경우 오류가 표시됩니다.
 
-**`${varOne > varTwo}`** returns **`true`** if **`varOne`** is greater than **`varTwo`**.
+**`${varOne > varTwo}`** 보다 큰 **`true`** 경우 **`varOne`** 을 반환합니다 **`varTwo`**.
 
-**`${varOne < varTwo}`** returns **`true`** if **`varOne`** is smaller than **`varTwo`**.
+**`${varOne < varTwo}`** 보다 작은 **`true`** 경우 **`varOne`** 을 반환합니다 **`varTwo`**.
 
-**`${varOne >= varTwo}`** returns **`true`** if **`varOne`** is greater or equal to **`varTwo`**.
+**`${varOne >= varTwo}`** 보다 크거나 **`true`** 같은 **`varOne`** 경우 을 **`varTwo`**&#x200B;반환합니다.
 
-**`${varOne <= varTwo}`** returns **`true`** if **`varOne`** is smaller or equal to **`varTwo`**.
+**`${varOne <= varTwo}`** 작거나 같은 **`true`** 경우 **`varOne`** 을 **`varTwo`**&#x200B;반환합니다.
 
-### Grouping parentheses {#grouping-parentheses}
+### 그룹화 괄호 {#grouping-parentheses}
 
-The grouping operator **`(`** **`)`** controls the precedence of evaluation in expressions.
+그룹화 연산자는 표현식의 평가 우선 순위를 **`(`** **`)`** 제어합니다.
 
 `${varOne && (varTwo || varThree)}`
 
@@ -284,15 +284,15 @@ Comment Type: draft
 
  -->
 
-Expression options can act on the expression and modify it, or serve as parameters when used in conjunction with block statements.
+표현식 옵션은 표현식에 대해 작동하고 이를 수정하거나 블록 문과 함께 사용할 때 매개 변수로 사용할 수 있습니다.
 
-Everything after the **`@`** is an option:
+이후의 모든 **`@`** 것은 선택 사항입니다.
 
 ```xml
 ${myVar @ optOne}
 ```
 
-Options can have a value, which may be a variable or a literal:
+옵션에는 변수 또는 리터럴일 수 있는 값이 있을 수 있습니다.
 
 ```xml
 ${myVar @ optOne=someVar}
@@ -301,120 +301,120 @@ ${myVar @ optOne=10}
 ${myVar @ optOne=true}
 ```
 
-Multiple options are separated by commas:
+여러 옵션은 쉼표로 구분됩니다.
 
 ```xml
 ${myVar @ optOne, optTwo=bar}
 ```
 
-Parametric expressions containing only options are also possible:
+옵션만 포함하는 매개 변수 표현식도 가능합니다.
 
 ```xml
 ${@ optOne, optTwo=bar}
 ```
 
-### String Formatting {#string-formatting}
+### 문자열 서식 {#string-formatting}
 
-Option that replaces the enumerated placeholders, {*n*}, with the corresponding variable:
+열거된 자리 표시자 {*n*}을(를) 해당 변수로 대체하는 옵션:
 
 ```xml
 ${'Page {0} of {1}' @ format=[current, total]}
 ```
 
-### Internationalization {#internationalization}
+### 국제화 {#internationalization}
 
-Translates the string to the language of the current *source* (see below), using the current [dictionary](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator). If no translation is found, the original string is used.
+현재 *사전을* 사용하여 문자열을 현재 소스의 [](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator)언어로 변환합니다(아래 참조). 번역이 없으면 원래 문자열이 사용됩니다.
 
 ```xml
 ${'Page' @ i18n}
 ```
 
-The hint option can be used to provide a comment for translators, specifying the context in which the text is used:
+힌트 옵션은 텍스트가 사용되는 컨텍스트를 지정하여 변환기에 대한 설명을 제공하는 데 사용할 수 있습니다.
 
 ```xml
 ${'Page' @ i18n, hint='Translation Hint'}
 ```
 
-The default source for the language is 'resource', meaning that the text gets translated to the same language as the content. This can be changed to 'user', meaning that the language is taken from the browser locale or from the locale of the logged-in user:
+언어의 기본 소스는 'resource'입니다. 즉, 텍스트가 컨텐츠와 동일한 언어로 번역됩니다. 이를 '사용자'로 변경할 수 있습니다. 즉, 브라우저 로케일 또는 로그인한 사용자의 로케일에서 언어를 가져옵니다.
 
 ```xml
 ${'Page' @ i18n, source='user'}
 ```
 
-Providing an explicit locale overrides the source settings:
+명시적인 로케일을 제공하면 소스 설정이 무시됩니다.
 
 ```xml
 ${'Page' @ i18n, locale='en-US'}
 ```
 
-To embed variables into a translated string, the format option can be used:
+변환된 문자열에 변수를 포함하려면 형식 옵션을 사용할 수 있습니다.
 
 ```xml
 ${'Page {0} of {1}' @ i18n, format=[current, total]}
 ```
 
-### Array Join {#array-join}
+### 배열 연결 {#array-join}
 
-By default, when displaying an array as text, HTL will display comma separated values (without spacing).
+기본적으로 배열을 텍스트로 표시할 때 HTL은 쉼표로 구분된 값(간격 없음)을 표시합니다.
 
-Use the join option to specify a different separator:
+연결 옵션을 사용하여 다른 구분 기호를 지정합니다.
 
 ```xml
 ${['one', 'two'] @ join='; '}
 ```
 
-### Display Context {#display-context}
+### 컨텍스트 표시 {#display-context}
 
-The display context of a HTL expression refers to its location within the structure of the HTML page. For example, if the expression appears in place that would produce a text node once rendered, then it is said to be in a **`text`** context. If it is found within the value of an attribute, then it is said to be in an **`attribute`** context, and so forth.
+HTL 표현식의 표시 컨텍스트는 HTML 페이지 구조 내의 위치를 나타냅니다. 예를 들어, 표현식이 한 번 렌더링되면 텍스트 노드를 생성하는 위치에 나타나면 **`text`** 컨텍스트에 있다고 합니다. 속성의 값 내에 있는 경우, 컨텍스트 내에 있는 것으로 **`attribute`** 간주됩니다.
 
-With the exception of script (JS) and style (CSS) contexts, HTL will automatically detect the context of expressions and escape them appropriately, to prevent XSS security problems. In the case of scripts and CSS, the desired context behavior must be explicitly set. Additionally, the context behavior can also be explicitly set in any other case where an override of the automatic behavior is desired.
+스크립트(JS) 및 스타일(CSS) 컨텍스트를 제외하고 HTL은 XSS 보안 문제를 방지하기 위해 표현식 컨텍스트를 자동으로 감지하고 적절하게 escape합니다. 스크립트 및 CSS의 경우 원하는 컨텍스트 동작을 명시적으로 설정해야 합니다. 또한, 자동 동작의 재정의가 필요한 다른 경우에는 컨텍스트 동작을 명시적으로 설정할 수도 있습니다.
 
-Here we have three variables in three different contexts: **`properties.link`** ( `uri` context), **`properties.title`** (**`attribute`** context) and **`properties.text`**(**`text`** context). HTL will escape each of these differently in accordance with the security requirements of their respective contexts. No explicit context setting is required in normal cases such as this one:
+여기에는 세 가지 다른 컨텍스트 내에 세 가지 변수가 있습니다.( **`properties.link`** 컨텍스트), `uri` ( **`properties.title`** 컨텍스트) 및&#x200B;**`attribute`** ( **`properties.text`****`text`** 컨텍스트). HTL은 각 컨텍스트의 보안 요구 사항에 따라 각각 다르게 이스케이프 처리됩니다. 다음과 같은 일반적인 경우에는 명시적 컨텍스트 설정이 필요하지 않습니다.
 
 ```xml
 <a href="${properties.link}" title="${properties.title}">${properties.text}</a>
 ```
 
-To safely output markup (that is, where the expression itself evaluates to HTML), the `html` context is used:
+마크업을 안전하게 출력하려면(즉, 표현식 자체가 HTML로 평가되는 경우) `html` 컨텍스트가 사용됩니다.
 
 ```xml
 <div>${properties.richText @ context='html'}</div>
 ```
 
-Explicit context must be set for style contexts:
+스타일 컨텍스트에 대해 명시적 컨텍스트를 설정해야 합니다.
 
 ```xml
 <span style="color: ${properties.color @ context='styleToken'};">...</span>
 ```
 
-Explicit context must be set for script contexts:
+스크립트 컨텍스트에 대해 명시적 컨텍스트를 설정해야 합니다.
 
 ```xml
 <span onclick="${properties.function @ context='scriptToken'}();">...</span>
 ```
 
-Escaping and XSS protection can also be turned off:
+이스케이프 및 XSS 보호 기능을 끌 수도 있습니다.
 
 ```xml
 <div>${myScript @ context='unsafe'}</div>
 ```
 
-### Context Settings {#context-settings}
+### 컨텍스트 설정 {#context-settings}
 
-| 컨텍스트 | When to use | What it does |
+| 컨텍스트 | 사용 시기 | 기능 |
 |--- |--- |--- |
-| text | Default for content inside elements | Encodes all HTML special characters. |
-| html | To safely output markup | Filters HTML to meet the AntiSamy policy rules, removing what doesn't match the rules. |
-| attribute | Default for attribute values | Encodes all HTML special characters. |
-| uri | To display links and paths Default for href and src attribute values | Validates URI for writing as an href or src attribute value, outputs nothing if validation fails. |
-| 개수 | To display numbers | Validates URI for containing an integer, outputs zero if validation fails. |
-| attributeName | Default for data-sly-attribute when setting attribute names | Validates the attribute name, outputs nothing if validation fails. |
-| elementName | Default for data-sly-element | Validates the element name, outputs nothing if validation fails. |
-| scriptToken | For JS identifiers, literal numbers, or literal strings | Validates the JavaScript token, outputs nothing if validation fails. |
-| scriptString | Within JS strings | Encodes characters that would break out of the string. |
-| scriptComment | Within JS comments | Validates the JavaScript comment, outputs nothing if validation fails. |
-| styleToken | For CSS identifiers, numbers, dimensions, strings, hex colours or functions. | Validates the CSS token, outputs nothing if validation fails. |
-| styleString | Within CSS strings | Encodes characters that would break out of the string. |
-| styleComment | Within CSS comments | Validates the CSS comment, outputs nothing if validation fails. |
-| unsafe | Only if none of the above does the job | Disables escaping and XSS protection completely. |
+| text | 요소 내의 컨텐츠 기본값 | 모든 HTML 특수 문자를 인코딩합니다. |
+| html | 마크업을 안전하게 출력하려면 | HTML을 필터링하여 AntiSamy 정책 규칙에 부합하지 않는 항목을 제거합니다. |
+| attribute | 속성 값의 기본값 | 모든 HTML 특수 문자를 인코딩합니다. |
+| uri | href 및 src 속성 값에 대한 링크 및 경로 기본값을 표시하려면 | URI를 href 또는 src 속성 값으로 쓸 수 있는지 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| 개수 | 숫자를 표시하려면 | 유효성 검사가 실패할 경우 0을 출력하여 정수를 포함하는지 URI를 확인합니다. |
+| attributeName | 속성 이름을 설정할 때 data-sly-attribute에 대한 기본값 | 속성 이름을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+|  elementName | Default for data-sly-element | 요소 이름을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| scriptToken | JS 식별자, 리터럴 숫자 또는 리터럴 문자열 | JavaScript 토큰의 유효성을 검사하며 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| scriptString | JS 문자열 내 | 문자열에서 벗어나는 문자를 인코딩합니다. |
+| scriptComment | JS 주석 내 | 유효성 검사에 실패하면 JavaScript 주석을 확인하고 출력하지 않습니다. |
+| styleToken | CSS 식별자의 경우 숫자, 크기, 문자열, 16진수 색상 또는 함수입니다. | CSS 토큰의 유효성을 검사하며 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| styleString | CSS 문자열 내 | 문자열에서 벗어나는 문자를 인코딩합니다. |
+| styleComment | CSS 주석 내 | CSS 주석을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| 안전하지 않음 | 위의 작업 중 어느 것도 작업을 수행하지 않는 경우에만 | 이스케이프 및 XSS 보호를 완전히 비활성화합니다. |
 
