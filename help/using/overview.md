@@ -10,8 +10,9 @@ topic-tags: 소개
 content-type: 참조
 discoiquuid: 8f779e08-94c7-43bc-a6e5-d81a9f818c5c
 mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
+skyline: 테스트 복제
 translation-type: tm+mt
-source-git-commit: 1d4565a4cffa6e5d42d6a5242f7ce62203dc7c63
+source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
 
 ---
 
@@ -42,13 +43,13 @@ HTML 템플릿 언어를 사용하여 Adobe.com 사이트를 다시 구현할 �
 
 ![](assets/chlimage_1.png)
 
-위의 다이어그램은 HTL에서 가능할 수 있는 다음과 같은 효율성 개선 사항을 보여줍니다.
+The diagram above shows following improvements in efficiency potentially made possible by HTL:
 
-* **** HTML/CSS/JS:HTML 개발자는 HTML 템플릿을 직접 편집할 수 있으므로 프런트 엔드 디자인은 더 이상 AEM 프로젝트와 별도로 구현되지 않아도 되지만 실제 AEM 구성 요소에 직접 구현할 수 있습니다. 이렇게 하면 전체 스택 Java 개발자가 고통스러운 반복을 줄일 수 있습니다.
-* **** JSP / HTL:HTL 자체는 Java 지식이 필요하지 않으며 쓰기 작업을 바로 진행할 수 있으므로 HTML 전문 지식이 있는 모든 개발자는 템플릿을 편집할 수 있습니다.
-* **** Java:HTL에서 제공하는 명확하고 간단한 Use-API 덕분에 비즈니스 로직이 있는 인터페이스가 명확해지므로 Java 개발 전반에도 도움이 됩니다.
+* **HTML / CSS / JS:** Because the HTML developers are able to directly edit HTL templates, the front-end designs don't have to be implemented separately from the AEM project anymore, but can be implemented directly on the actual AEM components. This reduces painful iterations with the full-stack Java developers.
+* **JSP / HTL:** Since HTL itself doesn't require any Java knowledge and is straight-forward to write, any developer with HTML expertise is empowered to edit the templates.
+* **Java:** Thanks to the clear and simple to use Use-API provided by HTL, the interface with the business logic is clarified, which also benefits Java development overall.
 
-**다음 보기:**
+**Read next:**
 
-* [HTML 템플릿 언어 시작하기](getting-started.md)
+* [Getting Started with the HTML Template Language](getting-started.md)
 
