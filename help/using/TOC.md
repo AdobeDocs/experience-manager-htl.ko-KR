@@ -1,10 +1,10 @@
 ---
-cloud: experience Cloud
-product: 경험 관리자
-sub-product: 경험 관리자 htl
+cloud: experience-cloud
+product: experience manager
+sub-product: experience manager htl
 archetype: admin
 user-guide-title: Experience Manager HTL 도움말
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 60258140976a8d2182c4d75c18863c4b607bffbd
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 60258140976a8d2182c4d75c18863c4b607bffbd
 
 + [개요](overview.md)
 + 시작하기{#getting-started}
-   + [HTL이란 무엇입니까?](update.md)
+   + [HTL이란?](update.md)
    + [HTL 시작하기](getting-started.md)
    + [HTL 사양](htl-specification.md)
 + HTML Template Language{#htl}
