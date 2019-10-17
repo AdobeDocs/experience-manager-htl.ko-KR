@@ -1,17 +1,17 @@
 ---
 title: AEM HTL 개요
 seo-title: AEM HTL 기술 설명서 개요.
-description: AEM에서 지원하는 HTL의 목적은 보안을 강화하는 생산성이 뛰어난 엔터프라이즈급 웹 프레임워크를 제공하는 것이며, Java 지식이 없는 HTML 개발자가 AEM 프로젝트에 보다 효율적으로 참여할 수 있도록 하는 것입니다.
-seo-description: 이 문서에서는 Adobe Experience Manager에서 지원하는 HTML 템플릿 언어의 원칙과 목적에 대해 설명합니다. HTL은 보안을 강화하는 생산성이 뛰어난 엔터프라이즈급 웹 프레임워크로서, Java 지식이 없는 HTML 개발자는 AEM 프로젝트에 보다 효율적으로 참여할 수 있습니다.
+description: 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM에서 지원하는 HTL의 목적입니다.
+seo-description: 이 문서는 Adobe Experience Manager에서 지원하는 HTML Template Language(HTL)의 원리와 목적을 설명합니다. HTL은 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크이며 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이도록 해줍니다.
 uuid: 8f486325-0a1b-4186-a998-96fc0034c44a
 contentOwner: 사용자
 products: SG_EXPERIENCEMANAGER/HTL
-topic-tags: 소개
+topic-tags: introduction
 content-type: 참조
 discoiquuid: 8f779e08-94c7-43bc-a6e5-d81a9f818c5c
 mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
-skyline: 테스트 복제
-translation-type: tm+mt
+skyline: testing replication
+translation-type: ht
 source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
 
 ---
@@ -19,37 +19,37 @@ source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
 
 # 개요 {#overview}
 
-AEM(Adobe Experience Manager)에서 지원하는 HTML 템플릿 언어(HTL)의 목적은 보안을 강화하는 생산성이 뛰어난 엔터프라이즈급 웹 프레임워크를 제공하는 것이며, Java 지식이 없는 HTML 개발자는 AEM 프로젝트에 보다 효율적으로 참여할 수 있도록 하는 것입니다.
+우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다.
 
-HTML 템플릿 언어는 AEM 6.0과 함께 도입되었으며 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템으로 JSP(JavaServer Pages)를 대신합니다. 강력한 기업 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어를 사용하면 향상된 보안 및 개발 효율성을 얻을 수 있습니다.
+HTML 템플릿 언어는 AEM 6.0에서 도입되었으며 HTML의 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
 
-## 보안 강화 {#increased-security}
+## 강화되는 보안 {#increased-security}
 
-HTML 템플릿 언어는 HTL이 프레젠테이션 레이어로 출력되는 모든 변수에 적합한 컨텍스트 인식 escape를 자동으로 적용할 수 있기 때문에, HTML 템플릿 언어는 JSP 및 대부분의 다른 템플릿 시스템과 비교하여 구현에 사용하는 사이트의 보안을 향상시킵니다. HTL은 HTML 구문을 이해하고 해당 지식을 사용하여 마크업에서의 위치를 기반으로 표현식에 필요한 escape를 조정하므로 이 작업을 가능하게 합니다. 이렇게 하면 `href` 또는 `src` 속성에 표현식이 배치되거나 다른 속성에 배치된 표현식과 다르게 이스케이프됩니다.
+HTML 템플릿 언어에서는 프레젠테이션 레이어로 출력되는 모든 변수에 적절한 컨텍스트 인식 이스케이프를 자동으로 적용할 수 있으므로 HTL을 구현에 사용하면 사이트의 보안이 JSP 및 기타 대다수 템플릿 시스템의 경우보다 강화됩니다. HTL에서는 HTML 구문을 이해하고 해당 지식을 사용하여 마크업에서의 위치를 기반으로 표현식에 필요한 이스케이프를 조정하므로 이 작업이 가능합니다. 예를 들면, 다른 속성이나 다른 위치에 배치된 표현식에서 다르게 이스케이프되는 `href` 또는 `src` 속성에 표현식이 배치됩니다.
 
-JSP와 같은 템플릿 언어로 동일한 결과를 얻을 수 있지만, 개발자는 적절한 escape가 각 변수에 적용되도록 수동으로 확인해야 합니다. 적용된 escape의 단일 누락 또는 실수는 잠재적으로 XSS(교차 사이트 스크립팅) 취약성을 유발할 수 있으므로 HTL을 사용하여 이 작업을 자동화하기로 결정했습니다. 필요한 경우 개발자는 여전히 표현식에서 다른 escape를 지정할 수 있지만 HTL을 사용하면 기본 동작이 원하는 동작에 훨씬 더 많이 해당하므로 오류 발생 가능성을 줄일 수 있습니다.
+JSP와 같은 템플릿 언어에서도 같은 결과를 얻을 수 있지만 개발자가 각 변수에 적절한 이스케이프가 적용되었는지 수동으로 확인해야 합니다. 적용된 이스케이프가 하나라도 생략되거나 실수가 있으면 XSS(크로스 사이트 스크립팅) 취약성의 원인이 될 가능성이 충분하므로 당사에서는 HTL로 이 작업을 자동화하기로 결정했습니다. 필요하면 개발자가 표현식에 서로 다른 이스케이프를 지정할 수도 있지만, HTL에서는 기본 동작이 원하는 동작에 해당할 가능성이 훨씬 많으므로 오류 가능성이 감소합니다.
 
-## 개발 간소화 {#simplified-development}
+## 간소화되는 개발 {#simplified-development}
 
-HTML 템플릿 언어는 쉽게 배울 수 있으며 기능은 간단하면서도 명확하게 전달되도록 의도적으로 제한됩니다. 또한 마크업을 구조화하고 로직을 호출할 수 있는 강력한 메커니즘과 마크업과 로직 간에 문제를 엄격하게 분리할 수 있습니다. HTL 자체는 표현식 및 데이터 속성을 사용하여 마크업에 원하는 동적 비헤이비어로 주석을 달 때 표준 HTML5입니다. 즉, 마크업의 유효성을 훼손하지 않고 읽을 수 있도록 유지합니다. 표현식 및 데이터 속성에 대한 평가는 전적으로 서버측에서 수행되며 클라이언트 측에서 표시되지 않습니다. 이 경우 원하는 JavaScript 프레임워크를 방해하지 않고 사용할 수 있습니다.
+HTML 템플릿 언어는 쉽게 배울 수 있으며 기능은 간단하고 복잡하지 않게 유지되도록 의도적으로 제한했습니다. 또한 마크업을 체계화하고 로직을 호출하는 동시에 마크업과 로직 간 문제의 엄격한 구분을 항상 강제로 적용하는 강력한 메커니즘이 있습니다. HTL 자체는 표현식 및 데이터 속성을 사용하여 원하는 동적 동작으로 마크업에 주석을 다는 표준 HTML5입니다. 즉, 마크업의 유효성을 훼손하지 않고 가독성을 유지합니다. 참고: 표현식 및 데이터 속성에 대한 평가가 전적으로 서버측에서 수행되며 클라이언트측에 표시되지 않으므로 원하는 JavaScript 프레임워크를 방해 없이 사용할 수 있습니다.
 
-이러한 기능을 통해 HTML 개발자는 Java에 대한 지식이 없고 제품별 지식이 거의 없는 HTML 템플릿을 편집할 수 있으므로 개발 팀의 일원이 될 수 있고 전체 스택 Java 개발자와의 공동 작업을 간소화할 수 있습니다. 또한 Java 개발자는 HTML에 대한 걱정 없이 백엔드 코드에 집중할 수 있습니다.
+Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러한 기능을 통해 HTL 템플릿을 편집할 수 있으므로 개발팀에 포함될 수 있으며 전체 스택 Java 개발자와 함께 수행하는 공동 작업이 간소화됩니다. 반대로, Java 개발자는 HTML에 대한 걱정 없이 백 엔드 코드에 집중할 수 있습니다.
 
-## 비용 절감 {#reduced-costs}
+## 절감되는 비용 {#reduced-costs}
 
-보안 강화, 개발 간소화 및 향상된 팀 공동 작업, AEM 프로젝트의 경우 TTM 출시 시간 단축, 총 소유 비용(TCO) 절감 등 다양한 이점을 얻을 수 있습니다.
+보안이 강화되고 개발이 간소화되며 팀 공동 작업이 개선되면 AEM 프로젝트에 드는 노력이 감소하여 TTM(출시 시기)이 빨라지고 TCO(총소유비용)가 절감됩니다.
 
-HTML 템플릿 언어를 사용하여 Adobe.com 사이트를 다시 구현할 때 관찰된 사항은 프로젝트의 비용과 지속 시간을 약 25% 줄일 수 있다는 것입니다.
+구체적으로, HTML 템플릿 언어로 Adobe.com 사이트를 다시 구현할 때 프로젝트의 비용과 기간이 25% 정도 감소할 수 있는 것으로 나타났습니다.
 
 ![](assets/chlimage_1.png)
 
-The diagram above shows following improvements in efficiency potentially made possible by HTL:
+위의 다이어그램은 HTL를 통해 가능해질 수 있는 다음과 같은 효율성 개선 사항을 보여줍니다.
 
-* **HTML / CSS / JS:** Because the HTML developers are able to directly edit HTL templates, the front-end designs don't have to be implemented separately from the AEM project anymore, but can be implemented directly on the actual AEM components. This reduces painful iterations with the full-stack Java developers.
-* **JSP / HTL:** Since HTL itself doesn't require any Java knowledge and is straight-forward to write, any developer with HTML expertise is empowered to edit the templates.
-* **Java:** Thanks to the clear and simple to use Use-API provided by HTL, the interface with the business logic is clarified, which also benefits Java development overall.
+* **HTML/CSS/JS:** HTML 개발자가 HTL 템플릿을 바로 편집할 수 있으므로 더는 프런트 엔드 디자인을 AEM 프로젝트에서 별도로 구현할 필요 없이 실제 AEM 구성 요소에 바로 구현할 수 있습니다. 따라서 전체 스택 Java 개발자의 성가신 반복 작업이 감소합니다.
+* **JSP/HTL:** HTL 자체가 Java 지식이 필요하지 않으며 간단하게 쓸 수 있으므로 개발자가 HTML 지식만 있으면 템플릿을 편집할 수 있습니다.
+* **Java:** HTL에서 제공되는 Use-API를 명확하고 간단하게 사용할 수 있으므로 비즈니스 로직이 있는 인터페이스가 명확해지며 Java 개발에도 전반적으로 도움이 됩니다.
 
-**Read next:**
+**다음 참조:**
 
-* [Getting Started with the HTML Template Language](getting-started.md)
+* [HTML 템플릿 언어 시작하기](getting-started.md)
 
