@@ -9,7 +9,7 @@ topic-tags: 소개
 discoiquuid: 3bf2ca75-0d68-489d-bd1c-1d4fd730c61a
 mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 1e3df6159b48da27460f3ad95c22c13d025b1a72
+source-git-commit: 6de5ed20e4463c0c2e804e24cb853336229a7c1f
 
 ---
 
@@ -48,7 +48,7 @@ HTL은 JSP와 비교할 때 HTL을 사용하여 수행할 수 있는 작업이 H
 아니요. 하지만 클라이언트 라이브러리 [로드](getting-started.md#loading-client-libraries) 섹션에 표시된 대로 [템플릿 및 호출](block-statements.md#template-call) 명령문은 유사한 패턴을 제공합니다.
 
 **AEM 프로젝트에서 HTL 기능을 확장할 수 있습니까?**
-**아니요. 하지만 클라이언트 라이브러리 [로드](getting-started.md#loading-client-libraries) 섹션에 표시된 대로 [템플릿 및 호출](block-statements.md#template-call) 명령문은 유사한 패턴을 제공합니다.
+아니요. 하지만 클라이언트 라이브러리 [로드](getting-started.md#loading-client-libraries) 섹션에 표시된 대로 [템플릿 및 호출](block-statements.md#template-call) 명령문은 유사한 패턴을 제공합니다.
 아니, 그들은 할 수 없어. HTL은 로직인 Use- [API](getting-started.md#use-api-for-accessing-logic) 및 마크업( [템플릿 및 호출](block-statements.md#template-call) 문)을 재사용할 수 있는 강력한 확장 메커니즘을 제공하므로 프로젝트 코드를 수정할 수 있습니다.
 
 **JSP에 대한 HTL의 주요 이점은 무엇입니까?**
@@ -413,11 +413,11 @@ for (var i = 0; i < elements.length; i++) {
 </div>
 ```
 
-위에서 보듯이, 요소에 포함될 마크업은 HTL 블록 문을 포함할 수 있으며 Handlebars 템플릿의 컨텐츠가 자체 파일에서 분리되었으므로 표현식이 명시적 컨텍스트를 제공할 필요가 없습니다. **`script`** 또한 이 예에서는 **`h2`** **`h3`** 요소에서처럼 서버측에서 실행되는 HTL을 Handlebars(요소에 표시)와 같이 클라이언트측에서 실행되는 템플릿 언어와 혼합할 수 있는 방법을 보여줍니다.
+위에서 보듯이, 요소에 포함될 마크업은 HTL 블록 문을 포함할 수 있고 Handlebars 템플릿의 컨텐츠가 자체 파일에서 분리되었으므로 표현식이 명시적 컨텍스트를 제공할 필요가 없습니다. **`script`** 또한 이 예에서는 **`h2`** **`h3`** 요소에서처럼 서버측에서 실행되는 HTL을 Handlebars(요소에 표시)와 같이 클라이언트측에서 실행되는 템플릿 언어와 혼합할 수 있는 방법을 보여줍니다.
 
 그러나 보다 현대적인 방법은 템플릿의 컨텐츠를 별도의 파일로 분리하지 않아도 되므로 HTML **`template`** 요소를 대신 사용하는 것입니다.
 
-**다음 보기:**
+**다음 참조:**
 
 * [표현식](expression-language.md) 언어 - HTL 표현식 내에서 수행할 수 있는 작업을 자세히 학습합니다.
 * [블록](block-statements.md) 문 - HTL에서 사용할 수 있는 모든 블록 문과 이를 사용하는 방법을 검색합니다.
