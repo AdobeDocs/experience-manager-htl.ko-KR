@@ -11,7 +11,7 @@ content-type: 참조
 discoiquuid: 9ba37ca0-f318-48b0-a791-a944a72502ed
 mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 84ed515309831fe413abf317d8739f2bba79afdb
+source-git-commit: 6de5ed20e4463c0c2e804e24cb853336229a7c1f
 
 ---
 
@@ -31,7 +31,7 @@ HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 
 
 >[!NOTE]
 >
->이 페이지에서 제공되는 예제를 살펴보려면 Read Eval Print [Loop라는 라이브 실행 환경을](https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl) 사용할 수 있습니다.
+>이 페이지에 제공된 예제를 살펴보려면 Read Eval Print [Loop라는 라이브 실행 환경을](https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl) 사용할 수 있습니다.
 
 표현식 구문에는 [변수](#variables), [리터럴](#literals), [연산자](#operators) 및 [optionsFollowing](#options)이 포함됩니다.
 
@@ -45,8 +45,10 @@ HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 
 
 점 표기법 또는 대괄호 표기법을 사용하여 변수의 속성에 액세스하는 방법에는 두 가지가 있습니다.
 
-`${currentPage.title}  
-${currentPage['title']} or ${currentPage["title"]}`
+```
+${currentPage.title}  
+${currentPage['title']} or ${currentPage["title"]}
+```
 
 대부분의 경우 보다 간단한 점 표기법을 선호해야 하며 대괄호 표기법을 사용하여 잘못된 식별자 문자가 포함된 속성에 액세스하거나 속성을 동적으로 액세스해야 합니다. 다음 두 장은 이러한 두 사례에 대한 세부 사항을 제공합니다.
 
@@ -56,17 +58,17 @@ ${currentPage['title']} or ${currentPage["title"]}`
 
 ### 유효한 식별자 문자 {#valid-indentifier-characters}
 
-식별자라고 하는 변수의 이름은 특정 규칙을 따릅니다. 문자(**`A`**-**`Z`** 및 **`a`****`z`**-**`_`**) 또는 밑줄(**`0`**)로 시작해야 하며, 그 뒤에 오는 문자도 숫자(**`9`**-**`:`**) 또는 콜론(콜론)으로 시작할 수 있습니다. Unicode letters such as **`å`** and **`ü`** cannot be used in identifiers.
+식별자라고 하는 변수의 이름은 특정 규칙을 따릅니다. 문자(**`A`**-**`Z`** 및 **`a`****`z`**-**`_`**) 또는 밑줄(**`0`**)로 시작해야 하며, 그 뒤에 오는 문자도 숫자(**`9`**-**`:`**) 또는 콜론(콜론)으로 시작할 수 있습니다. 식별자에는 **`å`** 와 같은 유니코드 문자를 사용할 **`ü`** 수 없습니다.
 
-Given that the colon (:) character is common in AEM property names, it is convenient that it is a valid identifier character:****
+콜론(**:**) 문자는 AEM 속성 이름에 공통인 경우 올바른 식별자 문자여야 합니다.
 
 `${properties.jcr:title}`
 
-The bracket notation can be used to access properties that contain invalid identifier characters, like the space character in the example below:
+대괄호 표기법을 사용하여 아래 예제의 공백 문자와 같이 잘못된 식별자 문자가 포함된 속성에 액세스할 수 있습니다.
 
 `${properties['my property']}`
 
-### Accessing Members Dynamically {#accessing-members-dynamically}
+### 동적으로 멤버 액세스 {#accessing-members-dynamically}
 
 <!-- 
 
@@ -94,31 +96,31 @@ Comment Type: draft
 ${currentPage.lastModified.time.toString}
 ```
 
-## Literals {#literals}
+## 리터럴 {#literals}
 
-A literal is a notation for representing a fixed value.
+리터럴은 고정 값을 나타내는 표기법입니다.
 
 ### 부울 {#boolean}
 
-Boolean represents a logical entity and can have two values: , and .**`true`****`false`**
+Boolean은 논리 엔티티를 나타내며 두 개의 값을 가질 수 있습니다.및 **`true`**&#x200B;를 **`false`**&#x200B;참조하십시오.
 
 `${true} ${false}`
 
-### Numbers {#numbers}
+### 숫자 {#numbers}
 
-There is only one number type: positive integers. While other number formats, like floating point, are supported in variables, but cannot be expressed as literals.
+숫자 유형은 하나만 있습니다.양의 정수. 부동 소수점 같은 다른 숫자 형식은 변수에서 지원되지만 리터럴로 표현될 수는 없습니다.
 
 `${42}`
 
-### Strings {#strings}
+### 문자열 {#strings}
 
-They represent textual data, and can be single or double quoted:
+텍스트 데이터는 텍스트 데이터를 나타내며, 단일 또는 이중 인용이 될 수 있습니다.
 
 `${'foo'} ${"bar"}`
 
-In addition to ordinary characters, following special characters can be used:
+일반 문자 외에도 다음 특수 문자를 사용할 수 있습니다.
 
-* **`\\`** Backslash character
+* **`\\`** 백슬래시 문자
 * **`\'`** 작은 따옴표(또는 아포스트로피)
 * **`\"`** 큰따옴표
 * **`\t`** 변조
@@ -204,57 +206,57 @@ ${myArray[2]}
 </div>
 ```
 
-HTL은 동적으로 설정된 값이 있는 속성을 false로 제거하거나 빈 문자열로 제거하므로 AND 논리 연산자를 사용하여 HTML 속성을 조건부로 표시할 수도 있습니다. So in the example below, the  attribute is only shown if  is truthy and if  exists and is not empty:**`class`****`logic.showClass`****`logic.className`**
+HTL은 동적으로 설정된 값이 있는 속성을 false로 제거하거나 빈 문자열로 제거하므로 AND 논리 연산자를 사용하여 HTML 속성을 조건부로 표시할 수도 있습니다. 따라서 아래 예에서 속성은 **`class`** true이고 **`logic.showClass`** 존재하며 **`logic.className`** 비어 있지 않은 경우에만 표시됩니다.
 
 ```xml
 <div class="${logic.showClass && logic.className}">...</div>
 ```
 
-#### Logical OR {#logical-or}
+#### 논리 OR {#logical-or}
 
-**`${varOne || varTwo}`** returns varOne if it is truthy; otherwise, returns varTwo.********
+**`${varOne || varTwo}`** true이면 **var** One을 반환합니다.그렇지 않으면 varTwo를 **반환합니다**.
 
-This operator can be used to test if one of two conditions apply, like verifying the existence of at least one property:
+이 연산자는 하나 이상의 속성이 있는지 확인하는 것과 같이 두 조건 중 하나가 적용되는지 여부를 테스트하는 데 사용할 수 있습니다.
 
 ```xml
 <div data-sly-test="${properties.jcr:title || properties.jcr:description}">...</div>
 ```
 
-As the logical OR operator returns the first variable that is truthy, it can also very conveniently be used to provide fallback values.
+논리 OR 연산자가 true인 첫 번째 변수를 반환하므로 폴백 값을 제공하는 데 매우 편리하게 사용할 수도 있습니다.
 
-conditionally display HTML attributes, because HTL removes attributes with values set by expressions that evaluate to false or to an empty string. So the example below will display ****title if it exists and is not empty, else it falls back to dislaying  if it exists and is not empty, else it will display the message "no title or description provided":`properties.jcr:`**`properties.jcr:description`**
+HTL은 false 또는 빈 문자열로 평가하는 표현식으로 설정된 값을 갖는 속성을 제거하므로 HTML 속성을 조건부로 표시합니다. 따라서 아래 예에는 **`properties.jcr:`** 제목이 존재하며 비어 있지 않은 경우 제목이 표시되고, 비어 있지 않은 경우 다시 표시되지 **`properties.jcr:description`** 않으면 "제목이나 설명이 제공되지 않음"이라는 메시지가 표시됩니다.
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
 ```
 
-### Conditional (ternary) Operator {#conditional-ternary-operator}
+### 조건부(삼항) 연산자 {#conditional-ternary-operator}
 
-**`${varCondition ? varOne : varTwo}`** returns  if  is truthy; otherwise it returns .**`varOne`****`varCondition`****`varTwo`**
+**`${varCondition ? varOne : varTwo}`** true인 **`varOne`** 경우 **`varCondition`** 반환그렇지 않으면 **`varTwo`**&#x200B;반환됩니다.
 
-This operator can typically be used to define conditions within expressions, like displaying a different message based on the status of the page:
+이 연산자는 일반적으로 페이지의 상태에 따라 다른 메시지를 표시하는 것과 같이 표현식 내의 조건을 정의하는 데 사용할 수 있습니다.
 
 ```xml
 <p>${currentPage.isLocked ? "page is locked" : "page can be edited"}</p>
 ```
 
-An important note, since colon characters are also permitted in identifiers, it is best to separate the ternary operators with a white space to provide clarity to the parser:
+중요한 메모는 콜론 문자도 식별자에서도 허용되므로 구문 분석기에 명확성을 제공하기 위해 삼항 연산자를 공백으로 구분하는 것이 좋습니다.
 
 ```xml
 <p>${properties.showDescription ? properties.jcr:description : properties.jcr:title}</p>
 ```
 
-### Comparison Operators {#comparison-operators}
+### 비교 연산자 {#comparison-operators}
 
 항등 연산자는 동일한 유형의 피연산자만 지원합니다. 유형이 일치하지 않으면 오류가 표시됩니다.
 
 * 문자열이 동일한 문자 시퀀스를 가질 때 동일해집니다.
-* Numbers are equal when they have the same value
-* Booleans are equal if both are  or both are .**`true`****`false`**
+* 숫자가 같은 값을 갖는 경우 숫자가 같습니다.
+* 둘 다 **`true`** 또는 둘 다 인 경우 부울이 **`false`**&#x200B;같습니다.
 
 * Null 또는 undefined 변수는 자신과 서로 같습니다.
 
-**`${varOne == varTwo}`** returns  if  and  are equal.**`true`****`varOne`****`varTwo`**
+**`${varOne == varTwo}`** 과 이(가) **`true`** 같은 **`varOne`** **`varTwo`** 경우 을 반환합니다.
 
 **`${varOne != varTwo}`** 과 같지 **`true`** 않은 **`varOne`** **`varTwo`** 경우 을 반환합니다.
 
@@ -409,7 +411,7 @@ HTL 표현식의 표시 컨텍스트는 HTML 페이지 구조 내의 위치를 �
 | uri | href 및 src 속성 값에 대한 링크 및 경로 기본값을 표시하려면 | URI를 href 또는 src 속성 값으로 쓸 수 있는지 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
 | 개수 | 숫자를 표시하려면 | 유효성 검사가 실패할 경우 0을 출력하여 정수를 포함하는지 URI를 확인합니다. |
 | attributeName | 속성 이름을 설정할 때 data-sly-attribute에 대한 기본값 | 속성 이름을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
-|  elementName | Default for data-sly-element | 요소 이름을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
+| elementName | Default for data-sly-element | 요소 이름을 확인하고 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
 | scriptToken | JS 식별자, 리터럴 숫자 또는 리터럴 문자열 | JavaScript 토큰의 유효성을 검사하며 유효성 검사에 실패하면 아무 것도 출력하지 않습니다. |
 | scriptString | JS 문자열 내 | 문자열에서 벗어나는 문자를 인코딩합니다. |
 | scriptComment | JS 주석 내 | 유효성 검사에 실패하면 JavaScript 주석을 확인하고 출력하지 않습니다. |
