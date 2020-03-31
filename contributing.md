@@ -1,50 +1,59 @@
 ---
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: f09b2268dc4745a8c2e3c53bb20fa3d35f6a7c2b
 translation-type: tm+mt
 
 ---
-# 기여
+# Adobe Experience Manager 설명서 제공
 
-Contribute를 선택해 주셔서 감사합니다.
+Adobe Experience Manager Cloud Service 설명서에 증여해 주셔서 감사합니다! Adobe는 전체 리더 커뮤니티뿐만 아니라 다른 Adobe 직원의 콘텐츠 기부를 환영합니다.
 
-다음은 이 프로젝트에 기여할 때 따라야 할 가이드라인 세트입니다.
+이 파일은 사용자가 기여할 수 있는 방법을 설명하고, 기고할 때 따라야 할 지침을 가리킵니다.
 
-## 행동 강령
+## Adobe 오픈 소스 행동 강령
 
-본 프로젝트는 Adobe 행동 [](code-of-conduct.md)수칙을 준수합니다. 참여하면 이 코드를 유지할 수 있습니다. Grp-opensourceoffice@adobe.com 에
-[부적절한 행동을](mailto:Grp-opensourceoffice@adobe.com)신고해 주십시오.
+이 프로젝트는 Adobe 오픈 [소스 행동 강령을 채택했습니다](code-of-conduct.md). AEM 문서에 증여하면 이 행동 규칙을 준수하는 데 동의하는 것입니다. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## 궁금한 사항이 있으십니까?
+## 기여 지침
 
-문제 제기를 시작합니다. 이 프로젝트의 기존 커미터는 프로젝트 방향과 관련된 합의와 문제 스레드
-내 문제 해결 방법 (해당되는 경우) 을
-해결하기 위해 작동합니다.
+AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만 가능한 경우 특정 지침 및 표준을 준수하도록 Adobe에 요청합니다. 자세한 내용은 [AEM 문서에](guidelines.md) 기여 지침을 참조하십시오.
 
-## Contributor License Agreement
+## Contribute 방법
 
-본 프로젝트에 대한 모든 제 3 자 기부는 서명된 기고자
-라이센스 계약을 수반해야 한다. 이를 통해 Adobe는 귀하의 기여도를
-프로젝트의 일부로 재배포할 수 있는 권한을 부여합니다. [CLA](http://opensource.adobe.com/cla.html)에 서명하십시오. Adobe CLA를 한 번만 제출하면
-되므로 이전에 제출한 적이 있는 경우 언제든지 해당 제품을 이용할 수 있습니다.
+귀하의 기고를 가능한 한 쉽게 제출하고자 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
 
-## 코드 검토
+* [문제 만들기](#create-an-issue)
+* [풀 요청 만들기](#create-a-pull-request)
 
-모든 제출물은 풀 요청 양식으로 제출해야 하며 프로젝트 커미터가 검토해야
-합니다. Importer 요청 전송에 대한 자세한 내용은 [Github의 풀 요청 설명서를](https://help.github.com/articles/about-pull-requests/)
-참조하십시오.
+어떤 방법을 선택하느냐에 따라 GitHub에서 직접 설명서를 얼마나 편리하게 편집할 수 있는지 결정됩니다.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+>[!NOTE]
+>
+>제출한 기여도는 Adobe 사용 [약관의 적용을 받습니다.](https://www.adobe.com/legal/terms.html)
 
-## 작성자에서 커피터에 이르는 기고자
+### 문제 만들기 {#create-an-issue}
 
-커뮤니티의 기부 활동을 환영합니다. 기고자 이외의 한 단계로 가서
-전체 쓰기 액세스 권한을 가진 커미터가 되려면 프로젝트에 초대를 받아야 합니다. 기존 커미터는 초대장을
-발행하기 전에 게으른 합의 (묵음) 에 도달해야 하는 내부 지명
-프로세스를 사용합니다. 자격 조건을 갖추고 있고 더 깊이 관여하고자 하는 경우 기존 커미터에 연락하여 해당 문제에 대한 대화를 할 수 있습니다.
+현재 문서에 대한 제안, 관찰 또는 설명되는 방식에 대한 질문을 가지고 있습니까? 그런 다음 문제를 만드십시오. 또한 기여할 수 있는 것이 있다면 문제가 매우 뛰어나지만 문서를 편집하거나 직접 요청을 하는 것이 불편합니다.
 
-## 보안 문제
+문제를 통해 문서 개선에 대한 아이디어를 쉽게 설명하고 AEM Docs Team 구성원이 검토할 수 있습니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 문제** 기록 링크를 클릭하면 문제를 만들 수 있습니다.
 
-보안 문제는 이 문제 추적기에 보고되지 않습니다. 대신, 보안 전문가에게 문제를 [제기하십시오.](https://helpx.adobe.com/security/alertus.html)
+### 풀 요청 만들기 {#create-a-pull-request}
+
+문제가 발견되고 이를 수정하는 방법을 정확히 아는 경우 풀 요청을 만드는 것이 좋습니다. 끌어오기 요청을 사용하면 문서에 직접 편집한 다음 AEM Docs Team 구성원이 포함하도록 검토합니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
+
+모든 가져오기 요청에는 서명된 [기고자 라이선스 계약 또는 CLA가 포함되어야 합니다.](https://opensource.adobe.com/cla.html)  이를 통해 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. Adobe CLA를 한 번만 제출하면 되므로 이전에 제출했다면 충분히 제출하십시오!
+
+### 빠른 비디오 소개
+
+다음 비디오를 통해 문제를 만들고 요청을 가져오는 방법에 대한 간단한 개요를 살펴보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
+
+### Adobe 직원의 기여
+
+Adobe 직원이고 풀 요청을 하려는 경우 의 개인 저장소를 사용하십시오 `https://git.corp.adobe.com/AdobeDocs`.
+
+문제는 공개 리포지토리를 자유롭게 사용하십시오.
+
+## 추가 정보
+
+GitHub [제작](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) 플랫폼을 사용하는 방법에 대한 자세한 내용은 Adobe Docs Contributor Guide를 참조하십시오.
