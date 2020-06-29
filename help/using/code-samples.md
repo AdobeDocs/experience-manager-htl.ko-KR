@@ -1,30 +1,23 @@
 ---
 title: 코드 샘플
-seo-title: AEM HTL용 코드 샘플
 description: We.Retail 참조 구현을 포함한 코드 샘플
-seo-description: We.Retail 참조 구현을 포함한 코드 샘플
-uuid: 4c84532e-1cd0-4faf-b99c-196557b5d15
-contentOwner: 사용자
-products: SG_EXPERIENCEMANAGER/HTL
-topic-tags: html-template-language
-content-type: 참조
-discoiquuid: bea6396e-13c4-4048-9a8a-e5d7c281deba
-mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f0473c2d7c2fc22a63232565452558001a9fd99e
+source-git-commit: d7efae3d1b4d1bc22c63c21f544a99bf0ae4b3c9
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 11%
 
 ---
 
 
-# 코드 샘플{#code-samples}
+# 코드 샘플 {#code-samples}
 
 다음은 HTL의 코드 샘플입니다.
 
-* [We.Retail 참조 구현](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html)\
-   HTL을 사용하여 완전히 구현된 AEM 사이트
+* [WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - 이 자습서에서는 WKND라는 가상의 라이프스타일 브랜드에 대한 AEM 사이트 구현을 안내합니다. 이 자습서에서는 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 Adobe Experience Manager 사이트를 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다. 모두 HTL에 구현되어 있습니다.
+* [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) - 유명한 연습의 AEM + HTL 구현입니다.
 
-* [HTL TodoMVC 예](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)\
-   유명한 연습의 AEM + HTL 구현.
+전문가에게 질문하기:
+
+* [2015년 1월 HTL 세션(HTL 소개)](http://scottsdigitalcommunity.blogspot.ca/2015/01/upcoming-sessions-of-ask-aem-community.html)
+* [2016년 3월 HTL 세션(고급 구성 요소 개발)](http://scottsdigitalcommunity.blogspot.ca/2016/03/ask-aem-community-experts-deep-dive.html)
