@@ -1,18 +1,11 @@
 ---
 title: AEM HTL 개요
-seo-title: AEM HTL 기술 설명서 개요.
 description: 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM에서 지원하는 HTL의 목적입니다.
-seo-description: 이 문서는 Adobe Experience Manager에서 지원하는 HTML Template Language(HTL)의 원리와 목적을 설명합니다. HTL은 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크이며 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이도록 해줍니다.
-uuid: 8f486325-0a1b-4186-a998-96fc0034c44a
-contentOwner: 사용자
-products: SG_EXPERIENCEMANAGER/HTL
-topic-tags: introduction
-content-type: 참조
-discoiquuid: 8f779e08-94c7-43bc-a6e5-d81a9f818c5c
-mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
-skyline: testing replication
-translation-type: ht
-source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
+translation-type: tm+mt
+source-git-commit: d3426d87dce09ac34ff1aca431ff2bfad2f7134a
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +14,7 @@ source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
 
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다.
 
-HTML 템플릿 언어는 AEM 6.0에서 도입되었으며 HTML의 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
+HTML 템플릿 언어는 AEM 6.0에서 도입되었으며 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템으로 JSP(JavaServer Pages)를 대체합니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
 
 ## 강화되는 보안 {#increased-security}
 
@@ -41,7 +34,7 @@ Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러
 
 구체적으로, HTML 템플릿 언어로 Adobe.com 사이트를 다시 구현할 때 프로젝트의 비용과 기간이 25% 정도 감소할 수 있는 것으로 나타났습니다.
 
-![](assets/chlimage_1.png)
+![효율적인 증가 및 비용 절감](assets/chlimage_1.png)
 
 위의 다이어그램은 HTL를 통해 가능해질 수 있는 다음과 같은 효율성 개선 사항을 보여줍니다.
 
@@ -52,4 +45,3 @@ Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러
 **다음 참조:**
 
 * [HTML 템플릿 언어 시작하기](getting-started.md)
-
