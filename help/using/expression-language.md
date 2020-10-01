@@ -2,9 +2,9 @@
 title: HTL 표현식 언어
 description: HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다.
 translation-type: tm+mt
-source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ${currentPage['title']} or ${currentPage["title"]}
 
 식별자라고 하는 변수의 이름은 특정 규칙을 따릅니다. 문자(`A`-`Z` `a`및-`z`)`_`또는 밑줄(`0`)`9`로 시작해야 하며, 그 뒤에 오는 문자도 숫자(`:`-) 또는 콜론()으로 시작할 수있습니다. 식별자에서는 `å` 및 같은 유니코드 문자를 사용할 `ü` 수 없습니다.
 
-콜론(`:`) 문자는 AEM 속성 이름에 공통인 경우, 올바른 식별자 문자임을 강조해야 합니다.
+콜론(`:`) 문자는 AEM 속성 이름에 공통인 경우 올바른 식별자 문자임을 강조해야 합니다.
 
 `${properties.jcr:title}`
 
@@ -86,7 +86,7 @@ ${currentPage.lastModified.time.toString}
 
 ### 숫자 {#numbers}
 
-숫자 유형은 하나만 있습니다. 양의 정수. 부동 소수점 같은 다른 숫자 형식은 변수에서 지원되지만 리터럴로 표현될 수는 없습니다.
+숫자 유형은 하나만 있습니다.양의 정수. 부동 소수점 같은 다른 숫자 형식은 변수에서 지원되지만 리터럴로 표현될 수는 없습니다.
 
 `${42}`
 
@@ -155,7 +155,7 @@ ${myArray[2]}
 
 #### 논리 NOT {#logical-not}
 
-`${!myVar}` 단일 피연산자가 (으)로 변환할 수 `false` 있는 `true`경우 반환 그렇지 않으면 반환됩니다 `true`.
+`${!myVar}` 단일 피연산자가 (으)로 변환할 수 `false` 있는 `true`경우 반환그렇지 않으면 반환됩니다 `true`.
 
 예를 들어 하위 페이지가 없는 경우에만 요소를 표시하는 것과 같이 테스트 조건을 변환하는 데 사용할 수 있습니다.
 
@@ -165,7 +165,7 @@ ${myArray[2]}
 
 #### 논리 AND {#logical-and}
 
-`${varOne && varTwo}` 잘못된 `varOne` 경우 반환 그렇지 않으면 반환됩니다 `varTwo`.
+`${varOne && varTwo}` 잘못된 `varOne` 경우 반환그렇지 않으면 반환됩니다 `varTwo`.
 
 이 연산자는 두 속성이 있는지 확인하는 것과 같이 두 가지 조건을 한 번에 테스트하는 데 사용할 수 있습니다.
 
@@ -184,7 +184,7 @@ HTL은 동적으로 false로 평가되는 값이 설정된 속성을 제거하�
 
 #### 논리 OR {#logical-or}
 
-`${varOne || varTwo}` true인 `varOne` 경우 반환 그렇지 않으면 반환됩니다 `varTwo`.
+`${varOne || varTwo}` true인 `varOne` 경우 반환그렇지 않으면 반환됩니다 `varTwo`.
 
 하나 이상의 속성이 있는지 확인하는 것과 같이 두 조건 중 하나가 적용되는지 여부를 테스트하는 데 이 연산자를 사용할 수 있습니다.
 
@@ -194,7 +194,7 @@ HTL은 동적으로 false로 평가되는 값이 설정된 속성을 제거하�
 
 논리 OR 연산자가 true인 첫 번째 변수를 반환하므로, 폴백 값을 제공하는 데 매우 편리하게 사용할 수도 있습니다.
 
-HTL은 false 또는 빈 문자열로 평가하는 표현식으로 설정된 값의 속성을 제거하기 때문에 HTML 특성을 조건부로 표시합니다. 따라서 아래 예에는 **`properties.jcr:`** **`properties.jcr:description`** 제목이 존재하며 비어 있지 않은 경우 표시되고, 그렇지 않은 경우 존재하는 경우 비어 있지 않은 경우 표시되지 않으면 &quot;제공된 제목 또는 설명 없음&quot; 메시지가 표시됩니다.
+HTL은 false로 평가하는 표현식으로 설정된 값이나 빈 문자열로 설정된 특성을 제거하므로 HTML 속성을 조건부로 표시하는 데에도 사용할 수 있습니다. 따라서 아래 예에는 **`properties.jcr:`** **`properties.jcr:description`** 제목이 존재하며 비어 있지 않은 경우 표시되고, 그렇지 않은 경우 존재하는 경우 비어 있지 않은 경우 표시되지 않으면 &quot;제공된 제목 또는 설명 없음&quot; 메시지가 표시됩니다.
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
@@ -202,7 +202,7 @@ HTL은 false 또는 빈 문자열로 평가하는 표현식으로 설정된 값�
 
 ### 조건부(삼항) 연산자 {#conditional-ternary-operator}
 
-`${varCondition ? varOne : varTwo}` true인 `varOne` 경우 `varCondition` 반환 그렇지 않으면 반환됩니다 `varTwo`.
+`${varCondition ? varOne : varTwo}` true인 `varOne` 경우 `varCondition` 반환그렇지 않으면 반환됩니다 `varTwo`.
 
 이 연산자는 일반적으로 페이지의 상태에 따라 다른 메시지를 표시하는 것과 같이 표현식 내의 조건을 정의하는 데 사용할 수 있습니다.
 
@@ -335,7 +335,7 @@ HTL을 사용하면 사용자 지정 코드를 작성하지 않고도 숫자 및
 >
 >사용할 수 있는 형식에 대한 자세한 내용은 [HTL 사양을 참조하십시오](https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md).
 
-### 국제화 {#internationalization}
+### 다국어화 {#internationalization}
 
 현재 *사전을 사용하여 문자열을 현재* 소스 [언어(아래 참조)로](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/internationalization/i18n-translator.html)변환합니다. 번역이 없으면 원래 문자열이 사용됩니다.
 
