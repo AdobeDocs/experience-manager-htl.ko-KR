@@ -1,10 +1,10 @@
 ---
 title: HTL 시작하기
-description: AEM에서 지원하는 HTL은 AEM의 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템으로 JSP를 대체합니다.
+description: AEM에서 지원하는 HTL은 AEM에서 HTML을 위한 권장 서버측 템플릿 시스템으로 JSP를 대체합니다.
 translation-type: tm+mt
-source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2471'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # HTL 시작하기 {#getting-started-with-htl}
 
-AEM(Adobe Experience Manager)에서 지원하는 HTML 템플릿 언어(HTL)는 AEM의 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템입니다. 이전 버전의 AEM에서 사용되는 대로 JSP(JavaServer 페이지)를 가져옵니다.
+Adobe Experience Manager(AEM)에서 지원하는 HTML 템플릿 언어(HTL)는 AEM의 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템입니다. 이전 버전의 AEM에서 사용되는 JSP(JavaServer Pages)를 가져옵니다.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ AEM(Adobe Experience Manager)에서 지원하는 HTML 템플릿 언어(HTL)는 A
 
 ## HTL over JSP {#htl-over-jsp}
 
-JSP와 비교하여 여러 이점을 제공하므로 새 AEM 프로젝트에서 HTML 템플릿 언어를 사용하는 것이 좋습니다. 그러나 기존 프로젝트의 경우 향후 몇 년간 기존 JSP를 유지 관리하는 것보다 마이그레이션이 덜 노력하는 경우에만 마이그레이션이 의미가 있습니다.
+JSP에 비해 여러 가지 이점을 제공하므로 새 AEM 프로젝트에서 HTML 템플릿 언어를 사용하는 것이 좋습니다. 그러나 기존 프로젝트의 경우 향후 몇 년간 기존 JSP를 유지 관리하는 것보다 마이그레이션이 덜 노력하는 경우에만 마이그레이션이 의미가 있습니다.
 
 그러나 HTL로 작성된 구성 요소는 JSP 또는 ESP로 작성된 구성 요소와 호환되므로 HTL로 이동하는 것이 반드시 양자택일 필요는 없습니다. 즉, 기존 프로젝트는 기존 구성 요소에 대해 JSP를 유지하면서 새 구성 요소에 HTL을 사용할 수 있습니다.
 
@@ -61,9 +61,9 @@ HTML 템플릿 언어는 표현식 언어를 사용하여 컨텐츠의 일부를
 
 두 가지 다른 종류의 구문을 구별할 수 있습니다.
 
-* **[블록 문](block-statements.md)**-**&lt;h1>**요소를 조건부로 표시하려면[`data-sly-test`](block-statements.md#test)HTML5 데이터 특성이 사용됩니다. HTL은 HTML 요소에 비헤이비어를 첨부할 수 있도록 허용하는 이러한 여러 개의 속성을 제공하며 모든 속성에 접두사가 붙습니다`data-sly`.
+* **[블록 문](block-statements.md)** - **&lt;h1>** 요소를 조건부로 표시하려면 [`data-sly-test`](block-statements.md#test) HTML5 데이터 특성이 사용됩니다. HTL은 HTML 요소에 비헤이비어를 첨부할 수 있도록 허용하는 이러한 여러 개의 속성을 제공하며 모든 속성에 접두사가 붙습니다 `data-sly`.
 
-* **[표현식 언어](expression-language.md)**- HTL 표현식은 문자와`${`로 구분됩니다`}`. 런타임 시 이러한 표현식은 평가되고 해당 값은 나가는 HTML 스트림에 삽입됩니다.
+* **[표현식 언어](expression-language.md)** - HTL 표현식은 문자와 `${` 로 구분됩니다 `}`. 런타임 시 이러한 표현식은 평가되고 해당 값은 나가는 HTML 스트림에 삽입됩니다.
 
 위에 연결된 두 페이지는 구문에 사용할 수 있는 기능의 세부 목록을 제공합니다.
 
@@ -82,14 +82,14 @@ HTL의 중앙 개념은 기존 HTML 요소를 다시 사용하여 블록 문을 
 </sly>
 ```
 
-는 다음과 같은 HTML을 출력하지만, 두 속성 **`jcr:title`** 과 속성이 모두 정의된 경우와 둘 다 비어 있는 **`jcr:description`** 경우에만 출력합니다.
+는 다음과 같은 HTML을 출력하지만, 두 속성 **`jcr:title`** **`jcr:description`** 과 속성이 모두 정의된 경우와 두 속성 모두 비어 있는 경우에만 출력합니다.
 
 ```xml
 <h1>MY TITLE</h1>
 <p>MY DESCRIPTION</p>
 ```
 
-SLY 요소는 동적으로 만들 때 정적 HTML을 변경하지 않도록 언어에서 제공하는 값을 억제하므로, 한 가지 명심할 사항은 기존 요소에 주석을 달 수 없을 때만 SLY 요소를 사용하는 것입니다.
+SLY 요소는 동적으로 만들 때 정적 HTML을 변경하지 않도록 언어에서 제공하는 값을 억제하므로, 한 가지 명심할 것은 기존 요소에 주석을 달 수 없을 때만 SLY 요소를 사용하는 것입니다.
 
 예를 들어, 이전 예가 이미 DIV 요소 내에서 래핑되었다면 추가된 SLY 요소는 남용될 수 있습니다.
 
@@ -110,12 +110,6 @@ SLY 요소는 동적으로 만들 때 정적 HTML을 변경하지 않도록 언�
     <p>${properties.jcr:description}</p>
 </div>
 ```
-
->[!NOTE]
->
->SLY 요소는 AEM 6.1 또는 HTL 1.1에서 도입되었습니다.
->
->그 이전에는 속성을 대신 [`data-sly-unwrap`](block-statements.md) 사용해야 했습니다.
 
 ### HTL 댓글 {#htl-comments}
 
@@ -138,7 +132,7 @@ HTL을 최대한 활용하기 위해서는 HTML 구문에 따라 HTML이 어떤 
 
 ### 요소 및 속성 이름 {#element-and-attribute-names}
 
-표현식은 HTML 텍스트 또는 속성 값에만 배치할 수 있지만 요소 이름이나 속성 이름 내에는 삽입할 수 없거나 더 이상 유효한 HTML이 아닙니다. 요소 이름을 동적으로 설정하려면 원하는 요소에서 [`data-sly-element`](block-statements.md#element) 문을 사용할 수 있고, 속성 이름을 동적으로 설정하여 한 번에 여러 속성을 설정할 수도 있으므로 [`data-sly-attribute`](block-statements.md#attribute) 문을 사용할 수 있습니다.
+표현식은 HTML 텍스트 또는 속성 값에만 배치할 수 있지만 요소 이름이나 속성 이름 내에는 삽입할 수 없거나 더 이상 유효한 HTML이 아닙니다. 요소 이름을 동적으로 설정하려면 원하는 요소에서 [`data-sly-element`](block-statements.md#element) 문을 사용할 수 있고 속성 이름을 동적으로 설정하여 한 번에 여러 속성을 설정할 수도 있으므로 [`data-sly-attribute`](block-statements.md#attribute) 문을 사용할 수 있습니다.
 
 ```xml
 <h1 data-sly-element="${myElementName}" data-sly-attribute="${myAttributeMap}">...</h1>
@@ -154,7 +148,7 @@ HTL은 데이터 속성을 사용하여 블록 문을 정의하므로 다음 컨
 
 이러한 컨텍스트의 컨텐츠는 HTML이 아닌 텍스트이며 포함된 HTML 요소는 간단한 문자 데이터로 간주되기 때문입니다. 따라서 실제 HTML 요소가 없으면 **`data-sly`** 속성을 실행할 수 없습니다.
 
-HTML 템플릿 언어가 HTML이 아닌 출력을 생성하는 데 악용되어서는 안 되기 때문에 이는 큰 제한과 같은 소리일 수 있습니다. 아래의 [논리](getting-started.md#use-api-for-accessing-logic) 액세스를 위한 Use-API 섹션에서는 이러한 컨텍스트에 대한 복잡한 출력을 준비하는 데 필요한 경우 템플릿에서 추가 로직을 호출할 수 있는 방법을 소개합니다. 예를 들어, 백엔드 스크립트로 데이터를 전송하는 쉬운 방법은 구성 요소의 논리를 사용하여 JSON 문자열을 생성한 다음 간단한 HTL 표현식을 사용하여 데이터 속성에 삽입할 수 있는 것입니다.
+HTML 템플릿 언어가 HTML이 아닌 출력을 생성하는 데 악용되어서는 안 되기 때문에 이는 큰 제한과 같은 소리일 수 있습니다. 아래의 [논리](getting-started.md#use-api-for-accessing-logic) 액세스를 위한 Use-API 섹션에서는 이러한 컨텍스트에 대한 복잡한 출력을 준비하는 데 필요한 경우 템플릿에서 추가 로직을 호출하는 방법을 소개합니다. 예를 들어, 백엔드 스크립트로 데이터를 전송하는 쉬운 방법은 구성 요소의 논리를 사용하여 JSON 문자열을 생성한 다음 간단한 HTL 표현식을 사용하여 데이터 속성에 삽입할 수 있는 것입니다.
 
 다음 예에서는 HTML 주석에 대한 동작을 보여주지만 스크립트 또는 스타일 요소에서 동일한 동작을 준수합니다.
 
