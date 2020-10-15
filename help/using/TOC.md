@@ -1,18 +1,18 @@
 ---
 sub-product: Adobe Experience Manager HTL
 user-guide-title: Adobe Experience Manager HTL
-breadcrumb-title: HTL Guide
-user-guide-description: Use the HTML Template Language (HTL) to create an enterprise-level web framework.
+breadcrumb-title: HTL 안내서
+user-guide-description: HTL(HTML Template Language)을 사용하여 엔터프라이즈급 웹 프레임워크를 만듭니다.
 translation-type: tm+mt
 source-git-commit: 5d98000895461141ff7601c809b7085f89e6bb8b
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager HTL Help {#using}
+# Adobe Experience Manager HTL 도움말 {#using}
 
 + [개요](overview.md)
 + 시작하기{#getting-started}
