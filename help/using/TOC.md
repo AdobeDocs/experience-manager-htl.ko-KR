@@ -6,8 +6,8 @@ user-guide-description: HTL(HTML Template Language)을 사용하여 엔터프라
 translation-type: tm+mt
 source-git-commit: 5d98000895461141ff7601c809b7085f89e6bb8b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '68'
+ht-degree: 100%
 
 ---
 
