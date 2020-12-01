@@ -12,11 +12,11 @@ ht-degree: 3%
 
 # HTL 전역 개체 {#htl-global-objects}
 
-HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 수 있었던 모든 객체에 대한 액세스 권한을 제공합니다 `global.jsp`. 이러한 개체는 [Use-API를 통해 소개될 수 있는 개체 이외에 추가로 제공됩니다](use-api.md).
+아무 것도 지정하지 않아도 HTL은 `global.jsp`을 포함하는 후 JSP에서 일반적으로 사용 가능한 모든 객체에 대한 액세스를 제공합니다. 이러한 개체는 [Use-API](use-api.md)를 통해 소개될 수 있는 개체 외에 추가로 제공됩니다.
 
-## Enumerable 객체 {#enumerable-objects}
+## Enumerable 개체 {#enumerable-objects}
 
-이러한 개체는 일반적으로 사용되는 정보에 쉽게 액세스할 수 있습니다. 도트 표기법을 사용하여 컨텐츠에 액세스할 수 있으며 `data-sly-list` 또는 를 사용하여 반복할 수 `data-sly-repeat`있습니다.
+이러한 개체는 일반적으로 사용되는 정보에 쉽게 액세스할 수 있습니다. 도트 표기법으로 해당 컨텐츠에 액세스할 수 있으며 `data-sly-list` 또는 `data-sly-repeat`을 사용하여 반복할 수 있습니다.
 
 | 변수 이름 | 설명 |
 |--- |--- |
@@ -24,7 +24,7 @@ HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 
 | `pageProperties` | 현재 페이지의 페이지 속성 목록입니다. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 | `inheritedPageProperties` | 현재 페이지의 상속된 페이지 속성 목록입니다. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 
-## Java 지원 객체 {#java-backed-objects}
+## Java 지원 개체 {#java-backed-objects}
 
 다음 각 개체는 해당 Java 개체의 지원을 받습니다.
 
@@ -58,7 +58,7 @@ HTL은 아무 것도 지정하지 않아도 JSP에서 일반적으로 사용할 
 
 ## JavaScript에서 지원하는 개체 {#javascript-backed-objects}
 
-JavaScript를 사용하여 HTL 로직을 백업할 수 있습니다. 그러나 Sling Models를 사용하는 것이 좋거나 [권장됩니다.](https://sling.apache.org/documentation/bundles/models.html)
+JavaScript를 사용하여 HTL 로직을 백업할 수 있습니다. 하지만 권장 방법이나 권장 방법은 [Sling Models를 사용하는 것입니다.](https://sling.apache.org/documentation/bundles/models.html)
 
 <!-- 
 
