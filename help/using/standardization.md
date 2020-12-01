@@ -14,5 +14,5 @@ ht-degree: 3%
 
 다음은 HTL 표준입니다.
 
-* [HTL 사양](https://github.com/adobe/htl-spec) - 언어 변호사용 공식 구문과 기능 설명
+* [HTL 사양](https://github.com/adobe/htl-spec)  - 언어 변호사용 공식 구문 및 기능 설명
 * [HTL TCK](https://github.com/adobe/htl-tck) - 언어 호환성을 인증하는 테스트 패키지
