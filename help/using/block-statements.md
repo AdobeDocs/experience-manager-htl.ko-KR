@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # HTL 블록 문 {#htl-block-statements}
 
-HTML 템플릿 언어(HTL) 블록 문은 기존 HTML에 직접 추가되는 사용자 지정 `data` 속성입니다. 이를 통해 프로토타입 정적 HTML 페이지에 대한 간편하고 완벽한 주석을 달 수 있으므로 HTML 코드의 유효성을 벗어나지 않고도 작동하는 동적 템플릿으로 변환할 수 있습니다.
+HTML 템플릿 언어(HTL) 블록 문은 기존 HTML에 직접 추가된 사용자 지정 `data` 속성입니다. 이를 통해 프로토타입 정적 HTML 페이지에 대한 간편하고 완벽한 주석을 달 수 있으므로 HTML 코드의 유효성을 벗어나지 않고도 작동하는 동적 템플릿으로 변환할 수 있습니다.
 
 ## 블록 개요 {#overview}
 
@@ -57,17 +57,17 @@ HTL 블록 플러그인은 HTML 요소에 설정된 `data-sly-*` 속성으로 �
 사용할 수 있는 많은 블록 문이 있습니다. 동일한 요소에서 사용할 경우 다음 우선 순위 목록은 블록 문을 평가하는 방법을 정의합니다.
 
 1. `data-sly-template`
-1. `data-sly-set`, `data-sly-test`, `data-sly-use`
+1. `data-sly-set`,  `data-sly-test`,  `data-sly-use`
 1. `data-sly-call`
 1. `data-sly-text`
-1. `data-sly-element`, `data-sly-include`, `data-sly-resource`
+1. `data-sly-element`,  `data-sly-include`,  `data-sly-resource`
 1. `data-sly-unwrap`
 1. `data-sly-list`, `data-sly-repeat`
 1. `data-sly-attribute`
 
 두 블록 명령문의 우선 순위가 같은 경우 평가 순서는 왼쪽에서 오른쪽으로 지정됩니다.
 
-### use {#use}
+### {#use} 사용
 
 `data-sly-use` 도우미 개체(JavaScript 또는 Java에 정의됨)를 초기화하고 변수를 통해 노출합니다.
 
@@ -95,7 +95,7 @@ OSGi 번들의 일부로 해당 클래스가 설치된 Java 클래스를 초기�
 <div data-sly-use.nav="${'navigation.js' @parentPage=currentPage}">${nav.foo}</div>
 ```
 
-다음을 사용하여 호출할 수 있는 다른 HTL 템플릿을 초기화합니다. `data-sly-call`
+`data-sly-call`을 사용하여 호출할 수 있는 다른 HTL 템플릿을 초기화합니다.
 
 ```xml
 <div data-sly-use.nav="navTemplate.html" data-sly-call="${nav.foo}"></div>
@@ -109,9 +109,9 @@ OSGi 번들의 일부로 해당 클래스가 설치된 Java 클래스를 초기�
 >* [JavaScript Use-API](use-api-javascript.md)
 
 
-#### 리소스를 사용한 데이터 활용 {#data-sly-use-with-resources}
+#### data-sly-use with resources {#data-sly-use-with-resources}
 
-이를 통해 HTL에서 바로 리소스를 가져올 수 `data-sly-use` 있으며 코드를 작성할 필요가 없습니다.
+이렇게 하면 `data-sly-use`이(가) 있는 HTL에서 바로 리소스를 가져올 수 있으며 코드를 작성할 필요가 없습니다.
 
 예:
 
@@ -123,9 +123,9 @@ OSGi 번들의 일부로 해당 클래스가 설치된 Java 클래스를 초기�
 
 >[!TIP]
 >
->경로 [가 항상 필요한 것은 아닙니다.](#path-not-required)
+>섹션 [경로가 항상 필요하지 않습니다.](#path-not-required)
 
-### 감싸기 {#unwrap}
+### {#unwrap} 줄 바꿈
 
 `data-sly-unwrap` 생성된 마크업에서 호스트 요소를 제거하고 컨텐츠를 유지합니다. 따라서 HTL 프레젠테이션 로직의 일부로서 필요하지만 실제 출력에서는 원하지 않는 요소를 제외할 수 있습니다.
 
@@ -186,7 +186,7 @@ Hello World
 <p data-sly-text="${properties.jcr:description}">Lorem ipsum</p>
 ```
 
-둘 다 의 값을 단락 텍스트 `jcr:description` 로 표시합니다. 두 번째 방법의 장점은 정적 자리 표시자 컨텐츠를 원본 디자이너에게 그대로 유지하면서 HTML에 대한 완벽한 주석을 달 수 있다는 것입니다.
+둘 다 `jcr:description` 값을 단락 텍스트로 표시합니다. 두 번째 방법의 장점은 정적 자리 표시자 컨텐츠를 원본 디자이너에게 그대로 유지하면서 HTML에 대한 완벽한 주석을 달 수 있다는 것입니다.
 
 ### attribute {#attribute}
 
@@ -204,11 +204,11 @@ Hello World
 <div title="Lorem Ipsum" data-sly-attribute.title="${properties.jcr:title}"></div>
 ```
 
-두 값 모두 `title` 속성을 값으로 설정합니다 `jcr:title`. 두 번째 방법의 장점은 정적 자리 표시자 컨텐츠를 원본 디자이너에게 그대로 유지하면서 HTML에 대한 완벽한 주석을 달 수 있다는 것입니다.
+둘 다 `title` 속성을 `jcr:title` 값으로 설정합니다. 두 번째 방법의 장점은 정적 자리 표시자 컨텐츠를 원본 디자이너에게 그대로 유지하면서 HTML에 대한 완벽한 주석을 달 수 있다는 것입니다.
 
-속성은 왼쪽에 정의된 동일한 속성(문자 또는 를 통해 정의됨)의 인스턴스보다 속성(리터럴 또는 정의됨 `data-sly-attribute`)의 가장 오른쪽 인스턴스 `data-sly-attribute`가 우선하므로 속성이 왼쪽에서 오른쪽으로 해결됩니다.
+속성은 왼쪽에 정의된 동일한 속성(문자 그대로 또는 `data-sly-attribute`을 통해 정의됨)의 인스턴스보다 속성(리터럴 또는 `data-sly-attribute`을 통해 정의됨)의 가장 오른쪽 인스턴스가 우선하므로 속성이 왼쪽에서 오른쪽으로 해결됩니다.
 
-값이 빈 문자열로 평가되는 속성( `literal` 또는 를 통해 설정됨) `data-sly-attribute`은 최종 마크업에서 제거됩니다. 이 규칙의 한 가지 예외는 리터럴 빈 문자열에 설정된 리터럴 속성이 보존된다는 것입니다. 예,
+값이 빈 문자열로 평가되는 속성(`literal` 또는 `data-sly-attribute`을 통해 설정)은 최종 마크업에서 제거됩니다. 이 규칙의 한 가지 예외는 리터럴 빈 문자열에 설정된 리터럴 속성이 보존된다는 것입니다. 예,
 
 ```xml
 <div class="${''}" data-sly-attribute.id="${''}"></div>
@@ -264,9 +264,9 @@ produce,
 <h1 data-sly-element="${titleLevel}">text</h1>
 ```
 
-을 `h1` 의 값으로 대체합니다 `titleLevel`.
+`h1`을 `titleLevel` 값으로 대체합니다.
 
-보안상의 이유로 다음 요소 이름만 `data-sly-element` 수락합니다.
+보안상의 이유로 `data-sly-element`은 다음 요소 이름만 허용합니다.
 
 ```xml
 a abbr address article aside b bdi bdo blockquote br caption cite code col colgroup
@@ -279,9 +279,9 @@ sup table tbody td tfoot th thead time tr u var wbr
 
 ### 테스트 {#test}
 
-`data-sly-test` 호스트 요소와 컨텐츠를 조건부로 제거합니다. 값이 요소를 `false` 제거합니다. 요소를 유지하는 값 `true` .
+`data-sly-test` 호스트 요소와 컨텐츠를 조건부로 제거합니다. `false`의 값은 요소를 제거합니다.`true`의 값은 요소를 유지합니다.
 
-예를 들어, 요소 및 `p` 컨텐츠는 다음 경우에만 렌더링됩니다. `isShown` is `true`
+예를 들어 `p` 요소와 해당 컨텐츠는 `isShown`이 `true`인 경우에만 렌더링됩니다.
 
 ```xml
 <p data-sly-test="${isShown}">text</p>
@@ -310,17 +310,17 @@ sup table tbody td tfoot th thead time tr u var wbr
 </div>
 ```
 
-### repeat {#repeat}
+### 반복 {#repeat}
 
-지정된 목록에 따라 요소를 여러 번 반복할 `data-sly-repeat` 수 있습니다.
+`data-sly-repeat`을 사용하면 지정된 목록에 따라 요소를 여러 번 반복할 수 있습니다.
 
 ```xml
 <div data-sly-repeat="${currentPage.listChildren}">${item.name}</div>
 ```
 
-컨테이너 요소가 필요하지 `data-sly-list`않는다는 점을 제외하면 이와 동일한 방식으로 작동합니다.
+컨테이너 요소가 필요하지 않는다는 점을 제외하면 `data-sly-list`과 동일한 방식으로 작동합니다.
 
-다음 예에서는 속성에 대한 *항목을 참조할 수도* 있음을 보여줍니다.
+다음 예에서는 속성에 대해 *item*&#x200B;을 참조할 수도 있음을 보여줍니다.
 
 ```xml
 <div data-sly-repeat="${currentPage.listChildren}" data-sly-attribute.class="${item.name}">${item.name}</div>
@@ -341,17 +341,17 @@ sup table tbody td tfoot th thead time tr u var wbr
 
 다음 기본 변수를 목록 범위 내에서 사용할 수 있습니다.
 
-* `item`: 반복의 현재 항목입니다.
-* `itemList`: 다음 속성을 포함하는 개체:
-* `index`: 0기반 카운터( `0..length-1`).
-* `count`: 1기반 카운터( `1..length`).
+* `item`:반복의 현재 항목입니다.
+* `itemList`:다음 속성을 포함하는 개체:
+* `index`:0기반 카운터(  `0..length-1`).
+* `count`:1기반 카운터(  `1..length`).
 * `first`: `true` if the current item is the first item.
 * `middle`: `true` 현재 항목이 첫 번째도 마지막 항목이 아닌 경우.
 * `last`: `true` if the current item is the last item.
-* `odd`: `true` if `index` is odd.
-* `even`: `true` 짝만 `index` 이 되면
+* `odd`: `true` 홀수 `index` 가 있는 경우
+* `even`: `true` 짝만 `index` 이 될 경우
 
-문에서 식별자를 정의하면 `data-sly-list` 및 `itemList` `item` 변수의 이름을 변경할 수 있습니다. `item` 이 `<variable>` 가 되고 `itemList` 될 것이다 `<variable>List`.
+`data-sly-list` 문에서 식별자를 정의하면 `itemList` 및 `item` 변수의 이름을 변경할 수 있습니다. `item` 이 `<variable>` 가 되고  `itemList` 또 `<variable>List`는
 
 ```xml
 <dl data-sly-list.child="${currentPage.listChildren}">
@@ -379,9 +379,9 @@ sup table tbody td tfoot th thead time tr u var wbr
 <article data-sly-resource="path/to/resource"></article>
 ```
 
-#### 경로가 항상 필요하지 않음 {#path-not-required}
+#### 경로가 항상 필수 사항은 아님 {#path-not-required}
 
-이미 리소스가 있는 경우에는 경로 `data-sly-resource` 를 사용할 필요가 없습니다. 이미 리소스가 있는 경우 직접 사용할 수 있습니다.
+이미 리소스가 있는 경우에는 `data-sly-resource`이(가) 있는 경로를 사용할 필요가 없습니다. 이미 리소스가 있는 경우 직접 사용할 수 있습니다.
 
 예를 들어, 다음은 올바른 경우입니다.
 
@@ -454,7 +454,7 @@ WCM 모드를 변경합니다.
 <article data-sly-resource="${'path/to/resource' @ wcmmode='disabled'}"></article>
 ```
 
-기본적으로 AEM 데코레이션 태그는 비활성화되어 있고, decorationTagName 옵션은 해당 태그를 다시 가져올 수 있으며, cssClassName은 해당 요소에 클래스를 추가할 수 있습니다.
+기본적으로 AEM 데코레이션 태그는 비활성화되어 있고 데코레이션 태그는 다시 가져올 수 있으며 cssClassName은 해당 요소에 클래스를 추가할 수 있습니다.
 
 ```xml
 <article data-sly-resource="${'path/to/resource' @ decorationTagName='span',
@@ -463,11 +463,11 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM에서는 포함 요소를 래핑하는 데코레이션 태그를 제어하는 명확하고 간단한 로직을 제공합니다. 자세한 내용은 [개발 구성 요소 설명서의 데코레이션](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/decoration-tag.html) 태그를 참조하십시오.
+>AEM은 포함된 요소를 둘러싸는 데코레이션 태그를 제어하는 명확하고 간단한 로직을 제공합니다. 자세한 내용은 개발 구성 요소 설명서의 [데코레이션 태그](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/decoration-tag.html)를 참조하십시오.
 
 ### 포함 {#include}
 
-`data-sly-include` 호스트 요소의 컨텐츠를 지정된 HTML 템플릿 파일(HTL, JSP, ESP 등)에 의해 생성된 마크업으로 대체 해당 템플릿 엔진에서 처리하는 경우. 포함된 파일의 렌더링 컨텍스트에는 현재 HTL 컨텍스트(포함 파일의 컨텍스트)가 포함되지 않습니다. 따라서 HTL 파일을 포함하려면 현재 파일 `data-sly-use` 이 포함된 파일에서 반복되어야 합니다(이 경우 일반적으로 사용 `data-sly-template` 및 `data-sly-call`).
+`data-sly-include` 호스트 요소의 컨텐츠를 지정된 HTML 템플릿 파일(HTL, JSP, ESP 등)에 의해 생성된 마크업으로 대체 해당 템플릿 엔진에서 처리하는 경우. 포함된 파일의 렌더링 컨텍스트에는 현재 HTL 컨텍스트(포함 파일의 컨텍스트)가 포함되지 않습니다.따라서 HTL 파일을 포함하려면 현재 `data-sly-use`이 포함된 파일에서 반복되어야 합니다(이 경우 일반적으로 `data-sly-template` 및 `data-sly-call` 사용).
 
 간단한 기능:
 
@@ -495,9 +495,9 @@ WCM 모드를 변경할 수도 있습니다.
 <section data-sly-include="${'template.html' @ wcmmode='disabled'}"></section>
 ```
 
-### 요청 속성 {#request-attributes}
+### 요청-특성 {#request-attributes}
 
-및 `data-sly-include` 에서 `data-sly-resource` 수신되는 HTL 스크립트에서 사용하기 `requestAttributes` 위해 전달할 수 있습니다.
+`data-sly-include` 및 `data-sly-resource`에서 `requestAttributes`를 전달하여 수신 HTL 스크립트에서 사용할 수 있습니다.
 
 이를 통해 스크립트 또는 구성 요소에 매개 변수를 올바르게 전달할 수 있습니다.
 
@@ -521,7 +521,7 @@ public class Settings extends WCMUsePojo {
 }
 ```
 
-예를 들어 슬링 모델을 통해 지정된 값을 사용할 수 있습니다 `requestAttributes`.
+예를 들어 Sling-Model을 통해 지정된 `requestAttributes`의 값을 사용할 수 있습니다.
 
 이 예에서 레이아웃은 Use-class의 Map을 통해 삽입됩니다.
 
@@ -536,7 +536,7 @@ public class ProductSettings {
 
 ### 템플릿 및 호출 {#template-call}
 
-템플릿 블록은 함수 호출과 같이 사용할 수 있습니다. 선언에서 매개 변수를 가져올 수 있으며, 이러한 매개 변수는 호출할 때 전달됩니다. 재귀를 허용합니다.
+템플릿 블록은 함수 호출과 같이 사용할 수 있습니다.선언에서 매개 변수를 가져올 수 있으며, 이러한 매개 변수는 호출할 때 전달됩니다. 재귀를 허용합니다.
 
 `data-sly-template` 템플릿을 정의합니다. 호스트 요소와 컨텐츠가 HTL로 출력되지 않습니다.
 
@@ -556,7 +556,7 @@ public class ProductSettings {
 <div data-sly-call="${two @ title=properties.jcr:title}"></div>
 ```
 
-다른 파일에 있는 템플릿은 로 초기화할 수 있습니다 `data-sly-use`. 이 경우 `data-sly-use` 와 같은 요소에 배치할 `data-sly-call` 수도 있습니다.
+다른 파일에 있는 템플릿은 `data-sly-use`으로 초기화할 수 있습니다. 이 경우 `data-sly-use` 및 `data-sly-call`도 동일한 요소에 배치할 수 있습니다.
 
 ```xml
 <div data-sly-use.lib="templateLib.html">
@@ -579,21 +579,21 @@ public class ProductSettings {
 <div data-sly-call="${nav @ page=currentPage}" data-sly-unwrap></div>
 ```
 
-## 슬라이 요소 {#sly-element}
+## sly 요소 {#sly-element}
 
-HTML `<sly>` 태그는 현재 요소를 제거하는 데 사용할 수 있으므로 해당 하위 요소만 표시할 수 있습니다. 이 요소의 기능은 `data-sly-unwrap` 블록 요소와 유사합니다.
+`<sly>` HTML 태그를 사용하여 현재 요소를 제거할 수 있으므로 해당 하위 요소만 표시할 수 있습니다. 이 기능은 `data-sly-unwrap` 블록 요소와 비슷합니다.
 
 ```xml
 <!--/* This will display only the output of the 'header' resource, without the wrapping <sly> tag */-->
 <sly data-sly-resource="./header"></sly>
 ```
 
-유효한 HTML 5 태그는 아니지만, `<sly>` 태그를 다음 방법을 사용하여 최종 출력에서 표시할 수 있습니다 `data-sly-unwrap`.
+유효한 HTML 5 태그는 아니지만 `<sly>` 태그는 `data-sly-unwrap`을 사용하여 최종 출력에서 표시할 수 있습니다.
 
 ```xml
 <sly data-sly-unwrap="${false}"></sly> <!--/* outputs: <sly></sly> */-->
 ```
 
-요소의 `<sly>` 목표는 요소가 출력되지 않는다는 것을 더 분명히 하는 것입니다. 그래도 쓸 수 있으면 `data-sly-unwrap`됩니다
+`<sly>` 요소의 목표는 요소가 출력되지 않는다는 것을 더 분명히 하는 것입니다. 원하는 경우 `data-sly-unwrap`을(를) 계속 사용할 수 있습니다.
 
-이와 `data-sly-unwrap`같이, 이것의 사용을 최소화하도록 노력하세요.
+`data-sly-unwrap`과 마찬가지로 이 작업의 사용을 최소화하십시오.
