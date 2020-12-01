@@ -14,8 +14,8 @@ ht-degree: 11%
 
 다음은 HTL의 코드 샘플입니다.
 
-* [WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - 이 자습서에서는 WKND라는 가상의 라이프스타일 브랜드에 대한 AEM 사이트 구현을 안내합니다. 이 자습서에서는 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 Adobe Experience Manager 사이트를 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다. 모두 HTL에 구현되어 있습니다.
-* [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) - 유명한 연습의 AEM + HTL 구현입니다.
+* [WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)  - 이 자습서는 WKND에서 가상의 라이프스타일 브랜드에 대한 AEM 사이트 구현을 안내합니다. 또한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다. 모두 HTL에 구현되어 있습니다.
+* [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)  - AEM + HTL의 유명한 연습 구현.
 
 전문가에게 질문하기:
 
