@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # HTL JavaScript Use-API {#htl-javascript-use-api}
 
-HTML 템플릿 언어(HTL) JavaScript 사용-API를 사용하면 HTML 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 로직을 JavaScript 코드로 캡슐화할 수 있고, HTL 코드는 직접 마크업 프로덕션만 다룹니다.
+HTML 템플릿 언어(HTL) JavaScript 사용-API를 사용하면 HTML 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 로직을 JavaScript 코드로 캡슐화할 수 있고, HTL 코드에서는 직접 마크업 프로덕션만 다룹니다.
 
 다음 규칙이 사용됩니다.
 
@@ -38,14 +38,14 @@ use(['dep1.js', 'dep2.js'], function (Dep1, Dep2) {
 
 ## 간단한 예 {#a-simple-example}
 
-Adobe는 `info`
+Adobe에서는`info`
 
 `/apps/my-example/components/info`
 
 여기에는 두 개의 파일이 포함되어 있습니다.
 
-* **`info.js`**: use-class를 정의하는 JavaScript 파일입니다.
-* **`info.html`**: 구성 요소를 정의하는 HTL 파일입니다 `info`. 이 코드는 use-API를 통해 `info.js` 의 기능을 사용합니다.
+* **`info.js`**:use-class를 정의하는 JavaScript 파일입니다.
+* **`info.html`**:구성 요소를 정의하는 HTL 파일입니다 `info`. 이 코드는 use-API를 통해 `info.js` 기능을 사용합니다.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
@@ -68,7 +68,7 @@ use(function () {
 </div>
 ```
 
-Adobe에서는 `info`
+또한 `info` 구성 요소를 사용하는 컨텐트 노드를
 
 `/content/my-example`, with properties:
 
@@ -115,7 +115,7 @@ Adobe에서는 `info`
 </section>
 ```
 
-해당 로직은 템플릿 옆의 `component.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
+해당 로직은 템플릿 바로 옆에 있는 `component.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
 
 ```javascript
 use(function () {
@@ -134,7 +134,7 @@ use(function () {
 });
 ```
 
-이렇게 하면 다른 소스 `title` 에서 해당 설명을 50자로 자릅니다.
+이렇게 하면 다른 소스에서 `title`을 가져와 설명을 50자로 자릅니다.
 
 ## 종속성 {#dependencies}
 
@@ -157,11 +157,11 @@ use(['../utils/MyUtils.js'], function (utils) {
 });
 ```
 
-## 확장 {#extending}
+## {#extending} 확장
 
-종속성 패턴을 사용하여 다른 구성 요소의 논리(일반적으로 현재 구성 요소의 논리) `sling:resourceSuperType` 를 확장할 수도 있습니다.
+종속성 패턴을 사용하여 다른 구성 요소의 논리를 확장할 수도 있습니다(일반적으로 현재 구성 요소의 `sling:resourceSuperType`).
 
-상위 구성 요소가 이미 해당 구성 요소를 제공하고 `title`있으며, 다음과 같은 항목을 추가할 `description` 수도 있다고 가정해 보십시오.
+상위 구성 요소가 이미 `title`을(를) 제공하고 `description`도 추가한다고 가정해 보십시오.
 
 ```javascript
 use(['../parent-component/parent-component.js'], function (component) {
@@ -176,9 +176,9 @@ use(['../parent-component/parent-component.js'], function (component) {
 });
 ```
 
-## 템플릿에 매개 변수 전달 {#passing-parameters-to-a-template}
+## 매개 변수를 템플릿 {#passing-parameters-to-a-template}에 전달
 
-구성 요소와 독립적인 `data-sly-template` 명령문의 경우 관련 Use-API에 매개 변수를 전달하는 것이 유용합니다.
+구성 요소와 독립적인 `data-sly-template` 문의 경우 관련 Use-API에 매개 변수를 전달하는 것이 유용합니다.
 
 따라서 구성 요소에서 다른 파일에 있는 템플릿을 호출합니다.
 
@@ -186,7 +186,7 @@ use(['../parent-component/parent-component.js'], function (component) {
 <section class="component-name" data-sly-use.tmpl="template.html" data-sly-call="${tmpl.templateName @ page=currentPage}"></section>
 ```
 
-다음은 템플릿에 있는 `template.html`템플릿입니다.
+그러면 이 템플릿은 `template.html`에 있습니다.
 
 ```xml
 <template data-sly-template.templateName="${@ page}" data-sly-use.tmpl="${'template.js' @ page=page, descriptionLength=50}">
@@ -195,7 +195,7 @@ use(['../parent-component/parent-component.js'], function (component) {
 </template>
 ```
 
-해당 로직은 템플릿 파일 바로 옆의 `template.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
+해당 로직은 템플릿 파일 바로 옆에 있는 `template.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
 
 ```javascript
 use(function () {
@@ -213,4 +213,4 @@ use(function () {
 });
 ```
 
-전달된 매개 변수는 키워드에 `this` 설정됩니다.
+전달된 매개 변수는 `this` 키워드에 설정됩니다.
