@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # HTL JavaScript Use-API {#htl-javascript-use-api}
 
-HTML 템플릿 언어(HTL) JavaScript 사용-API를 사용하면 HTML 파일에서 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 로직을 JavaScript 코드로 캡슐화할 수 있고, HTL 코드에서는 직접 마크업 프로덕션만 다룹니다.
+HTL(HTML Template Language) JavaScript Use-API를 통해 HTML 파일은 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 모든 복잡한 비즈니스 로직을 JavaScript 코드로 캡슐화할 수 있고, HTL 코드는 직접 마크업 프로덕션에만 다룹니다.
 
 다음 규칙이 사용됩니다.
 
@@ -38,11 +38,11 @@ use(['dep1.js', 'dep2.js'], function (Dep1, Dep2) {
 
 ## 간단한 예 {#a-simple-example}
 
-Adobe에서는`info`
+구성 요소 `info`는
 
 `/apps/my-example/components/info`
 
-여기에는 두 개의 파일이 포함되어 있습니다.
+여기에는 2개의 파일이 포함되어 있습니다.
 
 * **`info.js`**:use-class를 정의하는 JavaScript 파일입니다.
 * **`info.html`**:구성 요소를 정의하는 HTL 파일입니다 `info`. 이 코드는 use-API를 통해 `info.js` 기능을 사용합니다.
@@ -70,13 +70,13 @@ use(function () {
 
 또한 `info` 구성 요소를 사용하는 컨텐트 노드를
 
-`/content/my-example`, with properties:
+`/content/my-example`, 속성 포함:
 
 * `sling:resourceType = "my-example/component/info"`
 * `title = "My Example"`
 * `description = "This is some example content."`
 
-결과 저장소 구조는 다음과 같습니다.
+다음은 결과 저장소 구조입니다.
 
 ### 저장소 구조 {#repository-structure}
 
@@ -106,7 +106,7 @@ use(function () {
 }
 ```
 
-다음 구성 요소 템플릿을 고려해 보십시오.
+다음 구성 요소 템플릿을 고려합니다.
 
 ```xml
 <section class="component-name" data-sly-use.component="component.js">
@@ -115,7 +115,7 @@ use(function () {
 </section>
 ```
 
-해당 로직은 템플릿 바로 옆에 있는 `component.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
+해당 로직은 템플릿 옆의 `component.js` 파일에 있는 다음 서버측 JavaScript를 사용하여 작성할 수 있습니다.
 
 ```javascript
 use(function () {
@@ -138,7 +138,7 @@ use(function () {
 
 ## 종속성 {#dependencies}
 
-탐색 제목의 기본 논리나 특정 길이로 문자열을 잘리는 등 이미 지능적인 기능을 갖춘 유틸리티 클래스가 있다고 가정해 보겠습니다.
+탐색 제목의 기본 논리나 특정 길이의 문자열을 잘 잘라내는 것처럼 스마트 기능이 이미 있는 유틸리티 클래스가 있다고 가정해 봅시다.
 
 ```javascript
 use(['../utils/MyUtils.js'], function (utils) {
@@ -180,13 +180,13 @@ use(['../parent-component/parent-component.js'], function (component) {
 
 구성 요소와 독립적인 `data-sly-template` 문의 경우 관련 Use-API에 매개 변수를 전달하는 것이 유용합니다.
 
-따라서 구성 요소에서 다른 파일에 있는 템플릿을 호출합니다.
+따라서 구성 요소에서 다른 파일에 있는 템플릿을 호출하겠습니다.
 
 ```xml
 <section class="component-name" data-sly-use.tmpl="template.html" data-sly-call="${tmpl.templateName @ page=currentPage}"></section>
 ```
 
-그러면 이 템플릿은 `template.html`에 있습니다.
+그러면 `template.html`에 있는 템플릿입니다.
 
 ```xml
 <template data-sly-template.templateName="${@ page}" data-sly-use.tmpl="${'template.js' @ page=page, descriptionLength=50}">
