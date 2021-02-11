@@ -2,7 +2,7 @@
 title: HTL 표현식 언어
 description: HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다.
 translation-type: tm+mt
-source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 0%
@@ -194,7 +194,7 @@ HTL은 false로 평가할 때 동적으로 설정된 값이 있는 특성을 제
 
 논리 OR 연산자는 true인 첫 번째 변수를 반환하므로 폴백 값을 제공하는 데 매우 편리하게 사용할 수도 있습니다.
 
-HTL은 false 또는 빈 문자열로 평가하는 표현식으로 설정된 값이 있는 특성을 제거하므로 HTML 속성을 조건부로 표시하는 데에도 사용할 수 있습니다. 따라서 아래 예에는 **`properties.jcr:`** 제목이 존재하며 비어 있지 않으면 **`properties.jcr:description`**&#x200B;이(가) 존재하며 비어 있지 않으면 &lt;a1/>이(가) 다시 표시되므로 &quot;제공된 제목 또는 설명 없음&quot;이라는 메시지가 표시됩니다.
+HTL은 false 또는 빈 문자열로 평가하는 표현식으로 설정된 값이 있는 특성을 제거하므로 HTML 속성을 조건부로 표시하는 데에도 사용할 수 있습니다. 따라서 아래 예에는 **`properties.jcr:`** 제목이 존재하며 비어 있지 않으면 **`properties.jcr:description`**&#x200B;이(가) 존재하며 비어 있지 않으면 이(가) 다시 표시되므로 &quot;제공된 제목 또는 설명 없음&quot;이라는 메시지가 표시됩니다.
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
