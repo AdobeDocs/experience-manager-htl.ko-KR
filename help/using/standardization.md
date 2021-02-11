@@ -2,7 +2,7 @@
 title: 표준화
 description: HTL 사양 및 HTL TCK을 비롯한 HTL의 표준화
 translation-type: tm+mt
-source-git-commit: 832e0563401e38e2121d26ec9f43ef2fade0a20d
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 3%
