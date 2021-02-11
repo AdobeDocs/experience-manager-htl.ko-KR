@@ -2,7 +2,7 @@
 title: HTL이란
 description: 'HTML 템플릿 언어(HTL)는 HTML에 대한 Adobe Experience Manager의 기본 및 권장 서버 측 템플릿 시스템입니다. '
 translation-type: tm+mt
-source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 12%
