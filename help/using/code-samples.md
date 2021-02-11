@@ -2,7 +2,7 @@
 title: 코드 샘플
 description: We.Retail 참조 구현을 포함한 코드 샘플
 translation-type: tm+mt
-source-git-commit: d7efae3d1b4d1bc22c63c21f544a99bf0ae4b3c9
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 11%
