@@ -2,7 +2,7 @@
 title: Adobe Experience Manager HTML 개요
 description: 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM에서 지원하는 HTL의 목적입니다.
 translation-type: tm+mt
-source-git-commit: 88f6ad56a8d8f704b51aa84765de8da15e6c594e
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 94%
