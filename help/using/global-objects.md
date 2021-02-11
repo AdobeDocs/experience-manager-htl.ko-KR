@@ -2,10 +2,10 @@
 title: HTL 전역 개체
 description: 아무 것도 지정하지 않아도 global.jsp를 포함하는 후에 HTL은 JSP에서 일반적으로 사용할 수 있는 모든 객체에 대한 액세스를 제공합니다.
 translation-type: tm+mt
-source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
