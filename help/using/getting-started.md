@@ -2,7 +2,7 @@
 title: HTL 시작하기
 description: AEM에서 지원하는 HTL은 AEM에서 HTML을 위한 권장 서버측 템플릿 시스템으로 JSP를 대체합니다.
 translation-type: tm+mt
-source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 0%
