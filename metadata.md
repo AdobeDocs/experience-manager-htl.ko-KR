@@ -1,6 +1,6 @@
 ---
 solution: Experience Manager
-type: 설명서
+type: Documentation
 product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-htl.ko-KR
 index: y
