@@ -1,22 +1,21 @@
 ---
 title: HTL 전역 개체
-description: 아무 것도 지정하지 않아도 global.jsp를 포함하는 후에 HTL은 JSP에서 일반적으로 사용할 수 있는 모든 객체에 대한 액세스를 제공합니다.
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
+description: HTL에서는 지정하지 않아도 global.jsp 포함 후 JSP에서 일반적으로 사용할 수 있었던 모든 객체에 액세스할 수 있습니다.
+exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 5%
 
 ---
 
-
 # HTL 전역 개체 {#htl-global-objects}
 
-아무 것도 지정하지 않아도 HTL은 `global.jsp` 이후 JSP에서 일반적으로 사용할 수 있는 모든 객체에 대한 액세스를 제공합니다. 이러한 개체는 [Use-API](use-api.md)를 통해 소개될 수 있는 개체 외에 추가로 제공됩니다.
+HTL에서는 아무 것도 지정하지 않고 `global.jsp` 을 포함하여 JSP에서 일반적으로 사용할 수 있었던 모든 객체에 액세스할 수 있습니다. 이러한 개체는 [Use-API](use-api.md)를 통해 도입할 수 있는 개체 외에 있습니다.
 
-## Enumerable 개체 {#enumerable-objects}
+## 열거형 개체 {#enumerable-objects}
 
-이러한 객체는 일반적으로 사용되는 정보에 편리하게 액세스할 수 있습니다. 도트 표기법으로 해당 컨텐츠에 액세스할 수 있으며 `data-sly-list` 또는 `data-sly-repeat`을 사용하여 반복할 수 있습니다.
+이러한 개체는 일반적으로 사용되는 정보에 편리하게 액세스할 수 있습니다. 해당 컨텐츠는 점 표기법으로 액세스할 수 있으며 `data-sly-list` 또는 `data-sly-repeat`을 사용하여 반복할 수 있습니다.
 
 | 변수 이름 | 설명 |
 |--- |--- |
@@ -24,11 +23,11 @@ ht-degree: 5%
 | `pageProperties` | 현재 페이지의 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)에 의해 지원됨 |
 | `inheritedPageProperties` | 현재 페이지의 상속된 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)에 의해 지원됨 |
 
-## Java 백업 객체 {#java-backed-objects}
+## Java 지원 개체 {#java-backed-objects}
 
-다음 각 개체는 해당 Java 객체에 의해 지원됩니다.
+다음 각 개체는 해당 Java 개체에 의해 백업됩니다.
 
-아래 표에서 가장 유용한 변수는 굵게 강조 표시됩니다.
+아래 표에서 가장 유용한 변수는 굵게 강조 표시되어 있습니다.
 
 | 변수 이름 | 설명 |
 |---|---|
@@ -56,9 +55,9 @@ ht-degree: 5%
 | **`wcmmode`** | `com.adobe.cq.sightly.SightlyWCMMode` |
 | `xssAPI` | `com.adobe.granite.xss.XSSAPI` |
 
-## JavaScript에서 지원하는 개체 {#javascript-backed-objects}
+## JavaScript 지원 개체 {#javascript-backed-objects}
 
-JavaScript를 사용하여 HTL 로직을 백업할 수 있습니다. 그러나 권장 또는 권장 방법은 [Sling Models를 사용하는 것입니다.](https://sling.apache.org/documentation/bundles/models.html)
+JavaScript를 사용하여 HTL 논리를 백업할 수 있습니다. 그러나 기본 또는 권장 방법은 [Sling 모델을 사용하는 것입니다.](https://sling.apache.org/documentation/bundles/models.html)
 
 <!-- 
 
