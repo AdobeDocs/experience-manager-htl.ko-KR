@@ -4,12 +4,11 @@ user-guide-title: Adobe Experience Manager HTL
 breadcrumb-title: HTL 안내서
 user-guide-description: HTL(HTML Template Language)을 사용하여 엔터프라이즈급 웹 프레임워크를 만듭니다.
 feature-set: Experience Manager
-feature: Developer Tools
+feature: 개발자 도구
 role: Developer
-translation-type: tm+mt
 source-git-commit: 5b88f6255534ef5af0958681c80303ab3da112b5
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '70'
 ht-degree: 92%
 
 ---
