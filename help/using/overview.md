@@ -3,9 +3,9 @@ title: Adobe Experience Manager HTL 개요
 description: 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM에서 지원하는 HTL의 목적입니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다.
 
-HTML 템플릿 언어는 AEM에서 HTML의 기본 및 권장 서버측 템플릿 시스템입니다. HTL은 AEM 6.0에서 도입되었으며 JSP(JavaServer 페이지) 대신 사용됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
+HTML 템플릿 언어는 HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템입니다. HTL은 AEM 6.0과 함께 도입되었으며 JSP(JavaServer Pages)를 대신합니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
 
 ## 강화되는 보안 {#increased-security}
 
@@ -33,9 +33,9 @@ Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러
 
 구체적으로, HTML 템플릿 언어로 Adobe.com 사이트를 다시 구현할 때 프로젝트의 비용과 기간이 25% 정도 감소할 수 있는 것으로 나타났습니다.
 
-![효율적인 증가 및 비용 절감](assets/chlimage_1.png)
+![효율성 증가 및 비용 감소](assets/chlimage_1.png)
 
-위의 다이어그램은 HTL를 통해 가능해질 수 있는 다음과 같은 효율성 개선 사항을 보여줍니다.
+위의 다이어그램은 HTL를 통해 가능해질 수 있는 다음과 같은 효율성 개선 사항을 보여 줍니다.
 
 * **HTML/CSS/JS:** HTML 개발자가 HTL 템플릿을 바로 편집할 수 있으므로 더는 프런트 엔드 디자인을 AEM 프로젝트에서 별도로 구현할 필요 없이 실제 AEM 구성 요소에 바로 구현할 수 있습니다. 따라서 전체 스택 Java 개발자의 성가신 반복 작업이 감소합니다.
 * **JSP/HTL:** HTL 자체가 Java 지식이 필요하지 않으며 간단하게 쓸 수 있으므로 개발자가 HTML 지식만 있으면 템플릿을 편집할 수 있습니다.
