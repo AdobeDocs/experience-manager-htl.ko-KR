@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: 개발자 도구
 role: Developer
 source-git-commit: 5b88f6255534ef5af0958681c80303ab3da112b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
    + [HTL이란?](update.md)
    + [HTL 시작하기](getting-started.md)
    + [HTL 사양](htl-specification.md)
-+ HTML Template Language{#htl}
++ HTML 템플릿 언어{#htl}
    + [HTL 전역 개체](global-objects.md)
    + [HTL Java Use-API](use-api-java.md)
    + [HTL JavaScript Use-API](use-api-javascript.md)
