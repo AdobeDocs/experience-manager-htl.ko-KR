@@ -2,10 +2,10 @@
 title: HTL 블록 문
 description: HTML 템플릿 언어(HTL) 블록 문은 기존 HTML에 직접 추가된 사용자 지정 'data' 속성입니다.
 exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
+source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
+workflow-type: tm+mt
 source-wordcount: '1555'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ HTL 블록 플러그인은 HTML 요소에 설정된 `data-sly-*` 속성으로 �
 1. `data-sly-set`, `data-sly-test`, `data-sly-use`
 1. `data-sly-call`
 1. `data-sly-text`
-1. `data-sly-element`, `data-sly-include`, `data-sly-resource`
+1. `data-sly-element`,  `data-sly-include`,  `data-sly-resource`
 1. `data-sly-unwrap`
 1. `data-sly-list`, `data-sly-repeat`
 1. `data-sly-attribute`
@@ -462,7 +462,7 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM은 포함된 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 개발 구성 요소 문서의 [장식 태그](https://docs.adobe.com/content/help/ko/experience-manager-65/developing/components/decoration-tag.html)를 참조하십시오.
+>AEM은 포함된 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 개발 구성 요소 문서의 [장식 태그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/decoration-tag.html)를 참조하십시오.
 
 ### include {#include}
 

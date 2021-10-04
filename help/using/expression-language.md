@@ -2,10 +2,10 @@
 title: HTL 표현식 언어
 description: HTML 템플릿 언어는 표현식 언어를 사용하여 HTML 출력의 동적 요소를 제공하는 데이터 구조에 액세스합니다.
 exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '1854'
-ht-degree: 100%
+source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
+workflow-type: tm+mt
+source-wordcount: '1852'
+ht-degree: 99%
 
 ---
 
@@ -336,7 +336,7 @@ HTL은 사용자 지정 코드를 작성하지 않고도 숫자와 날짜의 기
 
 ### 다국어화 {#internationalization}
 
-현재 [사전](https://docs.adobe.com/content/help/ko/experience-manager-65/developing/components/internationalization/i18n-translator.html)을 사용하여 문자열을 현재 *원본*(아래 참조)의 언어로 번역합니다. 번역이 없으면 원래 문자열이 사용됩니다.
+현재 [사전](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/internationalization/i18n-translator.html)을 사용하여 문자열을 현재 *원본*(아래 참조)의 언어로 번역합니다. 번역이 없으면 원래 문자열이 사용됩니다.
 
 ```xml
 ${'Page' @ i18n}

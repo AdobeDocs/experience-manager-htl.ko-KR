@@ -1,7 +1,7 @@
 ---
-source-git-commit: fd7751869a45019e1492218df9cc7824ef507870
-workflow-type: ht
-source-wordcount: '533'
+source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
+workflow-type: tm+mt
+source-wordcount: '532'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,4 @@ Adobe에서는 물론 모든 기여를 환영하며 공개 보관소에 게재�
 
 ## 추가 정보
 
-GitHub 작성 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe 문서 기여 안내서](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)를 참조하십시오.
+GitHub 작성 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe 문서 기여 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko-KR)를 참조하십시오.
