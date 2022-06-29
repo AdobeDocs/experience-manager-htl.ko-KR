@@ -1,11 +1,11 @@
 ---
-title: HTL 블록 문
-description: HTML 템플릿 언어(HTL) 블록 문은 기존 HTML에 직접 추가된 사용자 지정 'data' 속성입니다.
+title: HTL 블록 문이란?
+description: HTL 블록 문 또는 HTL(HTML Template Language)에 대해 알아봅니다. 블록 문은 기존 HTML에 직접 추가된 사용자 지정 데이터 속성입니다.
 exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
-source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
-workflow-type: ht
-source-wordcount: '1555'
-ht-degree: 100%
+source-git-commit: 79d299766da07dae001708b396b05c73cd70d4cc
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 98%
 
 ---
 
