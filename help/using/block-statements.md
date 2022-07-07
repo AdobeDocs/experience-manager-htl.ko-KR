@@ -1,11 +1,11 @@
 ---
-title: HTL 블록 문이란?
-description: HTL 블록 문 또는 HTL(HTML Template Language)에 대해 알아봅니다. 블록 문은 기존 HTML에 직접 추가된 사용자 지정 데이터 속성입니다.
+title: HTL 블록 문이란 무엇입니까?
+description: HTL 블록 문 또는 HTML 템플릿 언어(HTL)에 대해 알아보십시오. 블록 문은 기존 HTML에 직접 추가된 사용자 지정 데이터 속성입니다.
 exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
 source-git-commit: 79d299766da07dae001708b396b05c73cd70d4cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -462,7 +462,7 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM은 포함된 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 개발 구성 요소 문서의 [장식 태그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/decoration-tag.html?lang=ko-KR)를 참조하십시오.
+>AEM은 포함된 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 자세한 내용은 개발 구성 요소 문서의 [장식 태그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/decoration-tag.html)를 참조하십시오.
 
 ### include {#include}
 
