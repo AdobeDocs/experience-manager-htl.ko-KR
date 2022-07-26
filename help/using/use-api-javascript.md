@@ -1,11 +1,11 @@
 ---
 title: HTL JavaScript Use-API
-description: HTML 템플릿 언어(HTL) JavaScript Use-API를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다.
+description: HTL(HTML 템플릿 언어) JavaScript use-API를 사용하여 HTL 파일이 JavaScript로 작성된 헬퍼 코드에 액세스하는 방법을 알아봅니다.
 exl-id: e98bfbd5-fa64-48c7-bd14-477d4c5e1788
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 93%
 
 ---
 

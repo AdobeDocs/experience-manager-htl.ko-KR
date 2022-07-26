@@ -1,11 +1,11 @@
 ---
 title: HTL 전역 개체
-description: 아무것도 지정하지 않아도 HTL은 global.jsp를 포함시킨 후 JSP에서 일반적으로 사용할 수 있었던 모든 개체에 대한 액세스를 제공합니다.
+description: 열거할 수 있는 개체, Java 지원 개체 및 JavaScript 지원 개체에 대해 알아봅니다. AEM에 사용되는 이러한 HTL 글로벌 개체에 대한 변수 이름과 설명을 찾습니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 88%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 100%
 | 변수 이름 | 설명 |
 |--- |--- |
 | `properties` | 현재 리소스의 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) 지원 |
-| `pageProperties` | 현재 페이지의 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) 지원 |
-| `inheritedPageProperties` | 현재 페이지의 상속된 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) 지원 |
+| `pageProperties` | 현재 페이지의 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) 지원 |
+| `inheritedPageProperties` | 현재 페이지의 상속된 페이지 속성 목록입니다. [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) 지원 |
 
 ## Java 지원 개체 {#java-backed-objects}
 
