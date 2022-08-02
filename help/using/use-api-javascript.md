@@ -1,11 +1,11 @@
 ---
 title: HTL JavaScript Use-API
-description: HTL(HTML 템플릿 언어) JavaScript use-API를 사용하여 HTL 파일이 JavaScript로 작성된 헬퍼 코드에 액세스하는 방법을 알아봅니다.
+description: HTML 템플릿 언어(HTL) JavaScript Use-API를 사용하여 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스하는 방법을 알아보십시오.
 exl-id: e98bfbd5-fa64-48c7-bd14-477d4c5e1788
 source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -175,9 +175,9 @@ use(['../parent-component/parent-component.js'], function (component) {
 });
 ```
 
-## 템플릿에 매개 변수 전달 {#passing-parameters-to-a-template}
+## 템플릿에 매개변수 전달 {#passing-parameters-to-a-template}
 
-구성 요소와 독립적일 수 있는 `data-sly-template` 문의 경우 관련 Use-API에 매개 변수를 전달하는 것이 유용할 수 있습니다.
+구성 요소와 독립적일 수 있는 `data-sly-template` 문의 경우 관련 Use-API에 매개변수를 전달하는 것이 유용할 수 있습니다.
 
 그럼, 구성 요소에서 다른 파일에 있는 템플릿을 호출해 보겠습니다.
 
@@ -212,4 +212,4 @@ use(function () {
 });
 ```
 
-전달된 매개 변수는 `this` 키워드에 설정됩니다.
+전달된 매개변수는 `this` 키워드에 설정됩니다.
