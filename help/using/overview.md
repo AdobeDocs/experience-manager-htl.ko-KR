@@ -1,11 +1,11 @@
 ---
 title: HTL 개요
-description: AEM에서 HTL(HTML 템플릿 언어)을 지원하여 생산적인 엔터프라이즈 수준 웹 프레임워크를 제공하는 방법을 알아봅니다. HTL을 사용하면 보안이 강화되고 Java 지식이 없는 HTML 개발자가 AEM 프로젝트에 더 잘 참여할 수 있습니다.
+description: AEM이 HTML 템플릿 언어(HTL)를 지원하여 생산적인 엔터프라이즈급 웹 프레임워크를 제공하는 방법을 알아보십시오. HTL은 보안을 강화하고 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있도록 해 줍니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
