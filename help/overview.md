@@ -1,11 +1,11 @@
 ---
 title: HTL 개요
-description: AEM에서 HTL(HTML 템플릿 언어)을 지원하여 보안을 강화하는 생산적 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있도록 하는 방법을 알아봅니다.
+description: AEM에서 HTML 템플릿 언어(HTL)가 보안을 강화하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 생산적인 엔터프라이즈 수준 웹 프레임워크를 제공하도록 지원하는 방법에 대해 알아봅니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: 5ab1275c984135fe946f36905bbc979cf19edd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 69%
 
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하고 Java 지식이 없는 HTML 개발자의 AEM 프로젝트 참여도를 높이는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다.
 
-[AEM 6.0에서 도입되었으며,](history.md) HTML 템플릿 언어는 AEM에서 HTML을 위한 기본 및 권장 서버측 템플릿 시스템입니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
+[AEM 6.0에 도입된](history.md) HTML 템플릿 언어는 HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템입니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
 
 ## 강화되는 보안 {#increased-security}
 
-HTML 템플릿 언어에서는 프레젠테이션 레이어로 출력되는 모든 변수에 적절한 컨텍스트 인식 이스케이프를 자동으로 적용할 수 있으므로 HTL을 구현에 사용하면 사이트의 보안이 대부분의 다른 템플릿 시스템과 비교하여 강화됩니다. HTL에서는 HTML 구문을 이해하고 해당 지식을 사용하여 마크업에서의 위치를 기반으로 표현식에 필요한 이스케이프를 조정하므로 이 작업이 가능합니다. 예를 들어, 이 경우 `href` 또는 `src` 다른 속성이나 다른 위치에 배치된 표현식에서 다르게 이스케이프되는 속성입니다.
+HTML 템플릿 언어에서는 프레젠테이션 레이어로 출력되는 모든 변수에 적절한 컨텍스트 인식 이스케이프를 자동으로 적용할 수 있으므로 HTL을 구현에 사용하면 사이트의 보안이 기타 대다수 템플릿 시스템의 경우보다 강화됩니다. HTL에서는 HTML 구문을 이해하고 해당 지식을 사용하여 마크업에서의 위치를 기반으로 표현식에 필요한 이스케이프를 조정하므로 이 작업이 가능합니다. 예를 들어 다른 속성이나 다른 위치에 배치된 표현식에서 다르게 이스케이프되는 `href` 또는 `src` 속성에 표현식이 배치됩니다.
 
 JSP와 같은 템플릿 언어에서도 같은 결과를 얻을 수 있지만 개발자가 각 변수에 적절한 이스케이프가 적용되었는지 수동으로 확인해야 합니다. 적용된 이스케이프가 하나라도 생략되거나 실수가 있으면 XSS(크로스 사이트 스크립팅) 취약성의 원인이 될 가능성이 충분하므로 당사에서는 HTL로 이 작업을 자동화하기로 결정했습니다. 필요하면 개발자가 표현식에 서로 다른 이스케이프를 지정할 수도 있지만, HTL에서는 기본 동작이 원하는 동작에 해당할 가능성이 훨씬 많으므로 오류 가능성이 감소합니다.
 
@@ -34,7 +34,7 @@ Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러
 
 구체적으로, HTML 템플릿 언어로 Adobe.com 사이트를 다시 구현할 때 프로젝트의 비용과 기간이 25% 정도 감소할 수 있는 것으로 나타났습니다.
 
-![효율적인 증가 및 비용 절감](assets/chlimage_1.png)
+![효율성 증가 및 비용 감소](assets/chlimage_1.png)
 
 위의 다이어그램은 HTL를 통해 가능해질 수 있는 다음과 같은 효율성 개선 사항을 보여 줍니다.
 
@@ -44,12 +44,12 @@ Java 지식이 없고 제품별 지식이 거의 없는 HTML 개발자가 이러
 
 ## 비디오 소개 {#video}
 
-다음 비디오는 [AEM Gems 세션,](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-introduction-to-htl.html) 는 HTL의 용도와 구현 예에 대한 개요를 제공합니다.
+[AEM Gems 세션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-introduction-to-htl.html)의 다음 비디오에서는 HTL의 목적에 대한 개요 및 구현 예제를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-비디오가 HTL을 참조한다는 점에 유의하십시오 [옛 이름인 Sightly입니다.](history.md)
+이 비디오에서는 HTL이 [이전 명칭인 Sightly](history.md)로 지칭됩니다.
 
 ## 다음 단계 {#next-steps}
 
-이제 HTL의 목적과 이점을 잘 알고 있습니다. 문서를 검토하여 언어를 시작하십시오 [HTML 템플릿 언어 시작하기](getting-started.md)
+이제 HTL의 목표와 장점에 대해 알아보았으므로, [HTML 템플릿 언어 시작하기](getting-started.md) 문서를 검토하여 언어를 살펴보십시오.
