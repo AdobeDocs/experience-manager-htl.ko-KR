@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: Developer Tools
 role: Developer
 source-git-commit: f9b59d5fcc380413f2727b06f41ecacca6518227
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 89%
 + [개요](overview.md)
 + [HTL 시작하기](getting-started.md)
 + [HTL 사양](specification.md)
-+ [HTL 전역 개체](global-objects.md)
++ [HTL 전역 오브젝트](global-objects.md)
 + [HTL Java Use-API](java-use-api.md)
-+ [AEM 확장](aem-extensions.md)
++ [AEM 확장 기능](aem-extensions.md)
 + [개발자 도구](developer-tools.md)
 + [코드 샘플](code-samples.md)
 + [HTL의 역사](history.md)
