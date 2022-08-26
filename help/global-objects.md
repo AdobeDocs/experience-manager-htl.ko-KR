@@ -1,26 +1,26 @@
 ---
-title: HTL 전역 개체
-description: HTL에서 열거할 수 있는 개체, Java 지원 개체 및 JavaScript 지원 개체에 대해 알아봅니다.
+title: HTL 전역 오브젝트
+description: HTL의 수많은 오브젝트, Java 지원 오브젝트 및 JavaScript 지원 오브젝트에 대해 알아봅니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 source-git-commit: 5ab1275c984135fe946f36905bbc979cf19edd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
 # HTL 전역 오브젝트 {#htl-global-objects}
 
-HTL에서는 아무 것도 지정하지 않고 개발자에게 유용한 많은 개체에 액세스할 수 있습니다. 이러한 객체는 [Use-API.](java-use-api.md)
+아무것도 지정하지 않아도 HTL은 개발자가 유용하게 사용할 수 있는 다양한 오브젝트에 대한 액세스를 제공합니다. 이들 오브젝트는 [Use-API](java-use-api.md)를 통해 도입될 수 있는 모든 것에 추가됩니다.
 
 >[!NOTE]
 >
->AEM의 JSP 개발에 익숙한 개발자의 경우 HTL에서는 다음을 포함한 후 JSP에서 일반적으로 사용할 수 있는 모든 객체에 액세스할 수 있습니다 `global.jsp`.
+>AEM의 JSP 개발에 익숙한 개발자를 위해, HTL은 `global.jsp`를 포함시킨 후 JSP에서 일반적으로 사용할 수 있었던 모든 오브젝트에 대한 액세스를 제공합니다.
 
 ## 열거형 오브젝트 {#enumerable-objects}
 
-이러한 오브젝트는 일반적으로 사용되는 정보에 대한 편리한 액세스를 제공합니다. 해당 컨텐츠에 점 표기법으로 액세스할 수 있으며 를 사용하여 반복할 수 있습니다 `data-sly-list` 또는 `data-sly-repeat`.
+이러한 오브젝트는 일반적으로 사용되는 정보에 대한 편리한 액세스를 제공합니다. 콘텐츠는 점 표기법을 통해 액세스할 수 있으며 `data-sly-list` 또는 `data-sly-repeat`를 사용하여 반복할 수 있습니다.
 
 | 변수 이름 | 설명 | 지원 |
 |--- |--- |--- |
