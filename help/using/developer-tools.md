@@ -3,7 +3,7 @@ title: 개발자 도구
 description: HTL에서 개발 작업을 수행할 때 유용하게 사용할 수 있는 다음 도구를 확인하십시오.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
 source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 100%
 
