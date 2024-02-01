@@ -4,10 +4,11 @@ type: Documentation
 product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.ko-KR
 index: y
-source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+recommendations: noDisplay
+source-git-commit: f891460cc7f247723c3e78031aba385faca6acd7
+workflow-type: ht
+source-wordcount: '96'
+ht-degree: 100%
 
 ---
 
