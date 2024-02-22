@@ -3,8 +3,8 @@ title: HTL 전역 오브젝트
 description: HTL의 수많은 오브젝트, Java 지원 오브젝트 및 JavaScript 지원 오브젝트에 대해 알아봅니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
-workflow-type: tm+mt
-source-wordcount: '200'
+workflow-type: ht
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
