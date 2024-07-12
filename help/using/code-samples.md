@@ -3,7 +3,7 @@ title: 코드 샘플
 description: WKND 참조 구현 및 핵심 구성 요소와 같은 예제들을 포함하는 코드 샘플을 통해 HTL에 대해 살펴봅니다.
 exl-id: cdc0a525-e5d1-4d7f-97ae-b9192163caee
 source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: HTL 사양
 description: 자세한 구문 정보는 HTL 사양을 참조하십시오.
 exl-id: c0657476-4db6-4fad-ad87-9252b5003237
 source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 100%
 
