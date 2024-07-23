@@ -2,10 +2,10 @@
 title: HTL Java Use-API
 description: HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
-source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
+source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 100%
+source-wordcount: '1140'
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스�
 
 ## 사용 사례 {#use-case}
 
-HTL Java Use-API를 사용하면 HTL 파일이 `data-sly-use`를 통해 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이를 통해 모든 복잡한 비즈니스 논리를 Java 코드에 캡슐화할 수 있지만 HTL 코드는 직접 마크업 생성만 처리합니다.
+HTL Java Use-API를 사용하면 HTL 파일이 `data-sly-use`를 통해 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이 방법을 사용하면 모든 복잡한 비즈니스 논리를 Java 코드에 캡슐화할 수 있지만 HTL 코드는 직접 마크업 생성만 처리합니다.
 
 Java Use-API 오브젝트는 POJO의 기본 생성자를 통해 특정 구현에 의해 인스턴스화된 간단한 POJO가 될 수 있습니다.
 
@@ -31,7 +31,7 @@ Use-API POJO는 다음 서명을 사용하여 init라고 하는 공용 메서드
     public void init(javax.script.Bindings bindings);
 ```
 
-`bindings` 맵에는 Use-API 오브젝트가 처리에 사용할 수 있는 현재 실행된 HTL 스크립트에 컨텍스트를 제공하는 오브젝트가 포함될 수 있습니다.
+`bindings` 맵에는 Use-API 개체가 처리에 사용할 수 있는 현재 실행 HTL 스크립트에 컨텍스트를 제공하는 개체가 포함될 수 있습니다.
 
 ## 간단한 예 {#a-simple-example}
 
@@ -39,9 +39,9 @@ Use-API POJO는 다음 서명을 사용하여 init라고 하는 공용 메서드
 
 >[!NOTE]
 >
->이 예제는 사용 방법을 간단하게 설명하기 위해 간소화되어 있습니다. 프로덕션 환경에서는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것이 좋습니다.
+>이 예제는 사용 방법을 설명하기 위해 간소화되었습니다. Adobe 프로덕션 환경에서는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것이 좋습니다.
 
-use-class가 없는 HTL 구성 요소(`info`라고 함)부터 시작하겠습니다. 단일 파일 `/apps/my-example/components/info.html`로 구성됩니다.
+use-class가 없는 HTL 구성 요소(`info,`)로 시작하십시오. 단일 파일 `/apps/my-example/components/info.html`로 구성됩니다.
 
 ```xml
 <div>
@@ -50,7 +50,7 @@ use-class가 없는 HTL 구성 요소(`info`라고 함)부터 시작하겠습니
 </div>
 ```
 
-또한 `/content/my-example/`에서 렌더링할 이 구성 요소에 대한 몇 가지 콘텐츠도 추가합니다.
+`/content/my-example/`에서 렌더링할 이 구성 요소에 대한 일부 콘텐츠 추가:
 
 ```xml
 {
@@ -60,7 +60,7 @@ use-class가 없는 HTL 구성 요소(`info`라고 함)부터 시작하겠습니
 }
 ```
 
-이 콘텐츠에 액세스하면 HTL 파일이 실행됩니다. HTL 코드 내에서 컨텍스트 오브젝트 `properties`를 사용하여 현재 리소스의 `title` 및 `description`에 액세스하고 이를 표시합니다. 출력 파일 `/content/my-example.html`은 다음과 같습니다.
+이 콘텐츠에 액세스하면 HTL 파일이 실행됩니다. HTL 코드 내에서 컨텍스트 개체 `properties`은(는) 현재 리소스의 `title` 및 `description`에 액세스하여 표시하는 데 사용됩니다. 출력 파일 `/content/my-example.html`은(는) 다음과 같습니다.
 
 ```html
 <div>
@@ -77,7 +77,7 @@ use-class가 없는 HTL 구성 요소(`info`라고 함)부터 시작하겠습니
 >
 >use-class는 HTL만으로는 수행할 수 없는 작업에만 사용해야 합니다.
 
-예를 들어 `info` 구성 요소가 리소스의 `title` 및 `description` 속성을 표시하지만 모두 소문자로 표시하기를 원한다고 가정합니다. HTL에는 문자열을 소문자로 변환하는 메서드가 없으므로 use-class가 필요합니다. Java use-class를 추가하고 `/apps/my-example/component/info/info.html`을 다음과 같이 변경하여 이를 수행할 수 있습니다.
+예를 들어 `info` 구성 요소가 리소스의 `title` 및 `description` 속성을 표시하지만 모두 소문자로 표시하기를 원한다고 가정합니다. HTL에는 문자열을 소문자로 변환하는 메서드가 없으므로 Java use-class를 추가하고 `/apps/my-example/component/info/info.html`을(를) 다음과 같이 변경할 수 있습니다.
 
 ```xml
 <div data-sly-use.info="Info">
@@ -86,7 +86,7 @@ use-class가 없는 HTL 구성 요소(`info`라고 함)부터 시작하겠습니
 </div>
 ```
 
-또한 `/apps/my-example/component/info/Info.java`를 생성하게 됩니다.
+또한 `/apps/my-example/component/info/Info.java`이(가) 만들어집니다.
 
 ```java
 package apps.my_example.components.info;
@@ -113,7 +113,7 @@ public class Info extends WCMUsePojo {
 }
 ```
 
-자세한 내용은 [`com.adobe.cq.sightly.WCMUsePojo`용 JavaDoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html)을 참조하십시오.
+자세한 내용은 `com.adobe.cq.sightly.WCMUsePojo`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html)용 [Java 문서를 참조하십시오.
 
 이제 코드의 여러 부분을 살펴보겠습니다.
 
@@ -133,7 +133,7 @@ Java use-class는 두 가지 방법으로 설치할 수 있습니다.
 
 ### Java 패키지는 저장소 경로입니다. {#java-package-is-repository-path}
 
-로컬 설치를 사용하는 경우 use-class의 패키지 이름은 저장소 폴더 위치의 패키지 이름과 일치해야 하며 경로의 모든 하이픈은 패키지 이름의 밑줄로 대체됩니다.
+로컬 설치를 사용할 때 use-class의 패키지 이름은 저장소 폴더 위치와 일치해야 합니다. 패키지 이름의 밑줄은 경로의 모든 하이픈을 대체합니다.
 
 이 경우 `Info.java`는 `/apps/my-example/components/info`에 있으므로 패키지는 `apps.my_example.components.info`입니다.
 
@@ -155,7 +155,7 @@ public class Info extends WCMUsePojo {
 
 ### `WCMUsePojo` 확장 {#extending-wcmusepojo}
 
-Java 클래스를 HTL과 통합하는 방법은 여러 가지가 있지만([`WCMUsePojo`](#alternatives-to-wcmusepojo)에 대한 대안 섹션 참조) 가장 간단한 방법은 `WCMUsePojo` 클래스를 확장하는 것입니다. `/apps/my-example/component/info/Info.java` 예제의 경우:
+Java 클래스를 HTL과 통합하는 방법은 여러 가지가 있지만([`WCMUsePojo`](#alternatives-to-wcmusepojo)에 대한 대안 섹션 참조) 가장 간단한 방법은 `WCMUsePojo` 클래스를 확장하는 것입니다. 이 예제 `/apps/my-example/component/info/Info.java`의 경우:
 
 ```java
 package apps.my_example.components.info;
@@ -194,13 +194,13 @@ public class Info extends WCMUsePojo {
 
 일반적으로 [활성화](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html) 메서드는 현재 컨텍스트(예: 현재 요청 및 리소스)를 기반으로 HTL 코드에 필요한 값을 미리 계산하고 (멤버 변수에) 저장하는 데 사용됩니다.
 
-`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 오브젝트 집합에 대한 액세스를 제공합니다([전역 오브젝트](global-objects.md) 문서 참조).
+`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 개체 집합에 대한 액세스를 제공합니다([전역 개체](global-objects.md) 문서 참조).
 
-`WCMUsePojo`을 확장하는 클래스에서 컨텍스트 오브젝트는 다음을 사용하여 이름으로 액세스할 수 있습니다.
+`WCMUsePojo`을(를) 확장하는 클래스에서 컨텍스트 개체의 이름을 사용하여 해당 개체에 액세스할 수 있습니다.
 
 [`<T> T get(String name, Class<T> type)`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html)
 
-또는 이 표에 나열된 것처럼 적절한 편의 메서드를 통해 일반적으로 사용되는 컨텍스트 오브젝트에 직접 액세스할 수 있습니다.
+또는 이 표에 나열된 적절한 편의 메서드를 사용하여 일반적으로 사용되는 컨텍스트 개체에 직접 액세스할 수 있습니다.
 
 | 오브젝트 | 편의 메서드 |
 |---|---|
@@ -226,7 +226,7 @@ use-class가 초기화되면 HTL 파일이 실행됩니다. 이 단계에서 HTL
 
 HTL 파일 내에서 이러한 값에 대한 액세스를 제공하려면 다음 명명 규칙에 따라 use-class에서 사용자 지정 getter 메서드를 정의해야 합니다.
 
-* `getXyz` 형식의 메서드는 `xyz`라는 오브젝트 속성을 HTL 파일 내에서 노출합니다.
+* `getXyz` 형식의 메서드가 HTL 파일 내에 `xyz` 개체 속성을 노출합니다.
 
 다음 예제 파일 `/apps/my-example/component/info/Info.java`에서 `getTitle` 및 `getDescription` 메서드는 HTL 파일의 컨텍스트 내에서 액세스할 수 있는 오브젝트 속성 `title` 및 `description`를 생성합니다.
 
@@ -247,9 +247,9 @@ public class Info extends WCMUsePojo {
 }
 ```
 
-### data-sly-use 속성 {#data-sly-use-attribute}
+### `data-sly-use` 특성 {#data-sly-use-attribute}
 
-`data-sly-use` 속성은 HTL 코드 내에서 use-class를 초기화하는 데 사용됩니다. 이 예에서 `data-sly-use` 속성은 `Info` 클래스를 사용하겠다고 선언합니다. 로컬 설치(Java 소스 파일이 HTL 파일과 동일한 폴더에 있음)를 사용하기 때문에 클래스의 로컬 이름만 사용할 수 있습니다. 번들 설치를 사용하는 경우 정규화된 클래스 이름을 지정해야 합니다.
+`data-sly-use` 속성은 HTL 코드 내에서 use-class를 초기화하는 데 사용됩니다. 이 예제에서 `data-sly-use` 특성은 `Info` 클래스가 사용되었음을 선언합니다. 로컬 설치(Java 소스 파일을 HTL 파일과 동일한 폴더에 배치함)를 사용하기 때문에 클래스의 로컬 이름만 사용할 수 있습니다. 번들 설치를 사용하는 경우 정규화된 클래스 이름을 지정해야 합니다.
 
 이 `/apps/my-example/component/info/info.html` 예제에서 사용 방법을 참고하십시오.
 
@@ -299,11 +299,11 @@ public class Info extends WCMUsePojo {
 
 >[!NOTE]
 >
->이 예제는 사용 방법을 간단하게 설명하기 위해 간소화되었습니다. 프로덕션 환경에서는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것이 좋습니다.
+>이 예제는 사용 방법을 설명하기 위해 단순화되었습니다. Adobe 프로덕션 환경에서는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것이 좋습니다.
 
 ## 추가 정보 {#beyond-the-basics}
 
-이 섹션에서는 이전에 설명된 간단한 예 이상의 몇 가지 추가 기능을 소개합니다.
+이 섹션에서는 이전에 설명한 예 이상의 몇 가지 추가 기능을 소개합니다.
 
 * use-class에 매개변수 전달
 * 번들 Java use-class

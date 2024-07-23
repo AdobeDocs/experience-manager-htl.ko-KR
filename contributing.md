@@ -1,8 +1,8 @@
 ---
-source-git-commit: 22f62868df0fcfc558e5d62434dde843a9f3ca83
+source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 # Adobe Experience Manager 설명서에 대한 기여
@@ -30,7 +30,7 @@ GitHub에서 직접 설명서를 편집할 때의 편의성에 따라서 편한 
 
 >[!NOTE]
 >
->제출하는 기여는 [Adobe 사용 약관](https://www.adobe.com/kr/legal/terms.html)이 적용됩니다.
+>제출하는 기여는 [Adobe 사용 약관](https://www.adobe.com/kr/legal/terms.html)의 적용을 받습니다.
 
 ### 문제 만들기 {#create-an-issue}
 

@@ -2,10 +2,10 @@
 title: HTL Java Use-API
 description: HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
-source-git-commit: ebeac25c38b81c92011c163c7860688f43547a7d
+source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
 workflow-type: tm+mt
 source-wordcount: '1137'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -194,7 +194,7 @@ public class Info extends WCMUsePojo {
 
 일반적으로 [활성화](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html) 메서드는 현재 컨텍스트(예: 현재 요청 및 리소스)를 기반으로 HTL 코드에 필요한 값을 미리 계산하고 (멤버 변수에) 저장하는 데 사용됩니다.
 
-`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 오브젝트 집합에 대한 액세스를 제공합니다([전역 오브젝트](global-objects.md) 문서 참조).
+`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 개체 집합에 대한 액세스를 제공합니다([전역 개체](global-objects.md) 문서 참조).
 
 `WCMUsePojo`을(를) 확장하는 클래스에서 컨텍스트 개체의 이름을 사용하여 해당 개체에 액세스할 수 있습니다.
 

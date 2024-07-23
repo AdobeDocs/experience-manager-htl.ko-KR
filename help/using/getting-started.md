@@ -2,10 +2,10 @@
 title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-source-git-commit: ebeac25c38b81c92011c163c7860688f43547a7d
+source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
 workflow-type: tm+mt
 source-wordcount: '2050'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
@@ -18,7 +18,7 @@ HTML 템플릿 언어(HTL)는 HTML에 대한 Adobe Experience Manager의 기본 
 
 >[!TIP]
 >
->이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문에 대한 질문이 있는 경우 [HTL 사양](specification.md)을 참조하십시오.
+>이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문에 대한 질문이 있는 경우 [HTL 사양](specification.md)을 참조하세요.
 
 ## HTL 레이어 {#layers}
 
