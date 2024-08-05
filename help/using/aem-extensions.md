@@ -3,15 +3,15 @@ title: AEM 확장 기능
 description: AEM은 개발자의 편리성을 위해 AEM에 대한 HTL 사양의 확장 기능을 제공합니다.
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
 source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # AEM 확장 기능 {#aem-extensions}
 
-HTL 사양의 [Apache Sling 확장 기능](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#extensions-of-the-htl-specification-1)과 마찬가지로 AEM은 HTL 스크립트에서 직접 AEM 개념을 사용하여 더 간편하게 작업할 수 있도록 하는 몇 가지 추가 표현식 옵션을 제공합니다.
+[HTL 사양의 Apache Sling 확장 기능](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#extensions-of-the-htl-specification-1)과 마찬가지로 AEM은 HTL 스크립트에서 직접 AEM 개념을 사용하여 더 간편하게 작업할 수 있도록 하는 몇 가지 추가 표현식 옵션을 제공합니다.
 
 ## i18n {#i18n}
 
@@ -29,7 +29,7 @@ AEM에서 `data-sly-include`는 포함된 스크립트에 대한 [WCM 모드](ht
 
 ## `data-sly-resource` {#data-sly-resource}
 
-경로 및 `Resources` 외에도 `data-sly-resource` 블록 요소는 [`Maps`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html) 또는 [`Records`](https://github.com/apache/sling-org-apache-sling-scripting-sightly-runtime/blob/master/src/main/java/org/apache/sling/scripting/sightly/Record.java)에서도 사용할 수 있습니다. 두 가지 방법을 사용하면 `resourceName` String 속성을 제공해야 합니다. 해당 값은 렌더링 컨텍스트에 포함될 [합성 리소스](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/org/apache/sling/api/resource/SyntheticResource.html)를 만드는 데 사용됩니다. `data-sly-resource`로 전달된 `Record` 또는 `Map`의 나머지 속성은 기본 `Resource` 속성으로 사용됩니다. 이 맵에서 `sling:resourceType` 속성이 누락된 경우 리소스 유형은 `resourceType` [표현식 옵션](https://github.com/adobe/htl-spec/blob/1.4/SPECIFICATION.md#229-resource) 값 또는 렌더링을 실행하는 현재 리소스의 리소스 유형으로 간주됩니다.
+경로 및 `Resources` 이외에 `data-sly-resource` 블록 요소는 [`Maps`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html) 또는 [`Records`](https://github.com/apache/sling-org-apache-sling-scripting-sightly-runtime/blob/master/src/main/java/org/apache/sling/scripting/sightly/Record.java)와 함께 작동할 수도 있습니다. 두 가지 접근 방식을 통해 `resourceName` 문자열 속성을 제공해야 합니다. 해당 값은 렌더링 컨텍스트에 포함될 [합성 리소스](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/org/apache/sling/api/resource/SyntheticResource.html)를 만드는 데 사용됩니다. `data-sly-resource`로 전달된 `Record` 또는 `Map`의 나머지 속성은 기본 `Resource` 속성으로 사용됩니다. 이 맵에서 `sling:resourceType` 속성이 누락된 경우 리소스 유형은 `resourceType` [표현식 옵션](https://github.com/adobe/htl-spec/blob/1.4/SPECIFICATION.md#229-resource) 값 또는 렌더링을 실행하는 현재 리소스의 리소스 유형으로 간주됩니다.
 
 스크립트 범위에서 `map`으로 사용할 수 있는 다음 맵/레코드 속성
 

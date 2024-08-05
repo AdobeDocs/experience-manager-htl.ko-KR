@@ -3,9 +3,9 @@ title: HTL 전역 오브젝트
 description: HTL의 수많은 오브젝트, Java 지원 오브젝트 및 JavaScript 지원 오브젝트에 대해 알아봅니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 
 ## Java 지원 오브젝트 {#java-backed-objects}
 
-해당 Java 객체는 다음 각 객체를 백업합니다.
+다음 각 오브젝트는 해당 Java 오브젝트에 의해 지원됩니다.
 
 | 변수 이름 | 설명 |
 |---|---|
@@ -62,4 +62,4 @@ ht-degree: 87%
 
 ## JavaScript 지원 오브젝트 {#javascript-backed-objects}
 
-JavaScript로 HTL 논리를 백업하는 것이 가능합니다. 그러나 기본 및 권장 메서드는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것입니다.
+JavaScript로 HTL 논리를 백업하는 것이 가능합니다. 단, 기본 및 권장 메서드는 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)을 사용하는 것입니다.
