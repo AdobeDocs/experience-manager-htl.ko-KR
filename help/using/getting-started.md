@@ -3,7 +3,7 @@ title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 100%
 
