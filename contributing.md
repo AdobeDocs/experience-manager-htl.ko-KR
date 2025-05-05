@@ -58,4 +58,4 @@ Adobe는 모든 기여에 대해 기쁘게 생각하며 공개 저장소에서 �
 
 ## 추가 정보
 
-GitHub 작성 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe 문서 기여 안내서](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)를 참조하십시오.
+GitHub 작성 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe 문서 기여 안내서](https://experienceleague.adobe.com/ko/docs/contributor/contributor-guide/introduction)를 참조하십시오.
