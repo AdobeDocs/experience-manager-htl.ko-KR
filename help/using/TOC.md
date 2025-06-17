@@ -2,14 +2,14 @@
 sub-product: Adobe Experience Manager HTL
 user-guide-title: Adobe Experience Manager HTL
 breadcrumb-title: HTL 안내서
-user-guide-description: 기존 AEM 프로젝트의 경우 HTML 템플릿 언어(HTL)를 사용하여 엔터프라이즈 수준 웹 프레임워크를 만듭니다.
+user-guide-description: 기존 AEM 프로젝트의 경우 HTML 템플릿 언어(HTL)를 사용하여 엔터프라이즈 수준의 웹 프레임워크를 만듭니다.
 feature-set: Experience Manager
 feature: Developer Tools
 role: Developer
 source-git-commit: e9148a152c5b9298233346d93809c80e35f980d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
