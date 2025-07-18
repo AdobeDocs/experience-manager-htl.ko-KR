@@ -2,10 +2,10 @@
 title: HTL 전역 오브젝트
 description: HTL의 다양한 오브젝트 및 Java 지원 오브젝트에 대해 알아봅니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
-source-git-commit: b585f03d600319414b92a95f98cf9293d91538b6
-workflow-type: ht
-source-wordcount: '205'
-ht-degree: 100%
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 81%
 
 ---
 
@@ -66,6 +66,6 @@ JavaScript로 HTL 논리를 백업하는 것이 가능합니다. 단, 기본 및
 
 >[!NOTE]
 >
->[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 AEM as a Cloud Service에서 더 이상 사용되지 않습니다. 대신 [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-ap)를 사용하십시오.
+>[JavaScript 사용 API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 이제 AEM as a Cloud Service에서 더 이상 사용되지 않습니다. 대신 [Java 사용 API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api)를 사용하십시오.
 >
->더 이상 사용되지 않거나 제거된 기능에 대한 추가 정보는 [AEM as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features)를 참조하십시오.
+>더 이상 사용되지 않는 기능과 제거된 기능에 대한 자세한 내용은 [AEM as a Cloud Service 릴리스 노트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features)를 참조하세요.

@@ -2,10 +2,10 @@
 title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
-source-wordcount: '2050'
-ht-degree: 100%
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
+workflow-type: tm+mt
+source-wordcount: '2045'
+ht-degree: 97%
 
 ---
 
@@ -18,15 +18,15 @@ HTML 템플릿 언어(HTL)은 Adobe Experience Manager에서 HTML용으로 주�
 
 >[!TIP]
 >
->이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문에 대한 질문이 있는 경우 [HTL 사양](specification.md)을 참조하십시오.
+>이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문에 대한 질문이 있는 경우 [HTL 사양](specification.md)을 참조하세요.
 
 ## HTL 레이어 {#layers}
 
 AEM에서 HTL은 여러 레이어로 이루어져 있습니다.
 
 1. **[HTL 사양](specification.md)** - HTL은 오픈 소스이며 특정 플랫폼에 구애받지 않는 사양으로, 누구나 자유롭게 구현할 수 있습니다.
-1. **[Sling HTL 스크립팅 엔진](specification.md)** - Sling 프로젝트는 AEM에서 사용되는 HTL의 참조 구현을 만들었습니다.
-1. **[AEM 확장 기능](specification.md)** - AEM은 Sling HTL 스크립팅 엔진을 기반으로 하여 AEM에 특화된 편리한 기능을 개발자에게 제공합니다.
+1. **[`Sling`HTL 스크립팅 엔진](specification.md)** - `Sling` 프로젝트에서 AEM에 사용되는 HTL의 참조 구현을 만들었습니다.
+1. **[AEM 확장 기능](specification.md)** - AEM은 `Sling` HTL 스크립팅 엔진 위에 구축되어 개발자에게 AEM 관련 편리한 기능을 제공합니다.
 
 이 HTL 문서는 HTL을 사용하여 AEM 솔루션을 개발하는 방법을 설명하는 데 중점을 둡니다. 따라서, 세 가지 레이어를 모두 다루며, 필요한 경우 외부 자료를 참고할 수 있도록 안내합니다.
 

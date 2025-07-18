@@ -2,10 +2,10 @@
 title: HTL의 역사
 description: AEM의 오랜 사용자들을 위해, 이 문서는 HTL, HTL이 JSP를 대체하는 방법 및 Sightly에서의 이름 변경에 대한 배경을 제공합니다.
 exl-id: 00985b35-2130-4946-959a-0a09a34a0f05
-source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
-source-wordcount: '540'
-ht-degree: 100%
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -61,6 +61,9 @@ AEM 6.0 및 6.1에서 HTL은 **Sightly**&#x200B;라고 불렸습니다. Adobe는
 
 >[!NOTE]
 >
->이런 명칭 변경은 코드나 API에 영향을 미치지 않으므로 호환성에는 영향을 미치지 않습니다. 자세한 내용은 [이 공지 비디오를 참조](https://helpx.adobe.com/ko/experience-manager/how-to/announce-htl.html)하십시오.
+>이 이름 변경 사항은 코드나 API에 영향을 주지 않으므로 호환성에는 영향을 주지 않습니다.
+
+<!-- LINK IS 404
+For more information, watch [this announcement video](https://helpx.adobe.com/experience-manager/how-to/announce-htl.html). -->
 
 HTL에 대한 자세한 내용은 [HTML 템플릿 언어(HTL) 시작 안내서](overview.md)를 참조하십시오.

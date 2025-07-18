@@ -2,10 +2,10 @@
 title: HTL Java Use-API
 description: HTL Java Use-API를 사용하면 HTL 파일이 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
-source-git-commit: 5e1dce693dc61300530837c996f45d793c0b07e6
-workflow-type: ht
-source-wordcount: '1135'
-ht-degree: 100%
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 99%
 
 ---
 
@@ -200,7 +200,7 @@ public class Info extends WCMUsePojo {
 
 [`<T> T get(String name, Class<T> type)`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html)
 
-또는 이 표에 나열된 것처럼 적절한 편의 메서드를 사용해 일반적으로 사용되는 컨텍스트 오브젝트에 직접 액세스할 수 있습니다.
+또는 이 테이블에 나열된 것처럼 적절한 편의 메서드를 사용해 일반적으로 사용되는 컨텍스트 오브젝트에 직접 액세스할 수 있습니다.
 
 | 오브젝트 | 편의 메서드 |
 |---|---|
@@ -312,7 +312,7 @@ public class Info extends WCMUsePojo {
 
 매개변수는 초기화 시 use-class에 전달할 수 있습니다.
 
-자세한 내용은 Sling [HTL 스크립팅 엔진 설명서](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects)를 참조하십시오.
+자세한 내용은 `Sling` [HTL 스크립팅 엔진 설명서](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects)를 참조하십시오.
 
 ### 번들 Java 클래스 {#bundled-java-class}
 

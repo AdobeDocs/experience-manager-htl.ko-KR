@@ -1,13 +1,13 @@
 ---
-source-git-commit: 22f62868df0fcfc558e5d62434dde843a9f3ca83
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 85%
+source-wordcount: '73'
+ht-degree: 84%
 
 ---
 # Adobe Experience Manager HTL 설명서
 
-Adobe Experience Manager HTL(HTML 템플릿 언어) 설명서용 저장소입니다.
+Adobe Experience Manager HTML 템플릿 언어(HTL) 설명서용 저장소입니다.
 
 이 설명서에 대한 귀하의 기여를 환영합니다. 다음 리소스를 참조하십시오.
 
