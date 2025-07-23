@@ -3,9 +3,9 @@ title: HTL 개요
 description: AEM이 HTML 템플릿 언어(HTL)를 지원하여 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 방법을 알아보십시오. 이 프레임워크를 사용하면 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >
 >**AEM용 Edge Delivery Services를 고려해 보셨나요?**
 >
->이 문서에 설명된 방법은 기존 프로젝트에도 계속 사용할 수 있습니다. 그러나 새 프로젝트의 경우 Adobe은 [Edge Delivery Services.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)을(를) 활용할 것을 권장합니다
+>이 문서에 설명된 방법은 기존 프로젝트에도 계속 사용할 수 있습니다. 단, 신규 프로젝트의 경우 Adobe는 [Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 활용할 것을 권장합니다.
 
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다. 이를 통해 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 HTML 템플릿 언어(HTL)는 모든 출력 변수에 컨텍스트 인식 이스케이프를 자동으로 적용하기 때문에 사이트의 보안이 기타 대다수 템플릿 시스템의 경우보다 강화됩니다. HTL에서는 HTML 구문을 이해하고 해당 지식을 사용하여 마크업에서의 위치를 기반으로 표현식에 필요한 이스케이프를 조정하므로 이 접근 방식이 가능합니다. 이 메서드를 통해 다른 속성이나 다른 위치에 배치된 표현식에서 다르게 이스케이프되는 `href` 또는 `src` 속성에 표현식이 배치됩니다.
 
-JSP와 같은 템플릿 언어에서도 같은 결과를 얻을 수 있지만 개발자가 각 변수에 적절한 이스케이프가 적용되었는지 수동으로 확인해야 합니다. 적용된 이스케이프가 하나라도 생략되거나 실수가 있으면 XSS(크로스 사이트 스크립팅) 취약성의 원인이 될 가능성이 충분하므로 Adobe에서는 HTL로 이 작업을 자동화하기로 결정했습니다. 필요하면 개발자가 표현식에 서로 다른 이스케이프를 지정할 수도 있지만, HTL에서는 기본 동작이 원하는 동작에 해당할 가능성이 훨씬 많으므로 오류 가능성이 감소합니다.
+JSP와 같은 템플릿 언어에서도 같은 결과를 얻을 수 있지만 개발자가 각 변수에 적절한 이스케이프가 적용되었는지 수동으로 확인해야 합니다. 적용된 이스케이프가 하나라도 생략되거나 실수가 있으면 XSS(크로스 사이트 스크립팅) 취약성의 원인이 될 가능성이 충분하므로 Adobe에서는 HTL로 이 작업을 자동화하기로 결정했습니다. 필요하면 개발자가 표현식에 서로 다른 이스케이프를 지정할 수도 있지만 HTL에서는 기본 동작이 원하는 동작에 해당할 가능성이 훨씬 많으므로 오류 가능성이 감소합니다.
 
 ## 간소화되는 개발 {#simplified-development}
 

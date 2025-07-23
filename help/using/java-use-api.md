@@ -3,9 +3,9 @@ title: HTL Java Use-API
 description: HTL Java Use-API를 사용하면 HTL 파일이 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ use-class가 없는 HTL 구성 요소(`info,`라고 함)부터 시작합니다. 
 }
 ```
 
-이 콘텐츠에 액세스하면 HTL 파일이 실행됩니다. HTL 코드 내에서 현재 리소스의 `title` 및 `description`에 액세스하고 이를 표시하기 위해서는 컨텍스트 오브젝트 `properties`가 사용됩니다. 출력 파일 `/content/my-example.html`은(는) 다음과 같습니다.
+이 콘텐츠에 액세스하면 HTL 파일이 실행됩니다. HTL 코드 내에서 현재 리소스의 `title` 및 `description`에 액세스하고 이를 표시하기 위해서는 컨텍스트 오브젝트 `properties`가 사용됩니다. 출력 파일 `/content/my-example.html`은 다음과 같습니다.
 
 ```html
 <div>
