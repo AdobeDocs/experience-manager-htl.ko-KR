@@ -2,12 +2,14 @@
 title: AEM 확장 기능
 description: AEM은 개발자의 편리성을 위해 AEM에 대한 HTL 사양의 확장 기능을 제공합니다.
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
-source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
+index: false
+source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
+workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
 
 ---
+
 
 # AEM 확장 기능 {#aem-extensions}
 
@@ -21,7 +23,7 @@ Apache Sling과 동일한 [세 가지 추가 옵션](https://sling.apache.org/do
 * `hint`
 * `basename`
 
-그러나 AEM에서는 HTL에 대한 [국제화 지원](https://experienceleague.adobe.com/ko/docs/ experience-manager-65/content/implementing/developing/components/internationalization/i18n-dev)은 `com.day.cq.i18n` 패키지의 API를 통해 구현됩니다.
+그러나 AEM에서는 HTL에 대한 [국제화 지원](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/components/internationalization/i18n-dev)은 `com.day.cq.i18n` 패키지의 API를 통해 구현됩니다.
 
 ## `data-sly-include` {#data-sly-include}
 

@@ -2,9 +2,9 @@
 title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: ht
-source-wordcount: '2045'
+source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
+workflow-type: tm+mt
+source-wordcount: '2077'
 ht-degree: 100%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 100%
 HTML 템플릿 언어(HTL)은 Adobe Experience Manager에서 HTML용으로 주로 사용되고 권장되는 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
 
 이 문서는 HTL의 목적에 대한 개요와 더불어 언어의 기본 개념 및 구성에 대한 소개를 제공합니다.
+
+>[!TIP]
+>
+>**AEM용 Edge Delivery Services를 고려해 보셨습니까?**
+>
+>이 문서에 설명된 방법은 기존 프로젝트에도 계속 사용할 수 있습니다. 단, 신규 프로젝트의 경우 Adobe는 [Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 활용할 것을 권장합니다.
 
 >[!TIP]
 >
