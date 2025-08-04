@@ -4,7 +4,7 @@ description: AEM은 개발자의 편리성을 위해 AEM에 대한 HTL 사양의
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
 index: false
 source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
