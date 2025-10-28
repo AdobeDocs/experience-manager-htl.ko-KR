@@ -24,7 +24,7 @@ HTML 템플릿 언어(HTL)은 Adobe Experience Manager에서 HTML용으로 주�
 
 >[!TIP]
 >
->이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문과 관련하여 질문이 있는 경우 [HTL 사양](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)을 참조하십시오.
+>이 문서는 HTL의 목적 및 그 기본 구조와 개념에 대한 개요를 제공합니다. 특정 구문과 관련하여 질문이 있는 경우 [HTL 사양](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)을 참조하십시오.
 
 <!--
 specification.md
@@ -34,9 +34,9 @@ specification.md
 
 AEM에서 HTL은 여러 레이어로 이루어져 있습니다.
 
-1. **[HTL 사양](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - HTL은 누구나 무료로 구현할 수 있는 오픈 소스 플랫폼 애그노스틱 사양입니다.
-1. **[`Sling`HTL 스크립팅 엔진](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - `Sling` 프로젝트에서 AEM에 사용되는 HTL의 참조 구현을 만들었습니다.
-1. **[AEM 확장 기능](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - AEM은 `Sling` HTL 스크립팅 엔진 위에 구축되어 개발자에게 AEM 관련 편리한 기능을 제공합니다.
+1. **[HTL 사양](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)** - HTL은 누구나 무료로 구현할 수 있는 오픈 소스 플랫폼 애그노스틱 사양입니다.
+1. **[`Sling`HTL 스크립팅 엔진](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)** - `Sling` 프로젝트에서 AEM에 사용되는 HTL의 참조 구현을 만들었습니다.
+1. **[AEM 확장 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)** - AEM은 `Sling` HTL 스크립팅 엔진 위에 구축되어 개발자에게 AEM 관련 편리한 기능을 제공합니다.
 
 이 HTL 문서는 HTL을 사용하여 AEM 솔루션을 개발하는 방법을 설명하는 데 중점을 둡니다. 따라서, 세 가지 레이어를 모두 다루며, 필요한 경우 외부 자료를 참고할 수 있도록 안내합니다.
 
@@ -63,7 +63,7 @@ HTML 템플릿 언어는 표현식 언어를 사용하여 콘텐츠 조각을 �
 * **블록 문** - `<h1>` 요소를 조건부로 표시하려면 `data-sly-test` HTML5 데이터 속성을 사용하십시오. HTL이 제공하는 이러한 여러 가지 속성을 통해 HTML 요소에 특정 동작을 추가할 수 있으며, 모든 속성은 `data-sly` 접두사로 시작합니다.
 * **표현식 언어** - `${` 및 `}` 문자가 HTL 표현식을 구분합니다. 런타임 시 이러한 표현식이 평가되며 해당 값은 발신 HTML 스트림에 삽입됩니다.
 
-두 구문에 대한 자세한 내용은 [HTL 사양](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)을 참조하십시오.
+두 구문에 대한 자세한 내용은 [HTL 사양](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)을 참조하십시오.
 
 ### SLY 요소 {#the-sly-element}
 
@@ -308,7 +308,7 @@ HTL에서 클라이언트 라이브러리는 `data-sly-use`를 통해 액세스�
 
 이 예시에서 HTML의 `head`와 `body` 요소가 각각 다른 파일에 있을 경우, `clientlib.html` 템플릿을 각 파일에서 따로 로드해야 합니다.
 
-[HTL 사양](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)의 템플릿 및 호출 문 섹션은 이러한 템플릿을 선언하고 호출하는 방법에 대한 자세한 내용을 제공합니다.
+[HTL 사양](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/specification)의 템플릿 및 호출 문 섹션은 이러한 템플릿을 선언하고 호출하는 방법에 대한 자세한 내용을 제공합니다.
 
 ### 클라이언트에 데이터 전달 {#passing-data-to-the-client}
 

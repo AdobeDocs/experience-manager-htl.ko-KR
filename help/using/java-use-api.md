@@ -195,7 +195,7 @@ public class Info extends WCMUsePojo {
 
 일반적으로 [활성화](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html) 메서드는 현재 컨텍스트(예: 현재 요청 및 리소스)를 기반으로 HTL 코드에 필요한 값을 미리 계산하고 (멤버 변수에) 저장하는 데 사용됩니다.
 
-`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 오브젝트 집합에 대한 액세스를 제공합니다([전역 오브젝트](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/global-objects) 문서 참조).
+`WCMUsePojo` 클래스는 HTL 파일 내에서 사용 가능한 것과 동일한 컨텍스트 오브젝트 집합에 대한 액세스를 제공합니다([전역 오브젝트](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/global-objects) 문서 참조).
 
 `WCMUsePojo`를 확장하는 클래스에서 컨텍스트 오브젝트에 다음과 같이 이름을 사용하여 액세스할 수 있습니다.
 
