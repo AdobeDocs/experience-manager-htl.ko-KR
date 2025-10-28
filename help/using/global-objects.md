@@ -3,9 +3,9 @@ title: HTL 전역 오브젝트
 description: HTL의 다양한 오브젝트 및 Java 지원 오브젝트에 대해 알아봅니다.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 index: false
-source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
-workflow-type: ht
-source-wordcount: '203'
+source-git-commit: 391c5279f0021dbedaffb0c63e67e037d6c782e1
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # HTL 전역 오브젝트 {#htl-global-objects}
 
-아무것도 지정하지 않아도 HTL은 개발자가 유용하게 사용할 수 있는 다양한 오브젝트에 대한 액세스를 제공합니다. 이러한 오브젝트는 [Use-API](java-use-api.md)를 통해 도입될 수 있는 모든 것에 추가됩니다.
+아무것도 지정하지 않아도 HTL은 개발자가 유용하게 사용할 수 있는 다양한 오브젝트에 대한 액세스를 제공합니다. 이러한 오브젝트는 [Use-API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api)를 통해 도입될 수 있는 모든 것에 추가됩니다.
 
 >[!NOTE]
 >

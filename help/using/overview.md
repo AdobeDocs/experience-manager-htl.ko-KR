@@ -2,10 +2,10 @@
 title: HTL 개요
 description: AEM이 HTML 템플릿 언어(HTL)를 지원하여 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 방법을 알아보십시오. 이 프레임워크를 사용하면 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: 3c7afd180151f35db74e105b23ae7e0ed50c7e4e
+source-git-commit: 391c5279f0021dbedaffb0c63e67e037d6c782e1
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '680'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,11 @@ ht-degree: 100%
 
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다. 이를 통해 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 
-[AEM 6.0에 도입된](history.md) HTML 템플릿 언어는 HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템입니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
+[AEM 6.0에 도입된](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history) HTML 템플릿 언어는 HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템입니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
+
+<!--
+history.md
+-->
 
 ## 강화되는 보안 {#increased-security}
 
@@ -54,8 +58,16 @@ HTML 템플릿 언어로 Adobe.com 사이트를 다시 구현한 결과, 프로�
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-이 비디오에서는 HTL이 [이전 명칭인 Sightly](history.md)로 지칭됩니다.
+이 비디오에서는 HTL이 [이전 명칭인 Sightly](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history)로 지칭됩니다.
+
+<!--
+history.md
+-->
 
 ## 다음 단계 {#next-steps}
 
-지금까지 HTL의 목표와 장점에 대해 알아보았습니다. 이제 언어 부분을 살펴보십시오. [HTML 템플릿 언어 시작하기](getting-started.md) 문서를 검토하십시오.
+지금까지 HTL의 목표와 장점에 대해 알아보았습니다. 이제 언어 부분을 살펴보십시오. [HTML 템플릿 언어 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/getting-started) 문서를 검토하십시오.
+
+<!--
+getting-started.md
+-->
