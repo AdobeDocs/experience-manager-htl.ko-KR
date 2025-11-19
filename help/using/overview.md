@@ -2,7 +2,7 @@
 title: HTL 개요
 description: AEM이 HTML 템플릿 언어(HTL)를 지원하여 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 방법을 알아보십시오. 이 프레임워크를 사용하면 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: 84db446b019d74070ce4af64091dd0674dab9d33
+source-git-commit: 5a493aea198f5e70834f5882fc0af9ac855717df
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 100%
@@ -21,10 +21,6 @@ ht-degree: 100%
 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 것이 AEM(Adobe Experience Manager)에서 지원하는 HTL(HTML 템플릿 언어)의 목적입니다. 이를 통해 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 
 [AEM 6.0에 도입된](history.md) HTML 템플릿 언어는 HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템입니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTML 템플릿 언어가 강화된 보안 및 개발 효율성 달성에 도움이 됩니다.
-
-<!--
-history.md
--->
 
 ## 강화되는 보안 {#increased-security}
 
