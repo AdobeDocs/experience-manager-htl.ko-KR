@@ -6,7 +6,7 @@ user-guide-description: 기존 AEM 프로젝트의 경우 HTML 템플릿 언어(
 feature-set: Experience Manager
 feature: Developer Tools
 role: Developer
-source-git-commit: e9148a152c5b9298233346d93809c80e35f980d0
+source-git-commit: b73388b1c6db9993cf979f8d3023410dea8d8ae8
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
@@ -25,3 +25,4 @@ ht-degree: 100%
 + [개발자 도구](developer-tools.md)
 + [코드 샘플](code-samples.md)
 + [HTL의 역사](history.md)
+
