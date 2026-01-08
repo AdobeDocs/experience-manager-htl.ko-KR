@@ -6,7 +6,7 @@ index: no
 TQID: https://experienceleague.adobe.com/GKmIxjLoe0Dv0-fU0z4cX62b8R2HqCPccATWfwhxPGI
 product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: a9c0f2ea176e8226d8f3eb30ecff63ebafd3e2ae
+source-git-commit: db51ea5e045d0666bb5cb749577791abfcda5226
 workflow-type: tm+mt
 source-wordcount: 530
 ht-degree: 100%
@@ -67,3 +67,4 @@ AEM 6.0 및 6.1에서 HTL은 **Sightly**&#x200B;라고 불렸습니다. Adobe는
 >이 명칭 변경은 코드나 API에 영향을 미치지 않으므로 호환성에는 영향을 미치지 않습니다.
 
 HTL에 대한 자세한 내용은 [HTML 템플릿 언어(HTL) 시작 안내서](overview.md)를 참조하십시오.
+
