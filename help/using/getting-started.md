@@ -6,16 +6,16 @@ TQID: https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJ
 product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2: id: a732f735-539c-44c2-ad33-4aa4f7480b3aid: ea99d093-20a6-45a0-99ac-a82e7018eb37
-source-git-commit: a9c0f2ea176e8226d8f3eb30ecff63ebafd3e2ae
+source-git-commit: f487047a68e98d1b089e0e7124ab91f3281d51ad
 workflow-type: tm+mt
 source-wordcount: 2077
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # HTL 시작하기 {#getting-started-with-htl}
 
-HTML 템플릿 언어(HTL)은 Adobe Experience Manager에서 HTML용으로 주로 사용되고 권장되는 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
+HTML 템플릿 언어(HTL)는 Adobe Experience Manager의 HTML에 대한 기본 및 권장 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
 
 이 문서는 HTL의 목적에 대한 개요와 더불어 언어의 기본 개념 및 구성에 대한 소개를 제공합니다.
 
