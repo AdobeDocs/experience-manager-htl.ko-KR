@@ -6,7 +6,7 @@ user-guide-description: 기존 AEM 프로젝트의 경우 HTML 템플릿 언어(
 feature-set: Experience Manager
 feature: Developer Tools
 role: Developer
-source-git-commit: b73388b1c6db9993cf979f8d3023410dea8d8ae8
+source-git-commit: 9bb2178569ef69312334b50032b799f00bab5727
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
@@ -16,13 +16,12 @@ ht-degree: 100%
 
 # Adobe Experience Manager HTL 도움말 {#content}
 
-+ [개요](overview.md)
-+ [HTL 시작하기](getting-started.md)
-+ [HTL 사양](specification.md)
-+ [HTL 전역 오브젝트](global-objects.md)
-+ [HTL Java Use-API](java-use-api.md)
-+ [AEM 확장 기능](aem-extensions.md)
-+ [개발자 도구](developer-tools.md)
-+ [코드 샘플](code-samples.md)
-+ [HTL의 역사](history.md)
-
++ [개요](/help/using/overview.md)
++ [HTL 시작하기](/help/using/getting-started.md)
++ [HTL 사양](/help/using/specification.md)
++ [HTL 전역 오브젝트](/help/using/global-objects.md)
++ [HTL Java Use-API](/help/using/java-use-api.md)
++ [AEM 확장 기능](/help/using/aem-extensions.md)
++ [개발자 도구](/help/using/developer-tools.md)
++ [코드 샘플](/help/using/code-samples.md)
++ [HTL의 역사](/help/using/history.md)
