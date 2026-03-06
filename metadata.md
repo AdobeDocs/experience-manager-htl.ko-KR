@@ -2,15 +2,15 @@
 solution: Experience Manager
 type: Documentation
 product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-htl.ko-KR
-index: y
+git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
+index: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 recommendations: noDisplay
-source-git-commit: 5c7a0f5795bcbb3b4a5fb34f2d49aad6aa31122f
+source-git-commit: 944fa924e7ccba0a195b2c92584ab75df86b1f83
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 40%
+source-wordcount: '86'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 40%
 GitHub 작성 시스템은 메타데이터를 계층적으로 정의하며, 다음과 같이 선례 수준이 높아집니다.
 
 1. metadata.md
-1. ToC
+1. 종료 날짜
 1. 문서
 
 metadata.md 파일에 정의된 메타데이터는 전체 리포지토리에 적용되지만 ToC 및 문서 수준에서 재정의될 수 있습니다. 메타데이터 재정의는 가능한 한 낮은 수준에서 수행해야 합니다.
@@ -31,7 +31,7 @@ metadata.md
 
 * `product`
 * `git-repo`
-* `index: y`
+* `index: true`
 
 더 이상 사용되지 않음:
 
@@ -42,7 +42,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-ToCs
+Tocs
 
 * `sub-product`
 * `user-guide-title`
@@ -51,5 +51,5 @@ ToCs
 
 * `title`
 * `description`
-* `index: n` (이전 버전의 구성 요소만 해당)
+* `index: false`(이전 버전의 구성 요소만 해당)
 

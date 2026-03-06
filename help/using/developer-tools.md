@@ -2,15 +2,13 @@
 title: 개발자 도구
 description: HTL에서 개발 작업을 수행할 때 유용하게 사용할 수 있는 다음 도구를 확인하십시오.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
-index: no
+index: false
 TQID: https://experienceleague.adobe.com/ip-WYHSwpvxvdvKMYXDFxXQwuTZjd9Hz1jBeybfmvmI
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: a9c0f2ea176e8226d8f3eb30ecff63ebafd3e2ae
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 944fa924e7ccba0a195b2c92584ab75df86b1f83
 workflow-type: tm+mt
-source-wordcount: 78
+source-wordcount: 101
 ht-degree: 100%
 
 ---
