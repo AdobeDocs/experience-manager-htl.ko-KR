@@ -2,15 +2,15 @@
 title: HTL의 역사
 description: AEM의 오랜 사용자들을 위해, 이 문서는 HTL, HTL이 JSP를 대체하는 방법 및 Sightly에서의 이름 변경에 대한 배경을 제공합니다.
 exl-id: 00985b35-2130-4946-959a-0a09a34a0f05
-index: no
+index: false
 TQID: https://experienceleague.adobe.com/GKmIxjLoe0Dv0-fU0z4cX62b8R2HqCPccATWfwhxPGI
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: db51ea5e045d0666bb5cb749577791abfcda5226
+source-git-commit: 944fa924e7ccba0a195b2c92584ab75df86b1f83
 workflow-type: tm+mt
-source-wordcount: 530
+source-wordcount: 534
 ht-degree: 100%
 
 ---
