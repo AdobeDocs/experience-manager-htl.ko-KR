@@ -10,8 +10,8 @@ role_v2:
 topic_v2:
   - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
 source-git-commit: a9c0f2ea176e8226d8f3eb30ecff63ebafd3e2ae
-workflow-type: tm+mt
-source-wordcount: 677
+workflow-type: ht
+source-wordcount: 716
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->**AEM용 Edge Delivery Services를 고려해 보셨나요?**
+>**AEM용 Edge Delivery Services를 고려해 보셨습니까?**
 >
 >이 문서에 설명된 방법은 기존 프로젝트에도 계속 사용할 수 있습니다. 단, 신규 프로젝트의 경우 Adobe는 [Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 활용할 것을 권장합니다.
 
