@@ -3,23 +3,19 @@ title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 TQID: https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
-  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a732f735-539c-44c2-ad33-4aa4f7480b3aid: ea99d093-20a6-45a0-99ac-a82e7018eb37
 source-git-commit: f487047a68e98d1b089e0e7124ab91f3281d51ad
-workflow-type: tm+mt
-source-wordcount: 2077
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: 2153
+ht-degree: 100%
 
 ---
 
 # HTL 시작하기 {#getting-started-with-htl}
 
-HTML 템플릿 언어(HTL)는 Adobe Experience Manager의 HTML에 대한 기본 및 권장 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
+HTML 템플릿 언어(HTL)는 HTML에 대한 Adobe Experience Manager의 기본 및 권장 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
 
 이 문서는 HTL의 목적에 대한 개요와 더불어 언어의 기본 개념 및 구성에 대한 소개를 제공합니다.
 
