@@ -2,21 +2,18 @@
 title: HTL 시작하기
 description: HTML에 대한 AEM의 기본 및 권장 서버측 템플릿 시스템인 HTL에 대해 알아보고 언어 및 기본 구성의 주요 개념에 대해 알아봅니다.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-TQID: https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s
+TQID: 'https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s'
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
-  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
-source-git-commit: f487047a68e98d1b089e0e7124ab91f3281d51ad
+    internal-label: Developer
+source-git-commit: ad1e15465b8b969663842d4946a1fa182821bcc1
 workflow-type: tm+mt
-source-wordcount: 2153
+source-wordcount: '2153'
 ht-degree: 100%
-
 ---
-
 # HTL 시작하기 {#getting-started-with-htl}
 
 HTML 템플릿 언어(HTL)는 HTML에 대한 Adobe Experience Manager의 기본 및 권장 서버측 템플릿 시스템입니다. 모든 HTML 서버측 템플릿 시스템과 마찬가지로, HTL 파일은 HTML 코드, 기본적인 화면 표시 로직, 런타임 시에 평가될 변수를 지정하여 브라우저로 전송될 출력을 정의합니다.
@@ -41,7 +38,7 @@ AEM에서 HTL은 여러 레이어로 이루어져 있습니다.
 1. **[`Sling`HTL 스크립팅 엔진](specification.md)** - `Sling` 프로젝트는 AEM에서 사용되는 HTL의 참조 구현을 만들었습니다.
 1. **[AEM 확장 기능](specification.md)** - AEM은 `Sling` HTL 스크립팅 엔진을 기반으로 하여 AEM에 특화된 편리한 기능을 개발자에게 제공합니다.
 
-이 HTL 문서는 HTL을 사용하여 AEM 솔루션을 개발하는 방법을 설명하는 데 중점을 둡니다. 따라서, 세 가지 레이어를 모두 다루며, 필요한 경우 외부 자료를 참고할 수 있도록 안내합니다.
+이 HTL 문서는 HTL을 사용하여 AEM 솔루션을 개발하는 방법을 설명하는 데 중점을 둡니다. 따라서 세 가지 레이어를 모두 다루며, 필요한 경우 외부 리소스를 연결합니다.
 
 ## HTL의 기본 개념 {#fundamental-concepts-of-htl}
 
@@ -153,7 +150,7 @@ HTL은 데이터 속성을 사용하여 블록 문을 정의하기 때문에 다
 
 이 접근 방식은 상당한 제약처럼 들릴 수 있습니다. 하지만 HTML 템플릿 언어는 유효한 HTML 출력만 생성해야 하므로, 이 방식이 더 선호됩니다. 아래의 [로직 액세스를 위한 Use-API](#use-api-for-accessing-logic) 섹션에서는 템플릿에서 추가적인 로직을 호출하는 방법을 소개합니다. 이러한 컨텍스트에 대한 복잡한 출력을 준비하는 데 필요한 경우 이 방법을 사용할 수 있습니다. 백엔드에서 프론트엔드 스크립트로 데이터를 전송하려면 컴포넌트의 로직을 사용해 JSON 문자열을 생성하고, 이를 간단한 HTL 표현식을 사용하여 데이터 속성에 삽입하면 됩니다.
 
-다음 예시는 HTML 주석에서의 동작을 보여 주지만 스크립트나 스타일 요소에서도 동일하게 작동합니다.
+다음 예시는 HTML 주석에서의 동작을 보여 주지만 스크립트나 스타일 요소에서도 동일한 동작이 관찰됩니다.
 
 ```xml
 <!--
@@ -175,7 +172,7 @@ HTL은 데이터 속성을 사용하여 블록 문을 정의하기 때문에 다
 
 아래의 [자동 컨텍스트 인식 이스케이프](#automatic-context-aware-escaping) 섹션에서 설명한 것처럼, HTL의 목표 중 하나는 모든 표현식에 컨텍스트에 인식 이스케이프를 자동으로 적용하여 크로스 사이트 스크립팅(XSS) 취약점을 줄이는 것입니다. HTL은 HTML 마크업의 표현식 컨텍스트를 감지하지만 인라인 JavaScript 또는 CSS는 분석하지 않으므로 개발자가 이러한 표현식을 위한 정확한 컨텍스트를 지정해야 합니다.
 
-올바른 이스케이프 결과를 적용하지 않으면 XSS 취약성이 발생하므로 HTL은 컨텍스트가 선언되지 않은 경우 스크립트 및 스타일 컨텍스트에 있는 모든 표현식의 출력을 제거합니다.
+올바른 이스케이프를 적용하지 않으면 XSS 취약성이 발생하므로 HTL은 컨텍스트가 선언되지 않은 경우 스크립트 및 스타일 컨텍스트에 있는 모든 표현식의 출력을 제거합니다.
 
 다음은 스크립트 및 스타일 내부에 배치된 표현식에 대한 컨텍스트를 설정하는 방법의 예입니다.
 
@@ -253,14 +250,14 @@ use(function () {
 또한 표현식에 배치된 변수의 유형이 중요합니다.
 
 * **문자열(String):**
-   * **not empty:** 문자열을 속성 값으로 설정합니다.
-   * **empty:** 속성을 모두 제거합니다.
+  * **not empty:** 문자열을 속성 값으로 설정합니다.
+  * **empty:** 속성을 모두 제거합니다.
 
 * **숫자(Number):** 숫자를 속성 값으로 설정합니다.
 
 * **부울(Boolean):**
-   * **true:** 값이 없는 속성을 표시합니다(부울 HTML 속성으로).
-   * **false:** 속성을 모두 제거합니다.
+  * **true:** 값이 없는 속성을 표시합니다(부울 HTML 속성으로).
+  * **false:** 속성을 모두 제거합니다.
 
 다음은 부울 표현식을 사용하여 부울 HTML 속성을 제어하는 방법의 예입니다.
 

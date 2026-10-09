@@ -2,25 +2,23 @@
 title: HTL 개요
 description: AEM이 HTML 템플릿 언어(HTL)를 지원하여 우수한 생산성으로 보안을 강화하는 엔터프라이즈 수준 웹 프레임워크를 제공하는 방법을 알아보십시오. 이 프레임워크를 사용하면 Java 지식이 없는 HTML 개발자들이 AEM 프로젝트에 더 잘 참여할 수 있습니다.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-TQID: https://experienceleague.adobe.com/aJOvBYeraXDv104qRJqUlp7d0as9YW1lSIg0EKaAUD0
+TQID: 'https://experienceleague.adobe.com/aJOvBYeraXDv104qRJqUlp7d0as9YW1lSIg0EKaAUD0'
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
-source-git-commit: a9c0f2ea176e8226d8f3eb30ecff63ebafd3e2ae
-workflow-type: ht
-source-wordcount: 716
+    internal-label: Developer
+source-git-commit: ad1e15465b8b969663842d4946a1fa182821bcc1
+workflow-type: tm+mt
+source-wordcount: '716'
 ht-degree: 100%
-
 ---
-
 # 개요 {#overview}
 
 >[!TIP]
 >
->**AEM용 Edge Delivery Services를 고려해 보셨습니까?**
+>**AEM용 Edge Delivery Services를 고려해 보셨나요?**
 >
 >이 문서에 설명된 방법은 기존 프로젝트에도 계속 사용할 수 있습니다. 단, 신규 프로젝트의 경우 Adobe는 [Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 활용할 것을 권장합니다.
 
@@ -36,9 +34,9 @@ JSP와 같은 템플릿 언어에서도 같은 결과를 얻을 수 있지만 �
 
 ## 간소화되는 개발 {#simplified-development}
 
-HTML 템플릿 언어는 쉽게 배울 수 있으며 기능은 간단하고 복잡하지 않게 유지되도록 의도적으로 제한했습니다. 또한 마크업을 체계화하고 로직을 호출하는 동시에 마크업과 로직 간 문제의 엄격한 구분을 항상 강제로 적용하는 강력한 메커니즘이 있습니다. HTL은 표현식 및 데이터 속성을 사용하여 동적 비헤이비어로 마크업에 주석을 다는 표준 HTML5입니다. 이러한 접근 방식을 통해 마크업의 유효성 및 가독성을 유지할 수 있습니다. 표현식 및 데이터 속성에 대한 평가가 전적으로 서버측에서 수행되며 클라이언트측에 표시되지 않으므로 원하는 JavaScript 프레임워크를 방해 없이 사용할 수 있습니다.
+HTML 템플릿 언어는 쉽게 배울 수 있으며 기능은 간단하고 복잡하지 않게 유지되도록 의도적으로 제한되어 있습니다. 또한 마크업을 체계화하고 로직을 호출하는 동시에 마크업과 로직 간 관심사의 엄격한 분리를 항상 강제하는 강력한 메커니즘이 있습니다. HTL은 표현식 및 데이터 속성을 사용하여 동적 동작으로 마크업에 주석을 다는 표준 HTML5입니다. 이러한 접근 방식을 통해 마크업의 유효성 및 가독성을 유지할 수 있습니다. 표현식 및 데이터 속성에 대한 평가가 전적으로 서버측에서 수행되며 클라이언트측에 표시되지 않으므로 원하는 JavaScript 프레임워크를 방해 없이 사용할 수 있습니다.
 
-이러한 기능을 사용하면 Java 지식이 없는 HTML 개발자들이 HTL 템플릿을 편집하고, 개발 팀에 통합하고, 전체 스택 Java 개발자와의 공동 작업을 간소화할 수 있습니다. 반대로, Java 개발자는 HTML에 대한 걱정 없이 백엔드 코드에 집중할 수 있습니다.
+이러한 기능을 사용하면 Java 지식이 없는 HTML 개발자들이 HTL 템플릿을 편집하고, 개발 팀에 합류하고, 전체 스택 Java 개발자와의 공동 작업을 간소화할 수 있습니다. 반대로, Java 개발자는 HTML에 대한 걱정 없이 백엔드 코드에 집중할 수 있습니다.
 
 ## 절감되는 비용 {#reduced-costs}
 

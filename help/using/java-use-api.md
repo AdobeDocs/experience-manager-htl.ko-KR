@@ -3,28 +3,25 @@ title: HTL Java Use-API
 description: HTL Java Use-API를 사용하면 HTL 파일이 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 index: false
-TQID: https://experienceleague.adobe.com/lCMIs0khRwcDzk97TQcNMMl4h7OZNf3KlK2YA4ANbZQ
+TQID: 'https://experienceleague.adobe.com/lCMIs0khRwcDzk97TQcNMMl4h7OZNf3KlK2YA4ANbZQ'
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
-  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
-source-git-commit: 944fa924e7ccba0a195b2c92584ab75df86b1f83
-workflow-type: ht
-source-wordcount: 1643
+    internal-label: Developer
+source-git-commit: ad1e15465b8b969663842d4946a1fa182821bcc1
+workflow-type: tm+mt
+source-wordcount: '1643'
 ht-degree: 100%
-
 ---
-
 # HTL Java Use-API {#htl-java-use-api}
 
 HTL Java Use-API를 사용하면 HTL 파일이 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다.
 
 ## 사용 사례 {#use-case}
 
-HTL Java Use-API를 사용하면 HTL 파일이 `data-sly-use`를 통해 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이 방법을 통해 모든 복잡한 비즈니스 논리를 Java 코드에 캡슐화할 수 있지만 HTL 코드는 직접 마크업 생성만 처리합니다.
+HTL Java Use-API를 사용하면 HTL 파일이 `data-sly-use`를 통해 사용자 정의 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이 방법을 통해 모든 복잡한 비즈니스 로직을 Java 코드에 캡슐화할 수 있지만 HTL 코드는 직접 마크업 생성만 처리합니다.
 
 Java Use-API 오브젝트는 POJO의 기본 생성자를 통해 특정 구현에 의해 인스턴스화된 간단한 POJO가 될 수 있습니다.
 
@@ -141,7 +138,7 @@ Java use-class는 두 가지 방법으로 설치할 수 있습니다.
 
 ### Java 패키지는 저장소 경로입니다. {#java-package-is-repository-path}
 
-로컬 설치를 사용하는 경우 use-class의 패키지 이름은 저장소 폴더 위치의 패키지 이름과 일치해야 합니다. 패키지 이름의 밑줄은 경로의 모든 하이픈을 대체합니다.
+로컬 설치를 사용하는 경우 use-class의 패키지 이름은 저장소 폴더 위치와 일치해야 합니다. 패키지 이름의 밑줄은 경로의 모든 하이픈을 대체합니다.
 
 이 경우 `Info.java`는 `/apps/my-example/components/info`에 있으므로 패키지는 `apps.my_example.components.info`입니다.
 
